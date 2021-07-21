@@ -1,0 +1,116 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>许愿墙</title>
+<link rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.0/dist/av-min.js"></script>
+<script type="text/javascript" src='js/index.js'></script>
+<link href="css/toast.css" rel="stylesheet" />
+<script src="js/clipboard.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+$(function(){
+        var clipboard = new ClipboardJS('.button');
+        clipboard.on('success', function(e) {
+             Toast.toast("您准备还愿这个愿望:"+e.text); 
+            e.clearSelection();
+        });
+ 
+       clipboard.on('error', function(e) {
+            alert('复制失败')
+        });  
+     
+       
+});
+</script>
+<style>
+.button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+</head>
+
+<body>
+
+	<div id='top'>
+		<span id='send'></span><br/>
+		<span id='huanyuan'></span>
+	</div>
+
+	<div id='main'>
+		
+	</div>
+
+
+<!--发送框-->
+	<div id='send-form'>
+		<p class='title'><span>许下您的愿望</span><a href="" id='close'></a></p>
+		<form action="" name='wish'>
+			<p>
+				<label for="nickname">昵称(页面展示)：</label>
+				<input type="text" name='nickname' id='nickname'/>
+			</p>
+			<p>
+				<label for="username">姓名(用来还愿)：</label>
+				<input type="text" name='username' id='username'/>
+			</p>
+			<p>
+				<label for="content">愿望：(您还可以许愿&nbsp;<span id='font-num'>50</span>&nbsp;个字)</label>
+				<textarea name="content" id='content'></textarea>
+				<div id='phiz'>
+					<img src="images/phiz/zhuakuang.gif" alt="抓狂" />
+					<img src="images/phiz/baobao.gif" alt="抱抱" />
+					<img src="images/phiz/haixiu.gif" alt="害羞" />
+					<img src="images/phiz/ku.gif" alt="酷" />
+					<img src="images/phiz/xixi.gif" alt="嘻嘻" />
+					<img src="images/phiz/taikaixin.gif" alt="太开心" />
+					<img src="images/phiz/touxiao.gif" alt="偷笑" />
+					<img src="images/phiz/qian.gif" alt="钱" />
+					<img src="images/phiz/huaxin.gif" alt="花心" />
+					<img src="images/phiz/jiyan.gif" alt="挤眼" />
+				</div>
+			</p>
+			<span id='send-btn'></span>
+		</form>
+	</div>
+
+	<div id='huanyuan-form'>
+		<p class='title'><span>还您实现的愿望</span><a href="" id='close2'></a></p>
+		<form action="" name='wish'>
+			<p>
+				<label for="id">许愿号：</label>
+				<input type="text" name="hyid" id="hyid"/>
+			</p>
+			<p>
+				<label for="username">姓名：</label>
+				<input type="text" name='husername' id='husername'/>
+			</p>
+			<span id="huanyuan-btn"></span>
+		</form>
+	</div>
+<script src="js/Toast.js"></script>
+</body>
+</html>

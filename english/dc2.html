@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>英语单词本</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+		<style>
+		    *{ margin:0; padding:0;}
+		    button,.login{ outline:none;width:80px; height:30px; background:#f40; color:#fff; border:none; border-radius:6px; display: block; margin: auto; cursor: pointer;}
+		    .popOutBg{ width:100%; height:100%; position: fixed; left:0; top:0; background:rgba(0,0,0,.6); display: none;}
+		    .popOut{ position:fixed; width:300px; height:200px; background:#fff; border-radius:8px;  display: none;left: 10%;}
+		    .popOut > span{ position: absolute; right:10px; top:0; height:42px; line-height:42px; color:#000; font-size:30px; cursor: pointer;}
+		    .popOut table{ display: block; margin:10 10 10 10; width:80%;}
+		    .popOut table tr td{ color:#666; padding:6px; font-size:14px;}
+		    .popOut table tr td:first-child{ text-align: center;}
+		    .inp{ width:150px; height:30px; line-height:30px; border:1px solid #999; padding:5px 10px; color:#000; font-size:14px; border-radius:6px;}
+		    .inp:focus{ border-color:#f40;}
+			.inp2{ width:150px; height:50px; line-height:50px; border:1px solid #999; padding:5px 10px; color:#000; font-size:14px; border-radius:6px;}
+			.inp2:focus{ border-color:#f40;}
+		</style>
+		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.0/dist/av-min.js"></script>
+		<script src="jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$(document).ready(function () {
+			//首先将#back-to-top隐藏
+			$("#back-to-top").hide();
+			//当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+			$(function () {
+				$(window).scroll(function () {
+					if ($(window).scrollTop() > 300) {
+						$("#back-to-top").fadeIn(500);
+					} else {
+						$("#back-to-top").fadeOut(500);
+					}
+				});
+				//当点击跳转链接后，回到页面顶部位置
+				$("#back-to-top").click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 500);
+					return false;
+				});
+			});
+		});
+	</script>
+	<style>
+		body {
+			height: 2000px;
+		}
+ 
+		p#back-to-top {
+			position: fixed;
+			bottom: 88px;
+			right: 112px;
+		}
+ 
+		p#back-to-top a {
+			text-align: center;
+			text-decoration: none;
+			color: #000;
+			display: block;
+			width: 50px;
+			/*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+			-moz-transition: color1s;
+			-webkit-transition: color1s;
+			-o-transition: color1s;
+		}
+ 
+		p#back-to-top a:hover {
+			color: #000011;
+		}
+ 
+		p#back-to-top a span {
+			background-color: #8A8A8A;
+			z-index: -100;
+			border: 1px solid #cccccc;
+			border-radius: 6px;
+			display: block;
+			height: 40px;
+			width:50px;
+			font-size: 10px;
+			color: #F0F0F0;
+			padding-top: 10px;
+			margin-bottom: 5px;
+			/*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+			-moz-transition: background1s;
+			-webkit-transition: background1s;
+			-o-transition: background1s;
+		}
+ 
+		#back-to-top a:hover span {
+			background-color: #000;
+		}
+	</style>
+		<script type="text/javascript">
+			$(function(){
+				AV.init({
+				  appId: "8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz",
+				  appKey: "eaSfopp9PqWpKoxovXSgbCLm"
+				});
+				show();
+				
+				window.count=0;
+				
+				$("#adddc").click(function(){
+					$(".popOut").hide();
+					$(".popOutBg").hide();
+					var dchead=$("#dchead").val();
+					var dctext=$("#dctext").val();
+
+					var Wish= AV.Object.extend('English');
+					var wish= new Wish();
+					wish.set('title', dchead);
+					wish.set('content', dctext);
+					wish.save();
+					setTimeout(function(){
+					window.location.reload();
+					},100)
+					
+					
+					$("#dchead").val('');
+					$("#dctext").val('');
+				});
+				
+				function show(){
+					var oldyear;
+					var oldmonth;
+					var oldday;
+					var query=new AV.Query('English');
+					query.ascending('createdAt');
+					query.find().then((engs) => {
+					engs.forEach (function (eng) {
+						var year=eng.createdAt.getFullYear();
+						var month=eng.createdAt.getMonth()+1;
+						var day=eng.createdAt.getDate();
+						if(oldyear==year&&oldmonth==month&&oldday==day){
+							$dchead="<button type='button' class='btn btn-primary' data-toggle='collapse' data-target='#demo"+count+"' "
+							+"style='width: 80%;height:auto;margin-top:0px;padding:1px;background-color: #256'>"
+							+eng.attributes.title
+							+"</button>"
+							+"<p id='demo"+count+"' class='collapse' style='border:1px solid #999;color:#fff;background-color:#000;margin-bottom:0px;'>"
+							+eng.attributes.content
+							+"</p>";
+						}else{
+							$dchead="<h4 style='background-color:#000;color:#fff;'>"+year+"-"+month+"-"+day+"</h4>"
+							+"<button type='button' class='btn btn-primary' data-toggle='collapse' data-target='#demo"+count+"' "
+							+"style='width: 80%;height:auto;margin-top:0px;padding:1px;background-color: #256'>"
+							+eng.attributes.title
+							+"</button>"
+							+"<p id='demo"+count+"' class='collapse' style='border:1px solid #999;color:#fff;background-color:#000;margin-bottom:0px;'>"
+							+eng.attributes.content
+							+"</p>";
+						}
+
+						$("#maincontent").append($dchead);
+						count++;
+						oldyear=year;
+						oldmonth=month;
+						oldday=day;
+					});
+					});
+				}
+				$("#add").click ( function(){
+				    $(".popOut").show();
+				    $(".popOutBg").show();
+				});
+				$(".popOut > span").click (function(){
+				    $(".popOut").hide();
+				    $(".popOutBg").hide();
+				});
+				$(".popOutBg").click (function(){
+				    $(".popOut").hide();
+				    $(".popOutBg").hide();
+				});
+			});
+		</script>
+
+	</head>
+	<body style="text-align: center;background-color: #20C997;">
+		<h3>英语单词本</h3>
+		<button type="button" id="add">添加</button>
+		<div class="popOutBg"></div>
+		<div class="popOut">
+		    <span title="关闭"> x </span>
+		    <table>
+		        <tr>
+		            <td width="120">单词：</td>
+		            <td><input type="text" class="inp" placeholder="请输入单词" id="dchead"></td>
+		        </tr>
+		        <tr>
+		            <td>解释：</td>
+		            <td><input type="text" class="inp2" placeholder="请输入解释" id="dctext"></td>
+		        </tr>
+		        <tr>
+		            <td colspan="2"><button  class="login" id="adddc">添加</button></td>
+		        </tr>
+		    </table>
+		</div>
+		<div id="maincontent"></div>
+		<p id="back-to-top">
+			<a href="#top">
+				<span>回到<br>顶部</span>
+			</a>
+		</p>
+		<script src="bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+
+

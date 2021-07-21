@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/icon.png >
+    <title>
+        小德の博客
+    </title>
+    <meta name="description" content= 嘿，我是小德,这是我的博客，用于写记录我每日所得。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,小德,XiaoDe >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/drew233/css/rfsearch.min.css">
+
+    
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+    
+<link rel="stylesheet" href="/css/demo.css">
+
+    
+<link rel="stylesheet" href="/css/component.css">
+
+    
+<link rel="stylesheet" href="/css/shizhong.css">
+
+    <style type="text/css">
+      .v * {
+        color: #698fca;
+      }
+      .v .vlist .vcard .vhead .vsys {
+        color: #3a3e4a;
+      }
+      .v .vlist .vcard .vh .vmeta .vat {
+        color: #638fd5;
+      }
+      .v .vlist .vcard .vhead .vnick {
+        color: #6ba1ff;
+      }
+      .v a {
+        color: #8696b1;
+      }
+      .v .vlist .vcard .vhead .vnick:hover {
+        color: #669bfc;
+      }
+    </style>
+    <script>
+    $(document).ready(function () {
+      //首先将#back-to-top隐藏
+      $("#back-to-top").hide();
+      //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+      $(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            $("#back-to-top").fadeIn(500);
+          } else {
+            $("#back-to-top").fadeOut(500);
+          }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    });
+  </script>
+
+    <style>
+    p#back-to-top {
+      position: fixed;
+      bottom: 88px;
+      right: 112px;
+    }
+ 
+    p#back-to-top a {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition: color1s;
+      -webkit-transition: color1s;
+      -o-transition: color1s;
+    }
+ 
+    p#back-to-top a:hover {
+      color: #000011;
+    }
+ 
+    p#back-to-top a span {
+      background-color: #8A8A8A;
+      z-index: -100;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      display: block;
+      height: 45px;
+      width:50px;
+      font-size: 10px;
+      color: #F0F0F0;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition: background1s;
+      -webkit-transition: background1s;
+      -o-transition: background1s;
+    }
+ 
+    #back-to-top a:hover span {
+      background-color: #000;
+    }
+  </style>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <div id="st-container" class="st-container" style="position:fixed">
+      <nav class="st-menu st-effect-9" id="menu-9">
+        <h2>菜单</h2>
+        <ul>
+          <li><a class="popup-trigger">搜索内容🔍</a></li>
+          <li><a href="https://oydq.github.io/wish/index.html">许愿墙🌲</a></li>
+          <li><a href="https://oydq.github.io/chat_show/index.html">聊天室💬</a></li>
+          <li><a href="https://oydq.github.io/chat_getkey/getkey.html">聊天室Key🔑</a></li>
+        </ul>
+      </nav>
+      <div id="st-trigger-effects">
+          <button data-effect="st-effect-9" style="position:fixed">菜单></button>
+      </div>
+    </div>
+
+  <p id="back-to-top">
+    <a href="#top">
+      <span>回到<br>顶部</span>
+    </a>
+  </p>
+
+    <div class="site-search">
+      <div class="popup search-popup" style="display: none;">
+      <div class="search-header">
+
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+
+    <div class="search-input-container">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="输入关键词搜索" spellcheck="false" type="text" id="search-input">
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+
+    </div>
+
+    <div id="search-result">
+      <div id="no-result"><i class="fa fa-frown-o fa-5x"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="search-pop-overlay" style="display: none;"></div>
+
+  <div id="Tz_box">
+  <ul id="Tz_List">
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" alt="数字图片冒号" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+  </ul>
+</div>
+</div>
+
+<body id="bodyx" style="margin-top:50px;">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            计算机系统基础知识
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>汉字编码分为1.输入码（数字编码、拼音码、字形码）、2.内部码、3.字形码（点阵、矢量）<br>点阵法表示字形，只要点阵大型确定，点阵信息量是相同的。<br>矢量法表示字形，笔画和字形的不同都会影响每一笔画的坐标值。<br>汉字在计算机内存储编码不少于2字节。<br>、、、、<br>计算机中只采用二进制存储<br>、、、、<br>微型和小型计算机中，常采用字符编码ASCII码<br>、、、、<br>2进制转8进制<br>从小数点，每3位2级制分成一组，写出等值的2进制组成8进制（不足3位，小数点左边左边补0，右边右边补0）。<br>2进制转16进制<br>从小数点，每4位2级制分成一组，写出等值的2进制组成16进制（不足4位，小数点左边左边补0，右边右边补0）。<br>八进制或十六进制转换为二进制，转换方法：将每一个八进制(或十六进制)，转换为三位(或四位)的二进制；<br>16进制权展成10进制：<br>5C=5<em>16^1+12</em>16^0=5<em>16+12=92<br>16进制 0-9 a-f<br>、、、、<br>16-bit补码表示整数,范围[-2^15,2^15)<br>最小整数-2^n-1，最大整数2^(n-1)-1<br>、、、、<br>正数符号位0 ，负数符号位1<br>正数，补码=反码=原码<br>负数，反码=原码取反，补码=反码+1（符号位不变）<br>移码=补码符号位取反<br>表示0仅用一个编码，补码和移码<br>在补码表示的情况下，数值位和符号统一处理，能将减法转化加法，用补码运算的二进制加法器实现。<br>十进制符号位不算<br>十六进制符号位算<br>在原码整数范围表示中，0占两个编码（+0和-0）<br>机器字长n时各码制表示的带符号数的范围<br>定点整数<br>原码 -2^(n-1)-1 ~ 2(n-1)-1<br>反码 -2^(n-1)-1 ~ 2(n-1)-1<br>补码 -2^(n-1) ~ 2(n-1)-1<br>移码 -2^(n-1) ~ 2(n-1)-1<br>定点小数<br>原码 -(1-2^-(n-1)) ~ 1-2^(-(n-1))<br>反码 -(1-2^-(n-1)) ~ 1-2^(-(n-1))<br>补码 -1~ 1-2^(-(n-1))<br>移码 -1 ~ 1-2^(-(n-1))<br>补码符号位和数值位运算规则相同。<br>-128的补码是1000 0000是人为规定的。<br>、、、、<br>含小数的二进制N可表示为<br>N=2^E</em>F (E为阶码，F为尾数)<br>在浮点表示法中，阶码通常为带符号的纯整数，尾数为带符号的纯小数。<br>尾数位越大，精度越高；阶码位越大，范围越大。<br>在工业标准IEEE754中，阶码一般采用移码表示。<br>对阶原则是小阶对大阶，补码表示尾数右移，符号位不变。<br>在计算X=-n/128时，可当求n的原码，将十进制n转成对应的2进制（由2的倍数相加得，有的在二进制里算1，没有的算0）。<br>否则，X先除，再乘以2取整为二进制数，再用除得数的小数部分继续乘以2…，从左到右，补足8位即可（不算上符号位，取8位），不足8位补0，完成后第一位变符号位。<br>8位阶码最大值127.<br>、、、、<br>逻辑公式，见书本18页<br>异或：X、Y的值都是true或false，才为false，否则为true。(相同取0，不同取1）<br>·点或省略，代表与,+加号，代表或<br>、、、、<br>奇偶校验码：7位字符编码+1位校验码，奇校验时，“1”的个数为奇数，偶校验时，“1”的个数为偶数。<br>偶校验编码时，“1”的个数为奇数则出现错误。<br>海明码既有检错又有纠错功能，校验位与信息位交叉设置，每个数据由确定位置关系的校验位来校验。<br>循环冗余校验（CRC）采用模2出发进行校验计算。<br>、、、、<br>CPU由运算器、控制器、寄存器组组成。<br>精简指令集计算机（RISC）：选取使用频率最高的一些简单指令，指令条数少且长度固定，指令格式种类少，取存指令访问存储器，其余指令操作在寄存器之间进行。<br>CPU的程序计数器（PC）:保存待执行指令地址，值自动增加1，使程序指令可指向下一个指令的地址。<br>地址寄存器（AR）：存着当前CPU访问的内存单元地址。<br>指令寄存器（IR）：存着当前正在执行的指令。当执行一条指令时，从内存中取出数据到数据寄存器（DR），在传送到IR。<br>运算器中的累加器（AC）用于暂时存放被操作数和中间的运算结果。<br>控制器包括:程序技术器（PC）\指令寄存器（IR）\指令译码器\状态字寄存器（PSW）\时序产生器\微操作信号发生器。<br>通用寄存器暂存操作数和地址，为了减少访问内存次数，提高运算速度。<br>算术逻辑单元的部件：加法器。<br>、、、、<br>时钟周期&lt;机器周期&lt;指令周期<br>立即寻址：操作数在指令中。（获取操作数最快）<br>直接寻址：操作数在内存中，指令给出操作数地址。<br>寄存器寻址：操作数在某寄存器中，指令给出寄存器名。<br>寄存器间接寻址：操作数在内存中，操作数地址在某寄存器中。<br>间接寻址：指令给出操作数地址的地址。<br>相对寻址（基址寻址）：指令地址码给出偏移量（可正可负），操作数地址=本条指令地址+偏移量。<br>变址寻址：操作数地址=变址寄存器内容+偏移量。<br>、、、、<br>存取速度：寄存器&gt;高速缓存(Cache)&gt;内存&gt;硬盘&gt;光盘&gt;软盘<br>高速缓存是解决了主存（内存）与CPU速度不匹配。<br>高速缓存容量较小，是内存的副本，对程序员是透明的，看不见的，主存地址和高速缓存地址之间的转换工作是由硬件自动完成。<br>、、、、<br>在光盘格式中，CD-R一次性可写CD光盘，不能多次擦除重写数据。<br>剪切板是内存的一块区域，用于各个应用程序之间相互交换信息。<br>EEPROM是半导体存储器。<br>EPROM可用紫外线擦除信息。<br>ROM一般采用对其内容求累加和进行自检的方法。<br>计算机刚加电时，E2PROM的内容不是随机的。<br>DRAM：构成计算机内存的主要存储件，使用电容存储信息且要周期性地进行刷新的存储器。<br>计算机启动时，用存在ROM中引导程序引导操作系统。<br>主储存器（主存、内存）包括：存储体、控制线路、地址寄存器、数据寄存器、地址译码电路等。<br>、、、、<br>总线分为：地址总线、数据总线、控制总线。<br>32位位处理器的32指CPU字节为32位。<br>计算机各部件之间传输信息的公共线路为总线，一次传输信息的位数为总线的宽度。<br>IEEE-488属于并行外部总线。<br>总线宽度分为地址总线宽度和数据总线宽度，地址总线宽度决定能使用多大的容量的内存，地址总线宽度为32位，则最多允许访问2^32Kb=4G的物理空间。数据总线宽度影响传输速度。<br>并行接口：适用传输相对较近、速度相对较高的场合。<br>串行接口：适用传输相对较远、速度相对较低。<br>带宽：单位时间内通过总线传输的数据总量。<br>位宽：能同时传送的二进制数据的位数或数据总线的位数。<br>工作频率：工作时钟频率MHz为单位。<br>字节是计算机运算和数据处理的基本信息单位，字节越长，运算精度越高，处理能力越强。<br>nk<em>32位的存储器(每个存储单位为32位，字长32)，编址单元有nk</em>32/32=2^m(1k=2^10)个，地址宽度（地址线位数）为  m个。<br>、、、、<br>IO接口可以独立编址。<br>打印质量好、速度快，且工作原理与复印机相似的是激光打印机。<br>IO设备与主机采用中断控制方式交换信息，CPU与IO设备间并行工作，数据传送过程与主程序是串行工作。<br>直接存储器存取方式（DMA）不需要CPU控制数据的传输过程。<br>、、、、<br>字长是CPU一次可以处理的二进制数目，运算速度通常指每秒所能执行的加法指令数目，用MIPS描述。<br>时钟频率直接反映了机器速度。<br>MFLOPS是浮点数运算速度指标的术语。<br>计算机工作效率常用平均响应时间、吞吐量和作业周期时间度量，可靠性由平均无故障时间（MTBF）评价。<br>时钟信号周期为1ns。</p>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: XiaoDe | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+
+本站总访问量<span id="busuanzi_value_site_pv"></span>次|欢迎您的来访！
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="eaSfopp9PqWpKoxovXSgbCLm">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/love.js"></script>
+
+
+<script src="/js/lovetext.js"></script>
+
+
+<script src="/js/js.js"></script>
+
+
+<script src="/js/snow.js"></script>
+
+
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+     <script>
+     	 $(".popup-trigger").click(function(){
+     		$(".site-search").show();
+     	});
+     	$(".popup-btn-close").click(function(){
+     		$(".site-search").hide();
+     	});
+     </script>
+     <script type="text/javascript">
+    function createImgEventFullScreen() {
+        var imgs = $(".post-content").find("img");
+        for (var i = 0; i < imgs.length; i++) {
+            // $(imgs[i]).click(createCover(imgs[i]));
+            imgs[i].onclick = function (e) {
+                var src = e.srcElement.currentSrc;
+                var _this = $(this);
+                createCover(src,_this);
+            }
+        }
+        function createCover(src,_this) {
+            var cover = $("<div id='outerDiv'  style='position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:5;width:100%;height:100%;display:none;'><div id='innerDiv' style='position:absolute;'><img  id='bigImg' style='border:5px solid #fff;' src=''/></div></div>");
+            $("#outerDiv").remove();
+            $("body").append(cover);
+            imgShow("#outerDiv", "#innerDiv", "#bigImg", _this,src);
+
+        }
+    }
+    function imgShow(outerDiv, innerDiv, bigImg, _this,src) {
+        //var src = _this.attr("src"); //获取当前点击的common-img元素中的src属性
+        $(bigImg).attr("src", src); //设置#bigImg元素的src属性
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).on('load',function() {
+            var windowW = $(window).width(); //获取当前窗口宽度
+            var windowH = $(window).height(); //获取当前窗口高度
+            var realWidth = this.width; //获取图片真实宽度
+            var realHeight = this.height; //获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8; //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) { //判断图片高度
+                imgHeight = windowH * scale; //如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth; //等比例缩放宽度
+                if (imgWidth > windowW * scale) { //如宽度仍大于窗口宽度
+                    imgWidth = windowW * scale; //再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) { //如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale; //如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight; //等比例缩放高度
+            } else { //如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth*2;
+                imgHeight = realHeight*2;
+            }
+            $(bigImg).css("width", imgWidth); //以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2; //计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2; //计算图片与窗口上边距
+            $(innerDiv).css({ "top": h, "left": w }); //设置#innerDiv的top和left属性
+            //console.log('****')
+            $(outerDiv).fadeIn("fast"); //淡入显示#outerDiv
+        });
+
+        $(outerDiv).click(function () { //再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    }
+    setTimeout(function () {
+        createImgEventFullScreen();
+    }, 1000)
+</script>
+        
+<script src="/js/shizhong.js"></script>
+
+        
+<script src="/js/szmove.js"></script>
+
+
+     
+<script src="/js/classie.js"></script>
+
+     
+<script src="/js/sidebarEffects.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/drew233/css/fsearch.min.js"></script>
+
+</body>
+</html>

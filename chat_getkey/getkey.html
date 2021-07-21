@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GetKey</title>
+		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.0/dist/av-min.js"></script>
+		<script src="jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				window.copy="";
+				var session = sessionStorage.getItem('getnum');
+				if(session!=null){
+					$(".button").hide();
+					$(".copykey").hide();
+					$('#keys').text("您已经获得过的KEY了！请勿重复获取");
+				}
+			});
+		</script>
+		<style type="text/css">
+	.button{
+	    display: block;
+	    margin:100px auto;
+	    position: relative;
+	    width:105px;
+	    height:45px;
+		text-align: center;
+	    border-radius: 50px;
+	    border:1px solid #fff;
+	    background-color: #E9E4E0;
+	}
+	p{
+		display: block;
+		margin:150px auto;
+		position: relative;
+		width:400px;
+		height:150px;
+		font-size: 50px;
+	}
+	.copykey{
+		display: none;
+		margin:10px auto;
+		position: relative;
+		width:100px;
+		height:50px;
+		font-size: 20px;
+	}
+	
+		</style>
+	</head>
+	<body>
+		<button class="button">获取登录Key</button>
+		<p id="keys"></p><br>
+		<button class="copykey" >复制KEY</button>
+		<p id="keys2"></p>
+		    <script>
+				var time=new Date();
+				var year=time.getFullYear();
+				var month=time.getMonth()+1;
+				if(month<10){month="0"+month;}
+				var day=time.getDate();
+				if(day<10){day="0"+day;}
+				var hour=time.getHours();
+				if(hour<10){hour="0"+hour;}
+				var minute=time.getMinutes();
+				if(minute<10){minute="0"+minute;}
+				var second=time.getSeconds();
+				if(second<10){second="0"+second;}
+				var week=time.getDay();
+				
+				$(".button").click(function(){
+					//随机KEY
+					// 生成十位字母加数字随机数
+					var arr = [];
+					var n = Math.random().toString(36).substr(2,10);
+					arr.push(n);      
+					// 去重
+					var ukeys = [];
+					  for (var i = 0; i < arr.length; i++) {
+					    if (ukeys.indexOf(arr[i]) == -1) {
+					        ukeys.push(arr[i]);
+					    }
+					  }
+					  // 数组处理，便于在Html文档中显示
+					var keys = '';
+					for (var i=0;i<ukeys.length;i++) {
+					    keys += ukeys[i];
+					}
+					
+					//随机昵称
+					var arr2 = [];
+					var n2= Math.random().toString(36).substr(2,3);
+					arr2.push(n2);      
+					// 去重
+					var ukeys2 = [];
+					  for (var i2 = 0; i2 < arr2.length; i2++) {
+					    if (ukeys2.indexOf(arr2[i2]) == -1) {
+					        ukeys2.push(arr2[i2]);
+					    }
+					  }
+					  // 数组处理，便于在Html文档中显示
+					var keys2 = '';
+					for (var i2=0;i2<ukeys2.length;i2++) {
+					    keys2+= ukeys2[i2];
+					}
+					$('#keys').text("您获得的KEY为:"+keys+"请记住key以便登录!");
+					$('#keys2').text("您获得的默认昵称为:"+keys2+"登录后可修改!");
+					$(".copykey").attr("data-clipboard-text",keys);
+					AV.init({
+					  appId: "8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz",
+					  appKey: "eaSfopp9PqWpKoxovXSgbCLm"
+					});
+					var Chat = AV.Object.extend('chat');
+					var chat = new Chat();
+					chat.set('nickname', keys2);
+					chat.set('content',"大家好！我是"+keys2+"多多指教!");
+					chat.set('key',keys);
+					chat.set('time',year+"-"+month+"-"+day+"\t"+hour+":"+minute+":"+second);
+					chat.save().then((chat) => {
+						alert("获取成功！");
+					}, (error) => {
+					 alert("获取失败！");
+					});
+					$(".button").hide();
+					$(".copykey").css("display","block");
+					sessionStorage.setItem('getnum', true);
+				});
+				
+				
+		       $(".copykey").click(function(){
+		       	var clipboard = new ClipboardJS('.copykey');
+		       	 clipboard.on('success', function(e) {
+		       	      alert("复制成功！");
+		       	     e.clearSelection();
+		       	 });
+		       	 
+		       	clipboard.on('error', function(e) {
+		       	     alert('复制失败');
+		       	 });  
+		       });
+		    </script>
+	</body>
+</html>

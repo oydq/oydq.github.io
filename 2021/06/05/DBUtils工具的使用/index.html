@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/icon.png >
+    <title>
+        小德の博客
+    </title>
+    <meta name="description" content= 嘿，我是小德,这是我的博客，用于写记录我每日所得。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,小德,XiaoDe >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/drew233/css/rfsearch.min.css">
+
+    
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+    
+<link rel="stylesheet" href="/css/demo.css">
+
+    
+<link rel="stylesheet" href="/css/component.css">
+
+    
+<link rel="stylesheet" href="/css/shizhong.css">
+
+    <style type="text/css">
+      .v * {
+        color: #698fca;
+      }
+      .v .vlist .vcard .vhead .vsys {
+        color: #3a3e4a;
+      }
+      .v .vlist .vcard .vh .vmeta .vat {
+        color: #638fd5;
+      }
+      .v .vlist .vcard .vhead .vnick {
+        color: #6ba1ff;
+      }
+      .v a {
+        color: #8696b1;
+      }
+      .v .vlist .vcard .vhead .vnick:hover {
+        color: #669bfc;
+      }
+    </style>
+    <script>
+    $(document).ready(function () {
+      //首先将#back-to-top隐藏
+      $("#back-to-top").hide();
+      //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+      $(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            $("#back-to-top").fadeIn(500);
+          } else {
+            $("#back-to-top").fadeOut(500);
+          }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    });
+  </script>
+
+    <style>
+    p#back-to-top {
+      position: fixed;
+      bottom: 88px;
+      right: 112px;
+    }
+ 
+    p#back-to-top a {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition: color1s;
+      -webkit-transition: color1s;
+      -o-transition: color1s;
+    }
+ 
+    p#back-to-top a:hover {
+      color: #000011;
+    }
+ 
+    p#back-to-top a span {
+      background-color: #8A8A8A;
+      z-index: -100;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      display: block;
+      height: 45px;
+      width:50px;
+      font-size: 10px;
+      color: #F0F0F0;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition: background1s;
+      -webkit-transition: background1s;
+      -o-transition: background1s;
+    }
+ 
+    #back-to-top a:hover span {
+      background-color: #000;
+    }
+  </style>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <div id="st-container" class="st-container" style="position:fixed">
+      <nav class="st-menu st-effect-9" id="menu-9">
+        <h2>菜单</h2>
+        <ul>
+          <li><a class="popup-trigger">搜索内容🔍</a></li>
+          <li><a href="https://oydq.github.io/wish/index.html">许愿墙🌲</a></li>
+          <li><a href="https://oydq.github.io/chat_show/index.html">聊天室💬</a></li>
+          <li><a href="https://oydq.github.io/chat_getkey/getkey.html">聊天室Key🔑</a></li>
+        </ul>
+      </nav>
+      <div id="st-trigger-effects">
+          <button data-effect="st-effect-9" style="position:fixed">菜单></button>
+      </div>
+    </div>
+
+  <p id="back-to-top">
+    <a href="#top">
+      <span>回到<br>顶部</span>
+    </a>
+  </p>
+
+    <div class="site-search">
+      <div class="popup search-popup" style="display: none;">
+      <div class="search-header">
+
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+
+    <div class="search-input-container">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="输入关键词搜索" spellcheck="false" type="text" id="search-input">
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+
+    </div>
+
+    <div id="search-result">
+      <div id="no-result"><i class="fa fa-frown-o fa-5x"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="search-pop-overlay" style="display: none;"></div>
+
+  <div id="Tz_box">
+  <ul id="Tz_List">
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" alt="数字图片冒号" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+  </ul>
+</div>
+</div>
+
+<body id="bodyx" style="margin-top:50px;">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            DBUtils工具的使用
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p><i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次</span></p>
+<hr>
+<blockquote>
+<p>DbUtils 是一个jdbc的工具，使用的范围内非常广，主要是为了简化jdbc的代码。<br>核心类：QueryRunner; ResultSetHandler(是一个接口，主要是完成ORM映射，把结果街转化成我们需要的java对象)</p>
+</blockquote>
+<p>核心方法：<br> * update();用来执行DDL（DDL：create alert,drop;）;<br> * query();用来执行DML（DML:insert update delete;）；<br> * batch(); 用来执行批处理；</p>
+<p>调用本方法之前，需要先创建对象，代码如下：<br>QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());<br>//当使用的是无参的构造器时，可以不提供连接池对象，但是在接下来的调用方法是,必须为方法提供Connection对象。</p>
+<p>对于结果集的处理有以下几个结果集处理器：<br>*BenaHandler //把单行结果集的数据封装成javaBean对象，返回值是ResultSetHandler<br>  ResultSetHandler &lt;javaBean类型&gt; rsh = new BeanHandler&lt;javaBean类型&gt;(javaBean.class);<br> 本方法多用于在 处理把单行结果集封装成JavaBean对象。（对象时通过反射完成创建的）</p>
+<p>*BeanListHandler<br>  List&lt;javaBean类型&gt; list = &lt;List&lt;javaBean类型&gt;&gt; new BeanListHandler&lt;javaBean类型&gt;(javaBean.class);<br>  本方法多用于把多行结果集封装成对象，并且把对象添加到集合中，新版本中可能不需要进行类型的转换，得到集合可以通过foreach循环来进行遍历。</p>
+<p>*MapHandler<br>  Map &lt;String,Object&gt; map = new MapHandler();<br>  本方法是用来吧单行结果集封装到一个Map中其中map的键是表中的列名称，值对应表的列值。 </p>
+<p>*MapListHandler<br>  List&lt;Map&lt;String,Object&gt;&gt; listmap = new MapListHandler();<br>  本方法是用来多行结果集的处理，把每行的结果封装成一个map，最后把所有的map都装到一个集合中，返回值是一个集合，但是集合中存放的是map，</p>
+<p>*ColumnHandler<br>  List<Object> nameList = new ColumnHandler();<br>  本方法是用来出来单列，单行 或者多行的数据</p>
+<p>*ScalarHandler<br>  本方法是用于处理单行单列的数据，多用于聚合函数的查询，但是以一个点需要注意，就是当聚合函数是涉及到数字类型的时候，一定要注意返回值类型的转换。有的人会选用Integer，long等类型，这些严格来说都是不合法的，例如，long类型最大只能容纳20的阶乘，21的阶乘就会包异常，所以我们要选用Number(这个是所有数据类型)的父类，并且对外提供的有Number.intValue(),和Number.LongValue(),等方法。</p>
+<p>调用代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br></pre></td><td class="code"><pre><span class="line">import java.sql.SQLException;</span><br><span class="line">import java.util.List;</span><br><span class="line">import java.util.Map;</span><br><span class="line">import org.apache.commons.dbutils.QueryRunner;</span><br><span class="line">import org.apache.commons.dbutils.ResultSetHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.BeanHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.BeanListHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.ColumnListHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.MapHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.MapListHandler;</span><br><span class="line">import org.apache.commons.dbutils.handlers.ScalarHandler;</span><br><span class="line">public class Demo1 &#123;</span><br><span class="line"> //总结：使用DBUtils工具的步骤就是，</span><br><span class="line"> /**</span><br><span class="line">  * * 首先要创建一个QueryRunner对象</span><br><span class="line">  * * 然后给出sql语句</span><br><span class="line">  * * 通过QueryRunner对象来执行SQL语句，并且针对不用的SQL语句使用不同的结果集处理器。</span><br><span class="line">  * * 并且本对象会自动关闭连接。</span><br><span class="line">  */</span><br><span class="line"> /**</span><br><span class="line">  * 测试增删改（她们的模板差不多）</span><br><span class="line">  * @throws SQLException</span><br><span class="line">  */</span><br><span class="line"> public void fun1() throws SQLException &#123;</span><br><span class="line">  student stu  = new student();</span><br><span class="line">  stu.setSid(&quot;1007&quot;);</span><br><span class="line">  stu.setSname(&quot;蒋干&quot;);</span><br><span class="line">  stu.setSage(&quot;35&quot;);</span><br><span class="line">  stu.setSgender(&quot;男&quot;);</span><br><span class="line">  add(stu);</span><br><span class="line"> &#125; </span><br><span class="line"> /**</span><br><span class="line">  * 增加方法</span><br><span class="line">  * @throws SQLException</span><br><span class="line">  */</span><br><span class="line"> //创建一个QueryRunner 对象，并且传递一个连接池参数，这样以后调用的本方法时候就不用</span><br><span class="line"> //再提供Connection了，如果没有提供，那么调用本方法时，就必须要提供Connection</span><br><span class="line"> public void add(student stu) throws SQLException &#123;</span><br><span class="line">  QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  String sql = &quot;insert into student values(?,?,?,?)&quot;;</span><br><span class="line">  qr.update(sql, stu.getSid(),stu.getSname(),stu.getSage(),stu.getSgender());</span><br><span class="line"> &#125;</span><br><span class="line"> public void fun2() throws SQLException &#123;</span><br><span class="line">  student stu  = new student();</span><br><span class="line">  stu.setSid(&quot;1007&quot;);</span><br><span class="line">  stu.setSname(&quot;蒋干 不知不觉&quot;);</span><br><span class="line">  stu.setSage(&quot;35&quot;);</span><br><span class="line">  stu.setSgender(&quot;男&quot;);</span><br><span class="line">  update(stu);</span><br><span class="line"> &#125;</span><br><span class="line"> //修改</span><br><span class="line"> public void update(student stu) throws SQLException &#123;</span><br><span class="line">  QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  String sql = &quot;update set sname=?,sage=?,sgender=? where sid =d?&quot;;</span><br><span class="line">  qr.update(sql, stu.getSid(),stu.getSname(),stu.getSage(),stu.getSgender()); </span><br><span class="line"> &#125;</span><br><span class="line"> public void fun3() throws SQLException &#123;</span><br><span class="line">  delete(&quot;1007&quot;);</span><br><span class="line"> &#125;</span><br><span class="line"> //删除方法</span><br><span class="line"> public void  delete(String id) throws SQLException &#123;</span><br><span class="line">  QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  String sql = &quot;delete from studnt where id=?&quot;;</span><br><span class="line">  qr.update(sql, id);</span><br><span class="line"> &#125;</span><br><span class="line"> /**</span><br><span class="line">  * 查询语句</span><br><span class="line">  * @throws SQLException</span><br><span class="line">  */</span><br><span class="line"> //BeanHandler结果集处理器用来处理，把单行查询得到的结果集抓换成对象</span><br><span class="line"> public void fun4() throws SQLException &#123;</span><br><span class="line">  //创建对象</span><br><span class="line">  QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  ResultSetHandler&lt;student&gt; rsh = new BeanHandler&lt;student&gt;(student.class);</span><br><span class="line">  String sql = &quot;select * from student where sid=?&quot;;</span><br><span class="line">  student stu = qr.query(sql, rsh, &quot;1007&quot;);</span><br><span class="line"> &#125;</span><br><span class="line"> //BeanListHandler用于处理多行结果集，把多个结果分别封装成对象，并且添加到一个集合中</span><br><span class="line"> //不过得到的结果需要进行强转，可以使用增强for循环集合的遍历。</span><br><span class="line"> public void  fun5() &#123;</span><br><span class="line">  QueryRunner qr =  new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  String sql = &quot;select * from student&quot;;</span><br><span class="line">  List&lt;student&gt; rshList = (List&lt;student&gt;) new BeanListHandler&lt;student&gt;(student.class);</span><br><span class="line">  for(student L:rshList) &#123;</span><br><span class="line">   System.out.println(L);</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> //MapHandler是把得到的单行结果集封装到一个map中</span><br><span class="line"> //其中map的键对应的是列名称，值对应的是列的值 。</span><br><span class="line"> public void fun6() throws SQLException &#123;</span><br><span class="line">  QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">  String sql = &quot;select * from student where id=?&quot;;</span><br><span class="line">  Map&lt;String,Object&gt; map = qr.query(sql, new MapHandler(),&quot;1003&quot;);</span><br><span class="line">  System.out.println(map);</span><br><span class="line"> &#125;</span><br><span class="line"> //MapListHandler用来处理多行结果集，是把多行结果集中的每行数据封装成一个对象在map中,然后把多个Map</span><br><span class="line"> //封装到一个集合中，写成了List&lt;Map&lt;String,Object&gt;&gt;</span><br><span class="line">  public void fun7() throws SQLException &#123;</span><br><span class="line">   QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">   String sql = &quot;select * from student&quot;;</span><br><span class="line">   List&lt;Map&lt;String,Object&gt;&gt; mapList = qr.query(sql, new MapListHandler());</span><br><span class="line">   for(Map&lt;String,Object&gt; map:mapList) &#123;</span><br><span class="line">    System.out.println(map);</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //用来处理单列多(单)行的数据，封装到集合中</span><br><span class="line">   public void fun8() throws SQLException &#123;</span><br><span class="line">    QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">    String sql = &quot;select sname from student&quot;;</span><br><span class="line">    List&lt;Object&gt; nameList = qr.query(sql, new ColumnListHandler());</span><br><span class="line">    System.out.println(nameList);</span><br><span class="line">   &#125;</span><br><span class="line">   //scalarHandler通常用在聚合函数查询的结果集处理，对单列单行进行处理</span><br><span class="line">   public void fun9() throws SQLException &#123;</span><br><span class="line">    QueryRunner qr = new QueryRunner(JDBCUtils.getDataSouse());</span><br><span class="line">    String sql = &quot;select count(1) from student&quot;;</span><br><span class="line">    //这是个重点如果你此时强转用的是Integer 或者long类型的话，都是不行的，因为数据类型的大小可能</span><br><span class="line">    //不够使用发的，比如long类型的可以容纳20的阶乘，但是21的阶乘就超出范围，但是数据类型共同的父类</span><br><span class="line">    //就是Number，用这个是绝对不会出现超出范围的情况</span><br><span class="line">    //处理方法可以是，number.intValue(),或者是number.LongValue();</span><br><span class="line">    Number num =  (Number)qr.query(sql, new ScalarHandler());</span><br><span class="line">    System.out.println(num.intValue());</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>#连接数据源配置文件,c3p0-config.xml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;c3p0-config&gt;</span><br><span class="line">	&lt;default-config&gt;</span><br><span class="line">		&lt;property name=&quot;driverClass&quot;&gt;com.mysql.jdbc.Driver&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;jdbcUrl&quot;&gt;jdbc:mysql://localhost:3306/oa?useUnicode=true&amp;amp;characterEncoding=utf-8&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;user&quot;&gt;root&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;password&quot;&gt;123456&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;automaticTestTable&quot;&gt;users_test&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;checkoutTimeout&quot;&gt;30000&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;idleConnectionTestPeriod&quot;&gt;30&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;initialPoolSize&quot;&gt;10&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;maxIdleTime&quot;&gt;30&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;maxPoolSize&quot;&gt;100&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;minPoolSize&quot;&gt;10&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;maxStatements&quot;&gt;200&lt;/property&gt;</span><br><span class="line">		&lt;user-overrides user=&quot;test-user&quot;&gt;</span><br><span class="line">			&lt;property name=&quot;maxPoolSize&quot;&gt;10&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;minPoolSize&quot;&gt;1&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;maxStatements&quot;&gt;0&lt;/property&gt;</span><br><span class="line">		&lt;/user-overrides&gt;</span><br><span class="line">	&lt;/default-config&gt; &lt;!-- This app is massive! --&gt;</span><br><span class="line">	&lt;named-config name=&quot;intergalactoApp&quot;&gt;</span><br><span class="line">		&lt;property name=&quot;acquireIncrement&quot;&gt;50&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;initialPoolSize&quot;&gt;100&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;minPoolSize&quot;&gt;50&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;maxPoolSize&quot;&gt;1000&lt;/property&gt; &lt;!-- intergalactoApp adopts a different approach to configuring statement </span><br><span class="line">			caching --&gt;</span><br><span class="line">		&lt;property name=&quot;maxStatements&quot;&gt;0&lt;/property&gt;</span><br><span class="line">		&lt;property name=&quot;maxStatementsPerConnection&quot;&gt;5&lt;/property&gt; &lt;!-- he&#x27;s important, but there&#x27;s only one of him --&gt;</span><br><span class="line">		&lt;user-overrides user=&quot;master-of-the-universe&quot;&gt;</span><br><span class="line">			&lt;property name=&quot;acquireIncrement&quot;&gt;1&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;initialPoolSize&quot;&gt;1&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;minPoolSize&quot;&gt;1&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;maxPoolSize&quot;&gt;5&lt;/property&gt;</span><br><span class="line">			&lt;property name=&quot;maxStatementsPerConnection&quot;&gt;50&lt;/property&gt;</span><br><span class="line">		&lt;/user-overrides&gt;</span><br><span class="line">	&lt;/named-config&gt;</span><br><span class="line">&lt;/c3p0-config&gt;</span><br></pre></td></tr></table></figure>
+<p>#引入工具类,C3P0Utils.java</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">package com.xiaode.util;</span><br><span class="line">import javax.sql.DataSource;</span><br><span class="line">import com.mchange.v2.c3p0.ComboPooledDataSource;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 使用C3P0提供数据源</span><br><span class="line"> * </span><br><span class="line"> * @author 小德</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class C3P0Utils &#123;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * 构建数据源对象</span><br><span class="line">	 */</span><br><span class="line"></span><br><span class="line">	private static DataSource dataSource = new ComboPooledDataSource(&quot;c3p0-config.xml&quot;);</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * 获取数据源的方法</span><br><span class="line">	 * </span><br><span class="line">	 * @return</span><br><span class="line">	 */</span><br><span class="line"></span><br><span class="line">	public static DataSource getDataSource() &#123;</span><br><span class="line">		return dataSource;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>————————————————<br>版权声明：本文为CSDN博主「大尾巴战狼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/dawiebazhanlang/article/details/80320996">https://blog.csdn.net/dawiebazhanlang/article/details/80320996</a></p>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: XiaoDe | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+
+本站总访问量<span id="busuanzi_value_site_pv"></span>次|欢迎您的来访！
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="eaSfopp9PqWpKoxovXSgbCLm">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/love.js"></script>
+
+
+<script src="/js/lovetext.js"></script>
+
+
+<script src="/js/js.js"></script>
+
+
+<script src="/js/snow.js"></script>
+
+
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+     <script>
+     	 $(".popup-trigger").click(function(){
+     		$(".site-search").show();
+     	});
+     	$(".popup-btn-close").click(function(){
+     		$(".site-search").hide();
+     	});
+     </script>
+     <script type="text/javascript">
+    function createImgEventFullScreen() {
+        var imgs = $(".post-content").find("img");
+        for (var i = 0; i < imgs.length; i++) {
+            // $(imgs[i]).click(createCover(imgs[i]));
+            imgs[i].onclick = function (e) {
+                var src = e.srcElement.currentSrc;
+                var _this = $(this);
+                createCover(src,_this);
+            }
+        }
+        function createCover(src,_this) {
+            var cover = $("<div id='outerDiv'  style='position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:5;width:100%;height:100%;display:none;'><div id='innerDiv' style='position:absolute;'><img  id='bigImg' style='border:5px solid #fff;' src=''/></div></div>");
+            $("#outerDiv").remove();
+            $("body").append(cover);
+            imgShow("#outerDiv", "#innerDiv", "#bigImg", _this,src);
+
+        }
+    }
+    function imgShow(outerDiv, innerDiv, bigImg, _this,src) {
+        //var src = _this.attr("src"); //获取当前点击的common-img元素中的src属性
+        $(bigImg).attr("src", src); //设置#bigImg元素的src属性
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).on('load',function() {
+            var windowW = $(window).width(); //获取当前窗口宽度
+            var windowH = $(window).height(); //获取当前窗口高度
+            var realWidth = this.width; //获取图片真实宽度
+            var realHeight = this.height; //获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8; //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) { //判断图片高度
+                imgHeight = windowH * scale; //如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth; //等比例缩放宽度
+                if (imgWidth > windowW * scale) { //如宽度仍大于窗口宽度
+                    imgWidth = windowW * scale; //再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) { //如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale; //如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight; //等比例缩放高度
+            } else { //如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth*2;
+                imgHeight = realHeight*2;
+            }
+            $(bigImg).css("width", imgWidth); //以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2; //计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2; //计算图片与窗口上边距
+            $(innerDiv).css({ "top": h, "left": w }); //设置#innerDiv的top和left属性
+            //console.log('****')
+            $(outerDiv).fadeIn("fast"); //淡入显示#outerDiv
+        });
+
+        $(outerDiv).click(function () { //再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    }
+    setTimeout(function () {
+        createImgEventFullScreen();
+    }, 1000)
+</script>
+        
+<script src="/js/shizhong.js"></script>
+
+        
+<script src="/js/szmove.js"></script>
+
+
+     
+<script src="/js/classie.js"></script>
+
+     
+<script src="/js/sidebarEffects.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/drew233/css/fsearch.min.js"></script>
+
+</body>
+</html>

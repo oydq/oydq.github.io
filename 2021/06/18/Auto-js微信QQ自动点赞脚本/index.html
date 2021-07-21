@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/icon.png >
+    <title>
+        小德の博客
+    </title>
+    <meta name="description" content= 嘿，我是小德,这是我的博客，用于写记录我每日所得。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,小德,XiaoDe >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/drew233/css/rfsearch.min.css">
+
+    
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+    
+<link rel="stylesheet" href="/css/demo.css">
+
+    
+<link rel="stylesheet" href="/css/component.css">
+
+    
+<link rel="stylesheet" href="/css/shizhong.css">
+
+    <style type="text/css">
+      .v * {
+        color: #698fca;
+      }
+      .v .vlist .vcard .vhead .vsys {
+        color: #3a3e4a;
+      }
+      .v .vlist .vcard .vh .vmeta .vat {
+        color: #638fd5;
+      }
+      .v .vlist .vcard .vhead .vnick {
+        color: #6ba1ff;
+      }
+      .v a {
+        color: #8696b1;
+      }
+      .v .vlist .vcard .vhead .vnick:hover {
+        color: #669bfc;
+      }
+    </style>
+    <script>
+    $(document).ready(function () {
+      //首先将#back-to-top隐藏
+      $("#back-to-top").hide();
+      //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+      $(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            $("#back-to-top").fadeIn(500);
+          } else {
+            $("#back-to-top").fadeOut(500);
+          }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    });
+  </script>
+
+    <style>
+    p#back-to-top {
+      position: fixed;
+      bottom: 88px;
+      right: 112px;
+    }
+ 
+    p#back-to-top a {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition: color1s;
+      -webkit-transition: color1s;
+      -o-transition: color1s;
+    }
+ 
+    p#back-to-top a:hover {
+      color: #000011;
+    }
+ 
+    p#back-to-top a span {
+      background-color: #8A8A8A;
+      z-index: -100;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      display: block;
+      height: 45px;
+      width:50px;
+      font-size: 10px;
+      color: #F0F0F0;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition: background1s;
+      -webkit-transition: background1s;
+      -o-transition: background1s;
+    }
+ 
+    #back-to-top a:hover span {
+      background-color: #000;
+    }
+  </style>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <div id="st-container" class="st-container" style="position:fixed">
+      <nav class="st-menu st-effect-9" id="menu-9">
+        <h2>菜单</h2>
+        <ul>
+          <li><a class="popup-trigger">搜索内容🔍</a></li>
+          <li><a href="https://oydq.github.io/wish/index.html">许愿墙🌲</a></li>
+          <li><a href="https://oydq.github.io/chat_show/index.html">聊天室💬</a></li>
+          <li><a href="https://oydq.github.io/chat_getkey/getkey.html">聊天室Key🔑</a></li>
+        </ul>
+      </nav>
+      <div id="st-trigger-effects">
+          <button data-effect="st-effect-9" style="position:fixed">菜单></button>
+      </div>
+    </div>
+
+  <p id="back-to-top">
+    <a href="#top">
+      <span>回到<br>顶部</span>
+    </a>
+  </p>
+
+    <div class="site-search">
+      <div class="popup search-popup" style="display: none;">
+      <div class="search-header">
+
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+
+    <div class="search-input-container">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="输入关键词搜索" spellcheck="false" type="text" id="search-input">
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+
+    </div>
+
+    <div id="search-result">
+      <div id="no-result"><i class="fa fa-frown-o fa-5x"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="search-pop-overlay" style="display: none;"></div>
+
+  <div id="Tz_box">
+  <ul id="Tz_List">
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" alt="数字图片冒号" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+  </ul>
+</div>
+</div>
+
+<body id="bodyx" style="margin-top:50px;">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Auto.js微信QQ自动点赞脚本
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>#脚本编译器（Auto.js）apk下载地址<br>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1xfj50KU-neR04-0TkgL-ag">https://pan.baidu.com/s/1xfj50KU-neR04-0TkgL-ag</a><br>提取码：uz06<br>#成品apk下载地址<br>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ChMmtgyyeVjSBM-RrcYygA">https://pan.baidu.com/s/1ChMmtgyyeVjSBM-RrcYygA</a><br>提取码：mq3f </p>
+<hr>
+<p>#源码展示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br></pre></td><td class="code"><pre><span class="line">&quot;ui&quot;;</span><br><span class="line">ui.layout(</span><br><span class="line">    &lt;frame w=&quot;*&quot; h=&quot;*&quot; bg=&quot;#000000&quot;&gt;</span><br><span class="line">        &lt;vertical gravity=&quot;center&quot;&gt;</span><br><span class="line">            &lt;text w=&quot;auto&quot; h=&quot;auto&quot; color=&quot;#ffffff&quot; textSize=&quot;30sp&quot;&gt;微信QQ自动点赞脚本v1.0&lt;/text&gt;</span><br><span class="line">            &lt;text w=&quot;auto&quot; h=&quot;auto&quot; color=&quot;#ffffff&quot; textSize=&quot;20sp&quot; marginTop=&quot;50&quot;&gt;（点击按钮运行，运行前请确认无障碍与悬浮窗权限授权开启，绿色软件无病毒,出现异常请重启软件）&lt;/text&gt;</span><br><span class="line">            &lt;text w=&quot;auto&quot; h=&quot;auto&quot; color=&quot;red&quot; textSize=&quot;20sp&quot; marginTop=&quot;10&quot;&gt;执行脚本前，请先关闭微信或QQ，脚本会自动打开微信或QQ，以免用户停滞页面与脚本检索页面冲突。&lt;/text&gt;</span><br><span class="line">            &lt;text w=&quot;auto&quot; h=&quot;auto&quot; color=&quot;#ffffff&quot; textSize=&quot;20sp&quot; marginTop=&quot;10&quot;&gt;@小德(2021-04-10)&lt;/text&gt;</span><br><span class="line">            &lt;horizontal gravity=&quot;center&quot;&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;xf&quot; textSize=&quot;15sp&quot; marginTop=&quot;20&quot; text=&#x27;开启悬浮窗权限&#x27; /&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;wza&quot; textSize=&quot;15sp&quot; marginTop=&quot;20&quot; marginLeft=&quot;5&quot; text=&#x27;开启无障碍权限&#x27; /&gt;</span><br><span class="line">            &lt;/horizontal&gt;</span><br><span class="line">            &lt;horizontal gravity=&quot;center&quot;&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;btn_vxyd&quot; textSize=&quot;15sp&quot; marginTop=&quot;15&quot; text=&#x27;启动微信运动点赞&#x27; /&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;btn_vxpyq&quot; textSize=&quot;15sp&quot; marginTop=&quot;15&quot; marginLeft=&quot;5&quot; text=&#x27;启动微信朋友圈点赞&#x27; /&gt;</span><br><span class="line">            &lt;/horizontal&gt;</span><br><span class="line">            &lt;horizontal gravity=&quot;center&quot;&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;btn_qqmp&quot; textSize=&quot;15sp&quot; marginTop=&quot;15&quot; text=&#x27;启动QQ名片点赞&#x27; /&gt;</span><br><span class="line">                &lt;button w=&quot;150&quot; h=&quot;50&quot; color=&quot;#000000&quot; bg=&quot;#FFCC99&quot; id=&quot;btn_qqpyq&quot; textSize=&quot;15sp&quot; marginTop=&quot;15&quot; marginLeft=&quot;5&quot; text=&#x27;启动QQ朋友圈点赞&#x27; /&gt;</span><br><span class="line">            &lt;/horizontal&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/vertical&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/frame&gt;</span><br><span class="line"></span><br><span class="line">);</span><br><span class="line">ui.xf.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        app.startActivity(&#123;</span><br><span class="line">            packageName: &quot;com.android.settings&quot;,</span><br><span class="line">            className: &quot;com.android.settings.Settings$AppDrawOverlaySettingsActivity&quot;,</span><br><span class="line">            data: &quot;package:&quot; + context.getPackageName(),</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">ui.wza.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        app.startActivity(&#123; action: &quot;android.settings.ACCESSIBILITY_SETTINGS&quot; &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">ui.btn_vxyd.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        console.show();</span><br><span class="line">        var app = getPackageName(&quot;微信&quot;);</span><br><span class="line">        launch(app);</span><br><span class="line">        log(&quot;正在打开微信并加载脚本...&quot;);</span><br><span class="line">        sleep(5000);</span><br><span class="line">        log(&quot;加载完成...&quot;);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        console.hide();</span><br><span class="line">        vxyd_run();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">ui.btn_vxpyq.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        console.show();</span><br><span class="line">        var app = getPackageName(&quot;微信&quot;);</span><br><span class="line">        launch(app);</span><br><span class="line">        log(&quot;正在打开微信并加载脚本...&quot;);</span><br><span class="line">        sleep(5000);</span><br><span class="line">        log(&quot;加载完成...&quot;);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        console.hide();</span><br><span class="line">        vxpyq_run();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">ui.btn_qqpyq.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        console.show();</span><br><span class="line">        var app = getPackageName(&quot;QQ&quot;);</span><br><span class="line">        launch(app);</span><br><span class="line">        log(&quot;正在打开QQ并加载脚本...&quot;);</span><br><span class="line">        sleep(5000);</span><br><span class="line">        log(&quot;加载完成...&quot;);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        console.hide();</span><br><span class="line">        qqpyq_run();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">ui.btn_qqmp.click(() =&gt; &#123;</span><br><span class="line">    threads.start(function () &#123;</span><br><span class="line">        console.show();</span><br><span class="line">        var app = getPackageName(&quot;QQ&quot;);</span><br><span class="line">        launch(app);</span><br><span class="line">        log(&quot;正在打开QQ并加载脚本...&quot;);</span><br><span class="line">        sleep(5000);</span><br><span class="line">        log(&quot;加载完成...&quot;);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        console.hide();</span><br><span class="line">        qqmp_run();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">//微信运动自动点赞函数</span><br><span class="line">function vxyd_run() &#123;</span><br><span class="line">    var w = floaty.rawWindow(</span><br><span class="line">        &lt;frame color=&quot;#000000&quot; bg=&quot;#FFCC99&quot;&gt;</span><br><span class="line">            &lt;button id=&quot;stop&quot;&gt;停止&lt;/button&gt;</span><br><span class="line">        &lt;/frame&gt;</span><br><span class="line">    );</span><br><span class="line">    w.setPosition(0, device.height - device.height / 4);</span><br><span class="line">    w.stop.click(() =&gt; &#123;</span><br><span class="line">        threads.start(function () &#123;</span><br><span class="line">            log(&quot;正在结束脚本...&quot;);</span><br><span class="line">            sleep(1500);</span><br><span class="line">            w.close();</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    if (className(&quot;android.widget.TextView&quot;).text(&quot;微信&quot;).exists()) &#123;</span><br><span class="line">        setScreenMetrics(1080, 2300);</span><br><span class="line">        click(900, 180);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        className(&quot;android.widget.EditText&quot;).findOne().setText(&quot;微信运动&quot;);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        click(500, 400);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        click(500, 2200);</span><br><span class="line">        sleep(2000);</span><br><span class="line">    &#125;</span><br><span class="line">    console.show();</span><br><span class="line">    click(550, 150);</span><br><span class="line">    log(&quot;脚本执行中请勿操作！！！&quot;);</span><br><span class="line">    log(&quot;----------------------------------&quot;);</span><br><span class="line">    while (true) &#123;</span><br><span class="line">        if (className(&quot;android.widget.TextView&quot;).text(&quot;排行榜&quot;).exists()) &#123;</span><br><span class="line">            log(&quot;在排行榜页面&quot;);</span><br><span class="line">            click(550, 150);</span><br><span class="line">            var picks = id(&quot;c5s&quot;).find();</span><br><span class="line">            if (!picks.empty()) &#123;</span><br><span class="line">                picks.forEach(function (pick, index) &#123;</span><br><span class="line">                    log(&quot;第&quot; + (index + 1) + &quot;个&quot;);</span><br><span class="line">                    if (pick) &#123;</span><br><span class="line">                        var like = pick.parent().parent();</span><br><span class="line">                        if (like.click()) &#123;</span><br><span class="line">                            log(&quot;点赞成功!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125; else &#123;</span><br><span class="line">                            log(&quot;点赞失败!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    if (className(&quot;android.widget.TextView&quot;).text(&quot;赞我的朋友&quot;).exists()) &#123;</span><br><span class="line">                        back();</span><br><span class="line">                        sleep(1000);</span><br><span class="line">                    &#125;</span><br><span class="line">                    if (className(&quot;android.widget.TextView&quot;).textEndsWith(&quot;的主页&quot;).exists()) &#123;</span><br><span class="line">                        back();</span><br><span class="line">                        sleep(1000);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line"></span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                log(&quot;没找到控件!&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            log(&quot;不在排行榜页面,脚本已结束!&quot;);</span><br><span class="line">            sleep(2000);</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;</span><br><span class="line">        //检查是否到达底部</span><br><span class="line">        if (text(&quot;邀请朋友&quot;).exists()) &#123;</span><br><span class="line">            log(&quot;已到达底部，结束脚本&quot;);</span><br><span class="line">            sleep(2000);</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //翻页</span><br><span class="line">        if (className(&quot;android.widget.TextView&quot;).text(&quot;排行榜&quot;).exists()) &#123;</span><br><span class="line">            var rect = id(&quot;dz&quot;).findOne().bounds();</span><br><span class="line">            var y2 = rect.bottom;</span><br><span class="line">            swipe(device.width / 2 + random(-100, 100), device.height / 2 + device.height / 4 + device.height / 8, device.width / 2 + random(-100, 100), y2, 1000);</span><br><span class="line">            sleep(1000);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//微信朋友圈自动点赞函数</span><br><span class="line">function vxpyq_run() &#123;</span><br><span class="line">    var w = floaty.rawWindow(</span><br><span class="line">        &lt;frame color=&quot;#000000&quot; bg=&quot;#FFCC99&quot;&gt;</span><br><span class="line">            &lt;button id=&quot;stop&quot;&gt;停止&lt;/button&gt;</span><br><span class="line">        &lt;/frame&gt;</span><br><span class="line">    );</span><br><span class="line">    w.setPosition(0, device.height - device.height / 4);</span><br><span class="line">    w.stop.click(() =&gt; &#123;</span><br><span class="line">        threads.start(function () &#123;</span><br><span class="line">            log(&quot;正在结束脚本...&quot;);</span><br><span class="line">            sleep(1500);</span><br><span class="line">            w.close();</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    if (className(&quot;android.widget.TextView&quot;).text(&quot;微信&quot;).exists()) &#123;</span><br><span class="line">        setScreenMetrics(1080, 2300);</span><br><span class="line">        click(677, 2200);</span><br><span class="line">        sleep(2000);</span><br><span class="line">        click(700, 320);</span><br><span class="line">        sleep(2000);</span><br><span class="line">    &#125;</span><br><span class="line">    console.show();</span><br><span class="line">    while (true) &#123;</span><br><span class="line">        var picks = desc(&quot;评论&quot;).find();</span><br><span class="line">        if (!picks.empty()) &#123;</span><br><span class="line">            picks.forEach(function (pick, index) &#123;</span><br><span class="line">                log(&quot;第&quot; + (index + 1) + &quot;个&quot;);</span><br><span class="line">                if (pick) &#123;</span><br><span class="line">                    if (pick.click()) &#123;</span><br><span class="line">                        if (className(&quot;android.widget.TextView&quot;).text(&quot;赞&quot;).exists()) &#123;</span><br><span class="line">                            className(&quot;android.widget.TextView&quot;).text(&quot;赞&quot;).findOne().parent().click();</span><br><span class="line">                            log(&quot;点赞成功!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125; else if (className(&quot;android.widget.TextView&quot;).text(&quot;取消&quot;).exists()) &#123;</span><br><span class="line">                            log(&quot;已点赞过！&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125; else &#123;</span><br><span class="line">                            log(&quot;点赞失败!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        log(&quot;未打开点赞框!&quot;);</span><br><span class="line">                        sleep(500);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">            swipe(device.width / 2 - 100, device.height / 2 + device.height / 4 + device.height / 8, device.width / 2 - 100, 245, 1000);</span><br><span class="line">            sleep(1000);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//QQ名片自动点赞函数</span><br><span class="line">function qqmp_run() &#123;</span><br><span class="line">    var w = floaty.rawWindow(</span><br><span class="line">        &lt;frame color=&quot;#000000&quot; bg=&quot;#FFCC99&quot;&gt;</span><br><span class="line">            &lt;button id=&quot;stop&quot;&gt;停止&lt;/button&gt;</span><br><span class="line">        &lt;/frame&gt;</span><br><span class="line">    );</span><br><span class="line">    w.setPosition(0, device.height - device.height / 4);</span><br><span class="line">    w.stop.click(() =&gt; &#123;</span><br><span class="line">        threads.start(function () &#123;</span><br><span class="line">            log(&quot;正在结束脚本...&quot;);</span><br><span class="line">            sleep(1500);</span><br><span class="line">            w.close();</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    setScreenMetrics(1080, 2300);</span><br><span class="line">    swipe(30, device.height / 2, device.width - 30, device.height / 2, 300);</span><br><span class="line">    sleep(2000);</span><br><span class="line">    click(160, 360);</span><br><span class="line">    sleep(2000);</span><br><span class="line">    click(1010, 400);</span><br><span class="line">    sleep(1000);</span><br><span class="line">    console.show();</span><br><span class="line">    while (true) &#123;</span><br><span class="line">        var picks = className(&quot;android.widget.ImageView&quot;).desc(&quot;赞&quot;).find();</span><br><span class="line">        if (!picks.empty()) &#123;</span><br><span class="line">            picks.forEach(function (pick, index) &#123;</span><br><span class="line">                log(&quot;第&quot; + (index + 1) + &quot;个&quot;);</span><br><span class="line">                if (pick) &#123;</span><br><span class="line">                    for (var i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">                        if (pick.click()) &#123;</span><br><span class="line">                            log(&quot;点赞成功!&quot; + (i + 1) + &quot;次&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                        else &#123;</span><br><span class="line">                            log(&quot;点赞失败!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">            swipe(device.width / 2, device.height / 2 + device.height / 4 + device.height / 8, device.width / 2, 245, 1000);</span><br><span class="line">            sleep(1000);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//QQ朋友圈自动点赞函数</span><br><span class="line">function qqpyq_run() &#123;</span><br><span class="line">    var w = floaty.rawWindow(</span><br><span class="line">        &lt;frame color=&quot;#000000&quot; bg=&quot;#FFCC99&quot;&gt;</span><br><span class="line">            &lt;button id=&quot;stop&quot;&gt;停止&lt;/button&gt;</span><br><span class="line">        &lt;/frame&gt;</span><br><span class="line">    );</span><br><span class="line">    w.setPosition(0, device.height - device.height / 4);</span><br><span class="line">    w.stop.click(() =&gt; &#123;</span><br><span class="line">        threads.start(function () &#123;</span><br><span class="line">            log(&quot;正在结束脚本...&quot;);</span><br><span class="line">            sleep(1500);</span><br><span class="line">            w.close();</span><br><span class="line">            console.hide();</span><br><span class="line">            exit();</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    setScreenMetrics(1080, 2300);</span><br><span class="line">    className(&quot;android.widget.FrameLayout&quot;).drawingOrder(&quot;1&quot;).click();</span><br><span class="line">    sleep(2000);</span><br><span class="line">    click(700, 530);</span><br><span class="line">    sleep(2000);</span><br><span class="line">    console.show();</span><br><span class="line">    while (true) &#123;</span><br><span class="line">        var picks = id(&quot;c7p&quot;).find();</span><br><span class="line">        if (!picks.empty()) &#123;</span><br><span class="line">            picks.forEach(function (pick, index) &#123;</span><br><span class="line">                log(&quot;第&quot; + (index + 1) + &quot;个&quot;);</span><br><span class="line">                if (pick) &#123;</span><br><span class="line">                    if (!pick.selected()) &#123;</span><br><span class="line">                        if (pick.click()) &#123;</span><br><span class="line">                            log(&quot;点赞成功!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                        else &#123;</span><br><span class="line">                            log(&quot;点赞失败!&quot;);</span><br><span class="line">                            sleep(500);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        log(&quot;已点赞过!&quot;);</span><br><span class="line">                        sleep(500);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">            swipe(device.width / 2, device.height / 2 + device.height / 4 + device.height / 8, device.width / 2, 245, 1000);</span><br><span class="line">            sleep(1000);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: XiaoDe | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+
+本站总访问量<span id="busuanzi_value_site_pv"></span>次|欢迎您的来访！
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="eaSfopp9PqWpKoxovXSgbCLm">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/love.js"></script>
+
+
+<script src="/js/lovetext.js"></script>
+
+
+<script src="/js/js.js"></script>
+
+
+<script src="/js/snow.js"></script>
+
+
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+     <script>
+     	 $(".popup-trigger").click(function(){
+     		$(".site-search").show();
+     	});
+     	$(".popup-btn-close").click(function(){
+     		$(".site-search").hide();
+     	});
+     </script>
+     <script type="text/javascript">
+    function createImgEventFullScreen() {
+        var imgs = $(".post-content").find("img");
+        for (var i = 0; i < imgs.length; i++) {
+            // $(imgs[i]).click(createCover(imgs[i]));
+            imgs[i].onclick = function (e) {
+                var src = e.srcElement.currentSrc;
+                var _this = $(this);
+                createCover(src,_this);
+            }
+        }
+        function createCover(src,_this) {
+            var cover = $("<div id='outerDiv'  style='position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:5;width:100%;height:100%;display:none;'><div id='innerDiv' style='position:absolute;'><img  id='bigImg' style='border:5px solid #fff;' src=''/></div></div>");
+            $("#outerDiv").remove();
+            $("body").append(cover);
+            imgShow("#outerDiv", "#innerDiv", "#bigImg", _this,src);
+
+        }
+    }
+    function imgShow(outerDiv, innerDiv, bigImg, _this,src) {
+        //var src = _this.attr("src"); //获取当前点击的common-img元素中的src属性
+        $(bigImg).attr("src", src); //设置#bigImg元素的src属性
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).on('load',function() {
+            var windowW = $(window).width(); //获取当前窗口宽度
+            var windowH = $(window).height(); //获取当前窗口高度
+            var realWidth = this.width; //获取图片真实宽度
+            var realHeight = this.height; //获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8; //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) { //判断图片高度
+                imgHeight = windowH * scale; //如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth; //等比例缩放宽度
+                if (imgWidth > windowW * scale) { //如宽度仍大于窗口宽度
+                    imgWidth = windowW * scale; //再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) { //如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale; //如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight; //等比例缩放高度
+            } else { //如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth*2;
+                imgHeight = realHeight*2;
+            }
+            $(bigImg).css("width", imgWidth); //以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2; //计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2; //计算图片与窗口上边距
+            $(innerDiv).css({ "top": h, "left": w }); //设置#innerDiv的top和left属性
+            //console.log('****')
+            $(outerDiv).fadeIn("fast"); //淡入显示#outerDiv
+        });
+
+        $(outerDiv).click(function () { //再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    }
+    setTimeout(function () {
+        createImgEventFullScreen();
+    }, 1000)
+</script>
+        
+<script src="/js/shizhong.js"></script>
+
+        
+<script src="/js/szmove.js"></script>
+
+
+     
+<script src="/js/classie.js"></script>
+
+     
+<script src="/js/sidebarEffects.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/drew233/css/fsearch.min.js"></script>
+
+</body>
+</html>

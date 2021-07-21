@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/icon.png >
+    <title>
+        小德の博客
+    </title>
+    <meta name="description" content= 嘿，我是小德,这是我的博客，用于写记录我每日所得。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,小德,XiaoDe >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/drew233/css/rfsearch.min.css">
+
+    
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+    
+<link rel="stylesheet" href="/css/demo.css">
+
+    
+<link rel="stylesheet" href="/css/component.css">
+
+    
+<link rel="stylesheet" href="/css/shizhong.css">
+
+    <style type="text/css">
+      .v * {
+        color: #698fca;
+      }
+      .v .vlist .vcard .vhead .vsys {
+        color: #3a3e4a;
+      }
+      .v .vlist .vcard .vh .vmeta .vat {
+        color: #638fd5;
+      }
+      .v .vlist .vcard .vhead .vnick {
+        color: #6ba1ff;
+      }
+      .v a {
+        color: #8696b1;
+      }
+      .v .vlist .vcard .vhead .vnick:hover {
+        color: #669bfc;
+      }
+    </style>
+    <script>
+    $(document).ready(function () {
+      //首先将#back-to-top隐藏
+      $("#back-to-top").hide();
+      //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+      $(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            $("#back-to-top").fadeIn(500);
+          } else {
+            $("#back-to-top").fadeOut(500);
+          }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    });
+  </script>
+
+    <style>
+    p#back-to-top {
+      position: fixed;
+      bottom: 88px;
+      right: 112px;
+    }
+ 
+    p#back-to-top a {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition: color1s;
+      -webkit-transition: color1s;
+      -o-transition: color1s;
+    }
+ 
+    p#back-to-top a:hover {
+      color: #000011;
+    }
+ 
+    p#back-to-top a span {
+      background-color: #8A8A8A;
+      z-index: -100;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      display: block;
+      height: 45px;
+      width:50px;
+      font-size: 10px;
+      color: #F0F0F0;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition: background1s;
+      -webkit-transition: background1s;
+      -o-transition: background1s;
+    }
+ 
+    #back-to-top a:hover span {
+      background-color: #000;
+    }
+  </style>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <div id="st-container" class="st-container" style="position:fixed">
+      <nav class="st-menu st-effect-9" id="menu-9">
+        <h2>菜单</h2>
+        <ul>
+          <li><a class="popup-trigger">搜索内容🔍</a></li>
+          <li><a href="https://oydq.github.io/wish/index.html">许愿墙🌲</a></li>
+          <li><a href="https://oydq.github.io/chat_show/index.html">聊天室💬</a></li>
+          <li><a href="https://oydq.github.io/chat_getkey/getkey.html">聊天室Key🔑</a></li>
+        </ul>
+      </nav>
+      <div id="st-trigger-effects">
+          <button data-effect="st-effect-9" style="position:fixed">菜单></button>
+      </div>
+    </div>
+
+  <p id="back-to-top">
+    <a href="#top">
+      <span>回到<br>顶部</span>
+    </a>
+  </p>
+
+    <div class="site-search">
+      <div class="popup search-popup" style="display: none;">
+      <div class="search-header">
+
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+
+    <div class="search-input-container">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="输入关键词搜索" spellcheck="false" type="text" id="search-input">
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+
+    </div>
+
+    <div id="search-result">
+      <div id="no-result"><i class="fa fa-frown-o fa-5x"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="search-pop-overlay" style="display: none;"></div>
+
+  <div id="Tz_box">
+  <ul id="Tz_List">
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" alt="数字图片冒号" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+  </ul>
+</div>
+</div>
+
+<body id="bodyx" style="margin-top:50px;">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            那些年的空间说说
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p><i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次</span></p>
+<hr>
+<p>#2014年6月26日<br>天生我材必有用，地育我根痞够洞。</p>
+<hr>
+<p>#2014年9月13日<br>风吹树摇嫩草抖，苍穹乌云慢行走。雨过风平浪静后，彩虹挂在天空中</p>
+<hr>
+<p>#2014年9月16日<br>人生不过如此：哭过，笑过，激动过，开心过，伤心过，兴奋过，一切的一切，都会过去。值得回念。说不定，在十年后，你回想过去，认为自己当时是那么的好笑，那么的无知。人生如云，缥缈无影，到头来还是一场空。</p>
+<hr>
+<p>#2015年1月27日<br>人不是永恒不变的，也不能不变，至于变得怎样，还得看自己的世界观，人生观。由一个孩子慢慢成熟，由一个不懂是非的人，也慢慢懂事了，由一个为爱执着的人，渐渐的看清了现实。人这一生活着，只为自己快乐，自由，能有一片自己满意的成就，美满的爱情，幸福的家庭，还有一种因为自己而不平凡的感触！</p>
+<hr>
+<p>#2015年1月29日<br>低头看月亮，我撒滋润给小草，却千疮百孔，有谁是我的倒影，也只有光才会摹的出，可有谁又是光呢？即便遗传也会有变异吧，所以，只有我才会理解的透我自己，为自己快乐，为自己伤心！</p>
+<hr>
+<p>#2015年4月27日<br>有时候不是不信任，只是因为比别人更在乎，所以更害怕失去。</p>
+<hr>
+<p>#2015年7月30日<br>别人问我为什么要变强，……我沉默了。因为……因为……因为我要保护爱我的人和我爱的人、不让他们受伤害。当天空划过一束明光时，我想，我成功了。人生如梦，梦醒了，我也醉了。永不会再回头。熟知此局易醉人，人却知醉醉更深。</p>
+<hr>
+<p>#2015年8月17日<br>我也曾想过最美的年华做最美好的事，可熟知现实一次次刺破我的童话。这样的干脆。但，这并不是什么坏事，因为，只有现实中的快乐才是真真的快乐，才是一种发自内心的喜悦。即便人会吃很多的苦，但是人生苦短，回归现实才是最可贵的。</p>
+<hr>
+<p>#2016年1月24日<br>咏煤炭 凿开混沌得乌金，藏蓄阳和意最深。爝火燃回春浩浩，洪炉照破夜沉沉…………</p>
+<hr>
+<p>#2016年2月15日<br>泪空流，我欲改变，却招来百般嘲笑。</p>
+<hr>
+<p>#2016年6月24日<br>我真不懂暴风的无情，这般刺痛我的心，有时我是多余的，却会被暴风掀，难道风暴是无端而起的吗？还是我自作自受，其实我的心很脆弱，经不起大风大浪，是我太弱，还是我未想好，我该怎样乐观些。</p>
+<hr>
+<p>#2016年9月16日<br>破嗓仰视苍天跋扈，气冲云霄昆山无情，纵身愤起九外飞仙，顶置天下唯吾独尊！怎又知落叶归根，尘埃落定，斗转乾坤今生无缘，曾为一方霸气，终归从属消尘，可否竟许红颜抛泪，却又是莫无声息。待尊崛起，怕又是烟消云散，八方来就，事与人违，寰宇振天，无人能敌。</p>
+<hr>
+<p>#2016年12月3日<br>《罪郎》<br>窗外又小雨，愁坏赏雨人。跃云厚作舟，思绪预登岸。方圜千寻亩，浩荡无人稀。步履愈沉重，甚破脚中云。流涕幻觉影，他方苦受难。怨言相分别，一别永隔离。雨落依稀里，瞥见阿郎君。罗敷怜无比，阿郎悔罪过。寻来千百度，岂敢来相会？</p>
+<hr>
+<p>#2016年12月3日<br>《怨女》<br>窗外又小雨，急坏雨中人。默默登高楼，怅然若失绪。忆挂当年人，事别难相会。步履愈沉重，血染脚中鞋。心痛恨郎君，背弃无情理。负气相分别，一别永不见。雨落楼台里，甚恐惊罗敷。罗敷无罪过，阿郎本先错。难过怎至此，岂为毋志气？</p>
+<hr>
+<p>#2017年5月14日<br>你如四月春风紧随，伴我流迹天南地北。</p>
+<hr>
+<p>#2017年5月14日<br>六月与我们，充斥着不舍与忧伤。<br>即将分别的我们，似孩提般莫名惆怅。</p>
+<hr>
+<p>#2017年5月28日<br>彼岸佳人秀，千年一回眸。</p>
+<hr>
+<p>#2017年6月10日<br>望夫石上望三年，妾身离别三千年。</p>
+<hr>
+<p>#2017年6月11日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/xh.png" alt="img"></p>
+<hr>
+<p>#2017年6月12日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/xh2.png" alt="img"></p>
+<hr>
+<p>#2017年7月8日<br>智商已经天定，基础已成现实，现在，只差时间的磨练。</p>
+<hr>
+<p>#2017年8月3日<br>当你伤害一个人时，<br>只有你真正认识到种伤害程度有多深，<br>才会发自内心的歉疚。<br>或许有人没心没肺，<br>或许有人毫无羞愧，<br>或许有人并不在乎，<br>但是，但你出门时，<br>记得多拿镜子照照自己的脸——是不是面由心生。</p>
+<hr>
+<p>#2017年8月6日<br>君落红阳西山北<br>我往东流不见仙</p>
+<hr>
+<p>#2017年8月15日<br>当一个穷人对你说：你的生活好Low。你是不是不以为然；当一个富人对你说：你的生活真Low。你又是不是差距感、自卑感会油然而生呢？</p>
+<hr>
+<p>#2017年8月28日<br>不管爱过与否，我就在那等待。谁会与我相濡以沫？执手千年。不是不爱，只是还未等到心爱之人。每往画面如烟，是挽手看天边的晚霞，是夜晚仰望满天的星空。回头来看，又是一年一度的七夕，我不爱，谁人度七夕？期待有你。</p>
+<hr>
+<p>#2017年9月12日<br>【大海的乞求】<br> ――欧阳德清<br>海岸边 搁滩上 海鸥振翅安详<br>每一个海孩子<br>都会有一个梦吧<br>我要去往大海的深处<br>和那一望无际的边头<br>拍拍海上的沙<br>触摸大海的深沉<br>可他咸得彻底<br>大海啊大海<br>是否哭过一整夜<br>海孩子心疼大海<br>大海别哭<br>不要在乎别人的眼光<br>世界把他抛弃 没关系<br>海孩子都有一个梦<br>梦见大海咆哮 不再哭泣<br>海孩子笑开了花 她说<br>大海弟弟 我会永远陪伴你<br>可是有一天<br>海孩子不再来过<br>大海焦虑着 咆哮着<br>哭泣到无声<br>海啸来了！<br>村庄中的人落荒而逃<br>“我们有什么错？<br>这样惩罚我们！”<br>大海无声的咆哮<br>不顾世人的乞求<br>淹没所有的村庄<br>海孩子 你在哪？<br>不是说过永远陪伴我<br>海孩子以及那个梦<br>碎了<br>大海在呻吟<br>直到所有的地方被淹没<br>海孩子仍不见踪影<br>大海咸了<br>咸烂了心底<br>海岸边 搁滩上 海鸥振翅安详<br>任咸水在爪边淌过</p>
+<hr>
+<p>#2017年10月4日<br>中秋节到了<br>看！天上的月亮圆不圆？<br>我有一万种难言的情绪存放<br>又是你不在的一年<br>一年的中秋<br>是否不在我身旁的又一年<br>没有任何留恋</p>
+<hr>
+<p>#2017年10月4日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/hua.png" alt="img"></p>
+<hr>
+<p>#2018年4月5日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/img.png" alt="img"></p>
+<hr>
+<p>#2018年4月10日<br>我受不了<br>你突如其来又匆匆而去<br>拂开心瓣的我<br>在留念中彷徨而陨落<br>千纸的问候<br>翻开时<br>阵阵隐痛<br>早知会犯错<br>早知会错过<br>为什么沉迷太深 最后失落？<br>别再难过<br>窝住头在床上懦弱<br>泪痕被风吹干黏稠</p>
+<hr>
+<p>#2018年6月15日<br>〔爱的不够，才借口多多〕<br>♀ : 知道爱一个人有多难吗？<br>♂ : 知道恨一个人有多难吗？<br>♀ : 爱的不够才借口多多。<br>♂ : 恨的不深才不能摆脱。<br>♀ : 爱一个人，就像吃了蜜，可你不知道它到底有多甜。<br>♂ : 恨一个人，就像吃了糊，可你不知道它到底有多恶心。<br>♀ : 爱上一个人，我就爱上了一座城！<br>♂ : 但我恨了一个人，却恨了半边国。<br>♀ : 有时候静静想想，我们最终还是有缘无分。<br>♂ : 静静想，到头来还不分谁错谁对。<br>♀ : 你现在还恨她么？<br>♂ : 你呢？爱他吗？<br>♀ : 对不起！我还是忘不了他。<br>♂ : 没关系，我在昨天就已经明白了。<br>♀ : 倘若，我还是我，我会选择你的。<br>♂ : 倘若，我也还是我，我也一样。<br>♀ : 离开后，我会记得你。<br>♂ : 谁不一样呢…<br>♀ : 我真的很幸运遇见你，你是个好人。<br>♂ : 遇见不遇见，无关紧要了，能在你心里留下一样东西，我也是值了哈哈哈咳咳……<br>我在那个女孩的心里，留下了一样东西。<br>她爱上了那一个对她漠不关心的人。<br>而我，恨了一个人。<br>她不会懂。<br>也不需要明白。<br>是吧…</p>
+<hr>
+<p>#2018年7月31日<br>男生很喜欢打游戏<br>女生很爱这个男生<br>有一天<br>男生对女生说，我要出去一趟<br>我要跟着你，女生着急了<br>不行<br>为什么不行，每次都不让我跟着<br>你乖乖的，等我回来我给你买你最爱的棉花糖<br>不不不<br>你别闹好不好<br>女生心里委屈，也好说<br>好吧，我去做早饭了<br>谁让她爱着这个男生呢<br>然后男生走掉了<br>男生出了家门<br>进了网吧<br>在自己的虚拟世界里，他就是个王者<br>嗯？外面下雨了<br>咳咳，看下手表，玩了四个小时了，该回去了<br>对了，棉花糖<br>男生下了楼<br>他呆了<br>女生在门口，被雨淋得湿透了身子<br>他跑过去<br>你怎么在这？<br>女生打了个喷嚏<br>我偷偷跟着你来的，看见你上了楼<br>但是。。<br>但是我怕，我不敢上去<br>我就在楼下等你<br>你。。。<br>你为什么不回家等我呢<br>我，担心你<br>男生抱紧女生<br>走，去医院<br>我要棉花糖<br>傻啊你，生病了还要什么棉花糖<br>可是，你答应我的呀<br>我，<br>我们先去医院好不好，我买好给你<br>不好，你去哪我去哪<br>他在游戏里是个王者，现实中，他做不了王者<br>男生的眼光百般疼爱<br>四小时的等待<br>我们也都相信这个女生足足等了四个小时<br>她很傻<br>对他爱的人<br>男生经历这次以后，在没有一个人出门<br>每次出门<br>后面都跟着个小番薯</p>
+<hr>
+<p>#2018年11月19日<br>无题<br>含一满口烈酒<br>咽下自己的诗章<br>像醉酒般豪放，不慌<br>澄清尘土泡成的大江<br>雨露的远方<br>晴出的艳斑格外明亮<br>谁又知道我吞下了诗章？<br>又澄清了大江的江浪<br>(藏头诗)<br> —— 彼岸花开<br> ——11.17晚</p>
+<hr>
+<p>#2018年12月1日<br>风花雪月，他挥舞着断剑<br>喝着烈酒，在人间彷徨多年<br>他游荡过得地方<br>现在要不成了繁华都市<br>要不，成了一片荒芜<br>似风般的少年，沧桑的没人去爱<br>捅破事实的黄沙<br>梦里的比现实还现实<br>戎马一生，终换不会那个她<br>he is being foolish.<br>so,<br>he is foolish.</p>
+<hr>
+<p>#2018年12月4日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/img2.png" alt="img"></p>
+<hr>
+<p>#2019年2月6日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/img3.png" alt="img"></p>
+<hr>
+<p>#2019年2月15日<br>快乐的方式是自己与自己？还是人与人。有时候人与人不是真真的快乐。我们都在寻找快乐，但是快乐就好像无处不在，又好像突然没了踪影。</p>
+<hr>
+<p>#2019年2月17日<br>你听。下雨了，很大很大的雨。我还在路上，摸着黑踏着一个个看不清的坑。我还是一个人，一个人在路上。</p>
+<hr>
+<p>#2019年3月28日<br>――前行的路上，总有三六九等，老子为之奋斗，老子为之不服输，老子不懂啥大道理，有时也特别幼稚，老子坚持过，也放弃过。老子努力过，也懈怠过。老子执着过，也后悔过。老子的方方面面，老子的行行举止，老子的那么好的一个追求，比不上天，比不起地，但老子可以放在心里，把它藏好，等它发芽。</p>
+<hr>
+<p>#2019年4月27日<br>阳行不易，阴道寻机。<br>静实则动，不变应万变。<br>人生如弈，你我皆是局中人。</p>
+<hr>
+<p>#2019年6月5日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/img4.png" alt="img"></p>
+<hr>
+<p>#2019年6月18日<br>无意间翻到初中一篇神文章，如下：<br>别人总是问我，一张纸能干什么？我总是回答，一张纸非常有用，别人又问有什么？我便答他四处观察。每次看一会儿回来问，没有什么有用的，不是扔掉就是撕，到底有啥用的？我再回答他，笔写字在哪？画图又在哪？他恍然大悟用心领会，说以后都要珍惜每张纸，我笑了笑点点头，表扬了他。于是他拿起了笔，在纸上写上三个字，“纸有用”，后又画上一幅画，拿着开心的跑了。<br>（哈哈，当时以为自己明白了真理）</p>
+<hr>
+<p>#2019年7月2日<br>佳人久未归，梨花久置未问寒。行又止，门庭木闩秋果落。新又春，昨还冬雪今感暖。心却凉，四季鲜闻佳人，在阑珊，汝等，予寻。</p>
+<hr>
+<p>#2019年7月5日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j1.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j2.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j3.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j4.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j5.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j6.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j7.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/j8.png" alt="img"></p>
+<hr>
+<p>#2019年7月11日<br>当我讨厌一个人的时候，如果这个人突然说喜欢我，那我就一点也不讨厌对方了。就是这么有原则，无法讨厌一个有眼光的人。</p>
+<hr>
+<p>#2019年8月16日<br>看，那有一个傻子，嘲笑着叫花子，磕着瓜子，抓着个孩子，叫花子拿着刀子，眼中充满泪花子，杀死了孩子和傻子。</p>
+<hr>
+<p>#2019年8月30日<br>人越缺什么，就越炫耀什么。<br>明明啥也不懂，也要装成很在行。<br>把别人眼中的另类，认为成自己的与众不同。</p>
+<hr>
+<p>#2019年9月10日<br>太过在乎，<br>害怕失去，<br>无聊寂寞，<br>渐渐地，成了舔狗。<br>(论舔狗的产生之一)</p>
+<hr>
+<p>#2020年1月7日<br>刚才车站台等车的时候跟着别人下电梯，我在门口看到出站口，我当时慌了，抬头一看下来的电梯密密麻麻都是人，我就反头一看，上去的电梯没人，我就跑上去，然后车紧接着就来了，我慌得一批，做死的跑，跑过1车厢，因为我是5车厢的，然后我接着跑，2车厢，3，4车厢，5车厢！我就放心了，从车厢后面上去的，结果这边是1号座位，因为我是12号座位，好怕我的位置被别人占着，因为火车上好多这样的人，卧槽，我等啊等，等啊等，终于走到位置旁边了。我打算把行李放在架子上，我去，架子太小，装不进，我的天，我放在座位上又坐不下，我又是里面的座位，会碍到别人，我后来看见别人都把行李箱放在两个座位后面的缝隙，噢！我懂了，可是我后面被别人放满了，我去，后来那个人来了拿走了，幸亏，我也就放进去了。现在，我旁边还没有人，估计这车人不多。</p>
+<hr>
+<p>#2020年1月11日<br>不要羡慕微信运动榜里步数比你多的朋友，他们其实没比你多走多远，他们只是，腿比较短哈哈，难搞哦！</p>
+<hr>
+<p>#2020年3月10日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/img5.png" alt="img"></p>
+<hr>
+<p>#2020年3月30日<br>突然想起了小学玩的『游戏本子』(还是区别电脑游戏本叫游戏本子吧)，有很多类型呢，不过我比较喜欢的是养宠物那款的，当时班上好多人多尝试做，可一般只有有些耐心的家伙才能做成。哈哈，从小那家伙就会当“服务器”了。<br>就是班上一个人拿个本子做一个游戏其他人在他那“注册”，取个名字，本子的一个范围就归你了。每天管理本子的人，每天固定给你们加经验值升级。当看见本子上自己比别人厉害就可以和其他人炫耀了。那么管理本子的人就像管理员，而本子相当于服务器哈哈，其他人就是客户。</p>
+<hr>
+<p>#2020年4月13日<br>晒晒自己仅存的藏书:<br>《陈迹·清欢》白落梅<br>《读者2013》读者杂志社<br>《超有用超有趣的美学大全》朱珂苇<br>《簪花小楷·纳兰性德》<br>《诗经》孔子等<br>《意林作文素材2019年4月上半月刊》<br>《青春写作美文》贾平凹<br>《语文读本1》<br>《意林2016年13—18期》<br>《一诗一世界·长相思》杜志建<br>《青春风·迷蝶》青春风编辑部<br>《意林作文素材2019年3月上半月刊》<br>《茶馆·龙须沟》老舍<br>《温暖人生的人际交往全集》《经典读库》编委会<br>《新概念作文·一等奖获得者全优范本A卷19年精选》黄兴<br>《围城》钱钟书<br>《白天黑夜都在玩的全脑思维游戏》<br>《红楼梦》曹雪芹·高鹗<br>《一生要读的最美经典》<br>《假如给我三天光明》凯勒<br>《哑舍·肆》玄色<br>《朱自清·徐志摩·郁达夫经典文集》<br>《白话周易》<br>《聊斋志异》蒲松龄<br>《故事会2017年7月下》<br>《请娘子安》初霊<br>《不畏将来不念过去》半夏<br>《小王子英文版》<br>《一小时读名著·西游记》<br>《人性的弱点》戴尔·卡耐基<br>《肖申克的救赎》斯蒂芬·金<br>《你远比想象中强大》埃里克·贝特朗·拉森<br>《时间移民》刘慈欣<br>《第七天》余华<br>《三体1》刘慈欣<br>《三体2·黑暗森林》刘慈欣<br>《炮灰天后》茹若<br>《你的名字》新海诚<br>《安妮日记》安妮·弗兰克<br>《摆渡人1》克莱儿·麦克福尔<br>《在细雨中呼喊》余华<br>《三十六计》<br>《中国地理未解之谜》<br>《你是那人间的四月天》林徽因<br>《纳兰词》<br>《美人何处》安意如<br>《陌上花开》安意如<br>《思无邪》安意如<br>《人生若只如初见》安意如<br>《细月不知人事改·宋词中的悲欢离合》白落梅<br>《聊将锦瑟记流年》安意如<br>……待续</p>
+<hr>
+<p>#2020年7月31日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj1.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj2.png" alt="img"></p>
+<hr>
+<p>#2020年8月2日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj3.png" alt="img"><br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj4.png" alt="img"></p>
+<hr>
+<p>#2020年8月5日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj5.png" alt="img"></p>
+<hr>
+<p>#2020年9月9日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj6.png" alt="img"></p>
+<hr>
+<p>#2020年11月19日<br>成功的话是说给失败者的，艰辛才是留给自己的，有的人表面头头是道，有的人犯错却是在骗自己。</p>
+<hr>
+<p>#2020年12月20日<br>“愿你如冬日的阳光一般，温暖而不炙热。”<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj7.png" alt="img"></p>
+<hr>
+<p>#2021年1月18日<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/mj8.png" alt="img"></p>
+<hr>
+<p>#2021年5月18日<br>社交恐惧症。<br>是恐惧症的一种亚型，恐惧症原称恐怖性神经症，是神经症的一种。以过分和不合理地惧怕外界某种客观事物或情境为主要表现，患者明知这种恐惧反应是过分的或不合理的，但仍反复出现，难以控制。恐惧发作时常常伴有明显的焦虑和自主神经症状，患者极力回避导致恐惧的客观事物或情境，或是带着畏惧去忍受，因而影响其正常活动。常见的恐惧症亚型包括广场恐惧、社交恐惧和特殊恐惧症三种。<br><img src="/2021/05/19/%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E7%A9%BA%E9%97%B4%E8%AF%B4%E8%AF%B4/sk.png" alt="img"></p>
+<hr>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: XiaoDe | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+
+本站总访问量<span id="busuanzi_value_site_pv"></span>次|欢迎您的来访！
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="eaSfopp9PqWpKoxovXSgbCLm">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/love.js"></script>
+
+
+<script src="/js/lovetext.js"></script>
+
+
+<script src="/js/js.js"></script>
+
+
+<script src="/js/snow.js"></script>
+
+
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+     <script>
+     	 $(".popup-trigger").click(function(){
+     		$(".site-search").show();
+     	});
+     	$(".popup-btn-close").click(function(){
+     		$(".site-search").hide();
+     	});
+     </script>
+     <script type="text/javascript">
+    function createImgEventFullScreen() {
+        var imgs = $(".post-content").find("img");
+        for (var i = 0; i < imgs.length; i++) {
+            // $(imgs[i]).click(createCover(imgs[i]));
+            imgs[i].onclick = function (e) {
+                var src = e.srcElement.currentSrc;
+                var _this = $(this);
+                createCover(src,_this);
+            }
+        }
+        function createCover(src,_this) {
+            var cover = $("<div id='outerDiv'  style='position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:5;width:100%;height:100%;display:none;'><div id='innerDiv' style='position:absolute;'><img  id='bigImg' style='border:5px solid #fff;' src=''/></div></div>");
+            $("#outerDiv").remove();
+            $("body").append(cover);
+            imgShow("#outerDiv", "#innerDiv", "#bigImg", _this,src);
+
+        }
+    }
+    function imgShow(outerDiv, innerDiv, bigImg, _this,src) {
+        //var src = _this.attr("src"); //获取当前点击的common-img元素中的src属性
+        $(bigImg).attr("src", src); //设置#bigImg元素的src属性
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).on('load',function() {
+            var windowW = $(window).width(); //获取当前窗口宽度
+            var windowH = $(window).height(); //获取当前窗口高度
+            var realWidth = this.width; //获取图片真实宽度
+            var realHeight = this.height; //获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8; //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) { //判断图片高度
+                imgHeight = windowH * scale; //如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth; //等比例缩放宽度
+                if (imgWidth > windowW * scale) { //如宽度仍大于窗口宽度
+                    imgWidth = windowW * scale; //再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) { //如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale; //如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight; //等比例缩放高度
+            } else { //如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth*2;
+                imgHeight = realHeight*2;
+            }
+            $(bigImg).css("width", imgWidth); //以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2; //计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2; //计算图片与窗口上边距
+            $(innerDiv).css({ "top": h, "left": w }); //设置#innerDiv的top和left属性
+            //console.log('****')
+            $(outerDiv).fadeIn("fast"); //淡入显示#outerDiv
+        });
+
+        $(outerDiv).click(function () { //再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    }
+    setTimeout(function () {
+        createImgEventFullScreen();
+    }, 1000)
+</script>
+        
+<script src="/js/shizhong.js"></script>
+
+        
+<script src="/js/szmove.js"></script>
+
+
+     
+<script src="/js/classie.js"></script>
+
+     
+<script src="/js/sidebarEffects.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/drew233/css/fsearch.min.js"></script>
+
+</body>
+</html>

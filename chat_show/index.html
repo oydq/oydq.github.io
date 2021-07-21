@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>在线聊天室</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 页面装饰CSS -->
+<link type="text/css" href="index.css" rel="stylesheet" />
+<!-- 用于连接LeanCloud 必须配置文件-->
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.0/dist/av-min.js"></script>
+<!-- 必备的Jquery库 -->
+<script src="jquery-1.11.1.min.js"></script>
+<!-- 核心逻辑代码JS -->
+<script src="index.js"></script>
+</head>
+<body>
+
+<!-- 标题 -->
+<div id="title">在线群聊，欢迎您! </div>
+
+<!-- 聊天区 -->
+<div id="chat">
+<!-- 	聊天框 -->
+<div class="window"></div>
+<!-- 新消息提示，默认不显示 -->
+<div class="tishi"></div>
+<!-- 文字走马灯提示 -->
+<div class="bottom"><marquee>请大家注意文明用语并且遵守国家法律法规!</marquee></div>
+</div>
+<!-- 聊天输入框 -->
+<div id="shuru"><textarea style="width: 100%;height:50px;resize:none;" id="content"></textarea></div>
+<!-- 发送提交 按钮-->
+<div id="form">
+	<input type="submit" value="发送" id="send" class="send" />
+	<input type="hidden" id="nicheng" class="nicheng"  />
+</div>
+<!-- 设置昵称按钮 -->
+<div id="bottom">设置昵称</div>
+
+<!-- 登录密匙的界面，默认不显示 -->
+<div id="bg"></div>
+<div id="window">
+<div class="t">
+<div class="title">登录密匙</div>
+<div class="key">
+<input type="text" value="" id="key" style="width: 60%;height:30px;text-align:center;" /><br /><br />
+<input type="button" id="setting" value="登录" style="width: 60%;height:30px;" />
+</div>
+</div>
+</div>
+<!-- 设置昵称的页面，默认不显示 -->
+<div id="bg2"></div>
+<div id="window2">
+<div class="t">
+<div class="title">设置昵称</div>
+<div class="nc">
+<input type="text" value="" id="nc" style="width: 60%;height:30px;text-align:center;" /><br /><br />
+<input type="button" id="setting2" value="确定" style="width: 60%;height:30px;" />
+</div>
+</div>
+</div>
+</body>

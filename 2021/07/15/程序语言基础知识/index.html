@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/icon.png >
+    <title>
+        小德の博客
+    </title>
+    <meta name="description" content= 嘿，我是小德,这是我的博客，用于写记录我每日所得。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,小德,XiaoDe >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/drew233/css/rfsearch.min.css">
+
+    
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+    
+<link rel="stylesheet" href="/css/demo.css">
+
+    
+<link rel="stylesheet" href="/css/component.css">
+
+    
+<link rel="stylesheet" href="/css/shizhong.css">
+
+    <style type="text/css">
+      .v * {
+        color: #698fca;
+      }
+      .v .vlist .vcard .vhead .vsys {
+        color: #3a3e4a;
+      }
+      .v .vlist .vcard .vh .vmeta .vat {
+        color: #638fd5;
+      }
+      .v .vlist .vcard .vhead .vnick {
+        color: #6ba1ff;
+      }
+      .v a {
+        color: #8696b1;
+      }
+      .v .vlist .vcard .vhead .vnick:hover {
+        color: #669bfc;
+      }
+    </style>
+    <script>
+    $(document).ready(function () {
+      //首先将#back-to-top隐藏
+      $("#back-to-top").hide();
+      //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+      $(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            $("#back-to-top").fadeIn(500);
+          } else {
+            $("#back-to-top").fadeOut(500);
+          }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    });
+  </script>
+
+    <style>
+    p#back-to-top {
+      position: fixed;
+      bottom: 88px;
+      right: 112px;
+    }
+ 
+    p#back-to-top a {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition: color1s;
+      -webkit-transition: color1s;
+      -o-transition: color1s;
+    }
+ 
+    p#back-to-top a:hover {
+      color: #000011;
+    }
+ 
+    p#back-to-top a span {
+      background-color: #8A8A8A;
+      z-index: -100;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      display: block;
+      height: 45px;
+      width:50px;
+      font-size: 10px;
+      color: #F0F0F0;
+      padding-top: 5px;
+      margin-bottom: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition: background1s;
+      -webkit-transition: background1s;
+      -o-transition: background1s;
+    }
+ 
+    #back-to-top a:hover span {
+      background-color: #000;
+    }
+  </style>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <div id="st-container" class="st-container" style="position:fixed">
+      <nav class="st-menu st-effect-9" id="menu-9">
+        <h2>菜单</h2>
+        <ul>
+          <li><a class="popup-trigger">搜索内容🔍</a></li>
+          <li><a href="https://oydq.github.io/wish/index.html">许愿墙🌲</a></li>
+          <li><a href="https://oydq.github.io/chat_show/index.html">聊天室💬</a></li>
+          <li><a href="https://oydq.github.io/chat_getkey/getkey.html">聊天室Key🔑</a></li>
+        </ul>
+      </nav>
+      <div id="st-trigger-effects">
+          <button data-effect="st-effect-9" style="position:fixed">菜单></button>
+      </div>
+    </div>
+
+  <p id="back-to-top">
+    <a href="#top">
+      <span>回到<br>顶部</span>
+    </a>
+  </p>
+
+    <div class="site-search">
+      <div class="popup search-popup" style="display: none;">
+      <div class="search-header">
+
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+
+    <div class="search-input-container">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="输入关键词搜索" spellcheck="false" type="text" id="search-input">
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+
+    </div>
+
+    <div id="search-result">
+      <div id="no-result"><i class="fa fa-frown-o fa-5x"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="search-pop-overlay" style="display: none;"></div>
+
+  <div id="Tz_box">
+  <ul id="Tz_List">
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" alt="数字图片0" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" alt="数字图片冒号" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/d.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+    <li><img src="/img/0.png" /><img src="/img/0.png" /></li>
+  </ul>
+</div>
+</div>
+
+<body id="bodyx" style="margin-top:50px;">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-home
+ replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            程序语言基础知识
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>解释器直接解释执行源程序，或者将源程序翻译成某种中间表示形式后再加以执行；而编译器则首先将源程序翻译成目标语言程序，然后在计算机上运行目标程序。<br>源程序 、词法分析、语法分析、语义分析、中间代码生成、代码优化、目标代码生成。<br>系统常将内存区域划分为代码区、静态数据区、栈区、堆区。其中代码区存放执行的指令序列，该区域内容不能被用户改变。<br>后缀式（逆波兰式）：将运算符号写在运算对象后面，表达式中的运算符号按照计算次序书写。<br>词法分析：对源程序从前到后逐个字符扫描，从中识别一个个“单词”符号（记号）。<br>语法分析：根据“单词”分解各类语法单位，如表达式。<br>语义分析：分析语法中的语义是否错误。<br>编写、编译、链接、运行。<br>、、、、<br>数据耦合：是指两个模块之间有调用关系，传递的是简单的数据值，相当于高级语言中的值传递；<br>标记耦合：是指两个模块之间传递的是数据结构；<br>内容耦合：是指如果一个模块与另一个模块的内部属性有关，不经调用直接使用另一个模块的程序代码或内部数据；<br>公共耦合：是指通过一个公共数据环境相互作用的那些模块间的耦合。<br>、、、、<br>偶然/巧合内聚：一个模块内的各处理元素之间没有任何联系。<br>逻辑内聚：模块内执行若千个逻辑上相似的功能，通过参数确定该模块完成哪一个功能。<br>时间内聚：需要同时执行的动作组合成一起形成模块。<br>过程内聚：一个模块完成多个任务，这些任务必须按指定的过程执行。<br>通信内聚：模块内所有处理元素都在一个数据结构上操作，或者各处理使用相同的输入数据或产生相同的输出数据。<br>顺序内聚：一个模块中的各个处理元素都密切相关于同一个功能且必须顺序执行，前一个功能元素的输出就是下一个功能元素的输入。<br>功能内聚：模块内的所有元素共同作用完成一个功能，缺一不可。（最佳内聚）<br>、、、、<br>XP（极限编程）软件开发方式，四大价值观——沟通、简单、反馈、勇气。<br>PERT（项目计划评审技术）图：有向图，难以清晰描述各个任务之间的并行情况。<br>Gantt（甘特）图：简单的水平条形图，以日历为基准描述项目任务，能清晰的描述每个任务何时开始，何时结束，任务并行性，但不能清晰描述出任务依赖关系。<br>、、、、<br>在结构化设计中，主要依据数据流图来进行软件体系结构设计。<br>结构化分析方法:<br>数据流图：描述数据在系统中如何被传送或变换以及描述如何对数据流进行变换的功能，用于功能建模。<br>实体联系图：描述数据对象以及数据对象之间的关系，用于数据建模。<br>状态-迁移图：描述系统对外部事件如何响应以及如何冯作，用于行为建模。<br>、、、、<br>黑盒在完全不考虑软件内部结构和特性的情况下，测试软件的外部特性。<br>等价类划分、边值分析、错误猜测和因果图。<br>白盒则是根据内部结构和逻辑来设计测试用例，检查是否满足设计要求。<br>语句覆盖：设计用例，运行被测试程序，使得每一个可执行语句至少执行一次。(最弱覆盖)<br>判定覆盖：设计用例，运行被测试程序，使得程序中每个判断的取真和取假分支至少经历一次。<br>条件覆盖：设计用例，运行被测试程序，使得每个判断的每个条件的可能取值至少执行一次。<br>路径覆盖：设计用例，运行被测试程序，覆盖程序中所有可能的路径。<br>、、、、<br>McCall软件质量模型：<br>运行方面特性：正确性、可靠性、可使用性、效率和完整性。<br>产品转移方面特性：可移植性、复用性、互用性。<br>产品修正方面特性：可维护性、灵活性、可测试性。<br>、、、、<br>软件测试分为静态和动态测试，人工检测和计算机辅助静态分析为静态测试，运行程序发现错误，对软件产品进行黑盒和白盒测试为动态测试。<br>回归测试用于识别改正当前错误的同时引入新的错误。<br>正确性维护，是指改正在系统开发阶段已发生而系统测试阶段尚未发现的错误；<br>适应性维护，是指使应用软件适应新技术变化和管理需求变化而进行的修改；<br>完善性维护，是指为扩充功能和改善性能而进行的修改，主要是指对已有的软件系统增加一些在系统分析和设计阶段中没有规定的功能与性能特征；<br>预防性维护，是指为了改进应用软件的可靠性和可锥护性，为了适应未来的软硬件环境的变化，主动增加预防性的功能，以使应用系统适应各类变化而不被淘汰。<br>、、、、<br>综合需求：功能需求、性能需求、环境需求、用户需求。<br>、、、、<br>详细设计的描述工具：结构化语言、程序流程图、NS图、判定表、决策树。<br>、、、、<br>CMMI（能力成熟度模型集成）：质量优先、Agile（敏捷开发）：交付时间优先、Lean（精益开发）：成本优先。<br>、、、、<br>应用软件产品在正式发行前需要先在开发商内部进行a测试，再在外部选择部分用户进行β测试。</p>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: XiaoDe | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+
+本站总访问量<span id="busuanzi_value_site_pv"></span>次|欢迎您的来访！
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="eaSfopp9PqWpKoxovXSgbCLm">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/love.js"></script>
+
+
+<script src="/js/lovetext.js"></script>
+
+
+<script src="/js/js.js"></script>
+
+
+<script src="/js/snow.js"></script>
+
+
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+     <script>
+     	 $(".popup-trigger").click(function(){
+     		$(".site-search").show();
+     	});
+     	$(".popup-btn-close").click(function(){
+     		$(".site-search").hide();
+     	});
+     </script>
+     <script type="text/javascript">
+    function createImgEventFullScreen() {
+        var imgs = $(".post-content").find("img");
+        for (var i = 0; i < imgs.length; i++) {
+            // $(imgs[i]).click(createCover(imgs[i]));
+            imgs[i].onclick = function (e) {
+                var src = e.srcElement.currentSrc;
+                var _this = $(this);
+                createCover(src,_this);
+            }
+        }
+        function createCover(src,_this) {
+            var cover = $("<div id='outerDiv'  style='position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:5;width:100%;height:100%;display:none;'><div id='innerDiv' style='position:absolute;'><img  id='bigImg' style='border:5px solid #fff;' src=''/></div></div>");
+            $("#outerDiv").remove();
+            $("body").append(cover);
+            imgShow("#outerDiv", "#innerDiv", "#bigImg", _this,src);
+
+        }
+    }
+    function imgShow(outerDiv, innerDiv, bigImg, _this,src) {
+        //var src = _this.attr("src"); //获取当前点击的common-img元素中的src属性
+        $(bigImg).attr("src", src); //设置#bigImg元素的src属性
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).on('load',function() {
+            var windowW = $(window).width(); //获取当前窗口宽度
+            var windowH = $(window).height(); //获取当前窗口高度
+            var realWidth = this.width; //获取图片真实宽度
+            var realHeight = this.height; //获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8; //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) { //判断图片高度
+                imgHeight = windowH * scale; //如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth; //等比例缩放宽度
+                if (imgWidth > windowW * scale) { //如宽度仍大于窗口宽度
+                    imgWidth = windowW * scale; //再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) { //如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale; //如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight; //等比例缩放高度
+            } else { //如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth*2;
+                imgHeight = realHeight*2;
+            }
+            $(bigImg).css("width", imgWidth); //以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2; //计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2; //计算图片与窗口上边距
+            $(innerDiv).css({ "top": h, "left": w }); //设置#innerDiv的top和left属性
+            //console.log('****')
+            $(outerDiv).fadeIn("fast"); //淡入显示#outerDiv
+        });
+
+        $(outerDiv).click(function () { //再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    }
+    setTimeout(function () {
+        createImgEventFullScreen();
+    }, 1000)
+</script>
+        
+<script src="/js/shizhong.js"></script>
+
+        
+<script src="/js/szmove.js"></script>
+
+
+     
+<script src="/js/classie.js"></script>
+
+     
+<script src="/js/sidebarEffects.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/gh/drew233/css/fsearch.min.js"></script>
+
+</body>
+</html>

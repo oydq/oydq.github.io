@@ -1,0 +1,32 @@
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	outline: none;
+}
+
+button {
+	float: left;
+	margin-top: 80px;
+	border: none;
+	padding: 0.3em 1em;
+	background: #C0C0C0;
+	color: #363636;
+	font-size: 1em;
+	letter-spacing: 1px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 0 20px 20px 0 ;
+	
+}
+
+button:hover {
+	background: #363636;
+	color: #fff;
+}
+
+
+
+}

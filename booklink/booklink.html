@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="卡片式书签站点导航">
+		<title>小德卡片式书签导航</title>
+		<meta name='robots' content='noindex,nofollow' />
+		<link rel='stylesheet' id='wp-block-library-css' href='static/css/style.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='style-css' href='static/css/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='fonts-css' href='static/css/style_1.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='switchery-css' href='static/css/switchery.min.css' type='text/css' media='all' />
+		<script type='text/javascript' src='static/js/jquery.min.js'></script>
+		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.0.0/dist/av-min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				AV.init({
+				  appId: "8voQy2KbUllhQ6T1eXEtrK9p-gzGzoHsz",
+				  appKey: "eaSfopp9PqWpKoxovXSgbCLm"
+				});
+				var query=new AV.Query('booklink');
+				query.find().then((linkes) => {
+				linkes.forEach (function (link) {
+				 var linkhref=link.attributes.linkhref;
+				 var linktitle=link.attributes.linktitle;
+				 var linkcontent=link.attributes.linkcontent;
+				 var newlinkdata3="<div class='col-xl-3 col-lg-4 col-md-6'>"+
+				 "<a class='card tooltip tooltip-bottom' class='card' href='"+linkhref+"'"+
+				 "style='z-index: 99999;' target='_blank'>"+
+							"<div class='media'>"+
+								"<div class='media-left'>"+
+									"<figure class='image image-rounded card-tn'>"+
+										"<img src='static/picture/iconstore.png' alt='card-tn'>"+
+									"</figure>"+
+								"</div>"+
+								"<div class='media-content'>"+
+									"<div class='card-title text-truncate'>"+
+										linktitle+
+										"</div>"+
+									"<div class='card-desc'>"+
+										linkcontent+
+										"</div>"+
+								"</div>"+
+							"</div>"+
+						"</a>"+
+					"</div>";
+				 $(".row").append(newlinkdata3);
+				});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<main class="main">
+			<!-- 顶部 -->
+			<div class="navbar-burger mobile-navbar-burger d-block" id="navbar-burger">
+				<span></span> <span></span> <span></span>
+			</div>
+
+			<nav class="navbar app-container" id="navbar">
+				<div class="navbar-brand">
+					<div class="navbar-burger d-block" id="navbar-burger">
+						<span></span> <span></span> <span></span>
+					</div>
+				</div>
+				
+				<!-- 顶部轮放文字 -->
+				<div class="navbar-item navbar-item-notice" style="width: 100%">
+					<div class="notice-carousel">
+						<div class="notice-carousel-wrap">
+							<div class="notice-item">
+								<i class="czs-book"></i>
+								<a class="notice-content" target="_blank" href="http://oydq.github.io">
+									欢迎来到小德博客！ </a>
+								<a class="notice-link text-primary" target="_blank" href="http://oydq.github.io">
+									这是一个用于学习的书签导航。 </a>
+							</div>
+							<div class="notice-item">
+								<i class="czs-book"></i>
+								<a class="notice-content" target="_blank" href="http://oydq.github.io">
+									日常发现的好东西或者学习中遇到的问题我把它们记录下来。</a>
+								<a class="notice-link text-primary" target="_blank" href="http://oydq.github.io">
+									分享学习的快乐。</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		<!-- 设置 -->
+				<div class="navbar-end">
+					<div class="navbar-item navbar-item-end">
+						<div class="dropdown dropdown-hover dropdown-right">
+							<i class="icon czs-setting dropdown-toggle" style="margin-right: 10px;"></i>
+							<div class="dropdown-menu">
+								<a class="dropdown-item">
+									<label for="js-brief">卡片简化</label>
+									<input type="checkbox" id="js-brief" class="js-switch" />
+								</a>
+								<a class="dropdown-item">
+									<label for="js-dark">黑夜模式</label>
+									<input type="checkbox" id="js-dark" class="js-switch" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<div class="content">
+				<div class="row">
+
+				<!-- 主要导航  动态添加-->
+
+			
+			<!-- 尾部-->
+				<div class="fix-tools">
+					<div class="fighting">
+						<i class="czs-arrow-up-l"></i>
+					</div>
+				</div>
+</div>
+</div>
+				<script type='text/javascript' src='static/js/cherry.min.js'></script>
+				<script type='text/javascript' src='static/js/jquery.min.js'></script>
+				<script type='text/javascript' src='static/js/smooth-scroll.min.js'></script>
+				<script type='text/javascript' src='static/js/js.cookie.min.js'></script>
+				<script type='text/javascript' src='static/js/switchery.min.js'></script>
+				<script type='text/javascript' src='static/js/app.min.js'></script>
+				<script type='text/javascript' src='static/js/wp-embed.min.js'></script>
+		</main>
+	</body>
+</html>
+

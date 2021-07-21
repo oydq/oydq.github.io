@@ -1,0 +1,156 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color:#EEEEEE;
+}
+#title{
+    width:100%;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #EEEEEE;
+    line-height:30px;
+    font-size:14px;
+    color: #FB5200;
+}
+#chat{
+    width:100%;
+    height:auto;
+    display:table;
+    background-color: #EEEEEE;  
+}
+#chat .window{
+    width:95%;
+    height:300px;
+    background-color: #363636;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    line-height:24px;
+    font-size:14px;
+    color: #ffffff;
+    overflow-x: auto;
+    padding-left: 10px;
+}
+#chat .tishi{
+	display: none;
+	width:100%;
+	height:30px;
+	background-color: #FF6666;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:30px;
+	font-size:14px;
+	color: #CC0033;
+}
+#chat .bottom{
+    width:95%;
+    height:30px;
+    background-color: #EEEEEE;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:30px;
+    font-size:14px;
+    color: #8A8A8A;
+}
+#shuru{
+    width:95%;
+    height:60px;
+    background-color: #EEEEEE;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+    color: #8A8A8A;
+}
+#form{
+    width:95%;
+    height:40px;
+    background-color: #EEEEEE;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    line-height:40px;
+    color: #FB5200;
+    font-size:14px;
+}
+#form input.send{
+    width:100%;
+    height:33px;
+    line-height:30px;
+	cursor: pointer;
+    background-color: #FB5200;
+    color:#FFFFFF;
+    border:0;
+}
+#form input.fanhui{
+    width:100%;
+    height:33px;
+    line-height:30px;
+    background-color: #006B9F;
+    color:#FFFFFF;
+    border:0;
+}
+
+#bg,#bg2{
+    display: none;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position:fixed;
+        background-color: #D8D8D8;
+    filter:alpha(opacity=50);  
+      -moz-opacity:0.5;  
+      -khtml-opacity: 0.5;  
+      opacity: 0.5;
+      z-index:1;
+}
+#window,#window2{
+    display: none;
+    z-index:3;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position:fixed;
+    background:none;
+}
+
+#window .t,#window2 .t{
+    width:300px;
+    height:188px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    z-index:20;
+    background-color: #FFFFFF;
+}
+#window .t .title,#window2 .t .title{
+    width:300px;
+    height:30px;
+    line-height:30px;
+    color:#FFFFFF;
+    z-index:30;
+    background-color: #282828;
+}
+#window .t .key,#window2 .t .nc{
+    margin-top:25px;
+    width:300px;
+    height:auto;
+    background-color:#FFFFFF;
+}
+
+#bottom,.mode{
+	cursor: pointer;
+    width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10px;
+	text-align:center;
+    height:33px;
+    line-height:30px;
+    background-color: #363636;
+    color:#FFFFFF;
+    border:0;
+}
