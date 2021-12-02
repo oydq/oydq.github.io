@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		vue | 
+	 
+	小德的博客
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="小德的博客" />
+	 
+		<meta name="description" content="小德的博客" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">小德的博客</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
+		<li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										JAVA学习
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java框架
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/ElasticSearch/">
+                     
+										    ElasticSearch
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/MyBatisPlus/">
+                     
+										    MyBatisPlus
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Mybatis/">
+                     
+										    Mybatis
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Ngnix/">
+                     
+										    Ngnix
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/NoSQL/">
+                     
+										    NoSQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Redis/">
+                     
+										    Redis
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/SSM/">
+                     
+										    SSM
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Swagger/">
+                     
+										    Swagger
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/%E5%B7%A5%E5%85%B7/">
+                     
+										    工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java理论
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/RBAC%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F/">
+                     
+										    RBAC权限系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">
+                     
+										    设计原则
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                     
+										    设计模式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java高级
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/">
+                     
+										    JUC并发编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/JVM/">
+                     
+										    JVM
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/Java%E5%8F%8D%E5%B0%84/">
+                     
+										    Java反射
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/Java%E6%B3%A8%E8%A7%A3/">
+                     
+										    Java注解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/%E6%B3%9B%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/">
+                     
+										    泛型的理解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%85%B6%E4%BB%96/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%A0%E5%8E%BB%E5%A4%96%E5%8C%85%E5%85%AC%E5%8F%B8%EF%BC%9F/">
+                     
+										    为什么我不建议你去外包公司？
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%85%B6%E4%BB%96/%E9%AB%98%E6%95%B0/">
+                     
+										    高数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										前端
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/vue/">
+                     
+										    vue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										理财
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%B4%A2/%E7%90%86%E8%B4%A2/">
+                     
+										    理财
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										算法与数据结构
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E6%B3%95%EF%BC%88%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%EF%BC%89/">
+                     
+										    大O表示法（复杂度分析）
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+                     
+										    数据结构与算法
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/">
+                     
+										    队列
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%972/">
+                     
+										    队列2
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										项目管理
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/Git/">
+                     
+										    Git
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/Jekins/">
+                     
+										    Jekins
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/SVN/">
+                     
+										    SVN
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										动画
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E5%8A%A8%E7%94%BB/Blender%E6%93%8D%E4%BD%9C/">
+                     
+										    Blender操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/BUG/">
+                     
+										    BUG
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/Linux/">
+                     
+										    Linux
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/TCPIP%E7%90%86%E8%AE%BA/">
+                     
+										    TCPIP理论
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/%E4%BB%80%E4%B9%88%E6%98%AFPOP3%E3%80%81SMTP%E5%92%8CIMAP/">
+                     
+										    什么是POP3、SMTP和IMAP
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										阿里
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E8%BF%99%E7%BE%A4%E7%96%AF%E5%AD%90/">
+                     
+										    阿里云的这群疯子
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E7%AC%AC%E4%B8%80%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98%E2%80%94%E2%80%94%E5%A4%9A%E9%9A%86/">
+                     
+										    阿里第一位程序员——多隆
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E8%81%8C%E7%BA%A7%E4%BD%93%E7%B3%BB/">
+                     
+										    阿里职级体系
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										面试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95/">
+                     
+										    面试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	vue
+</h1>
+<div class="article-meta">
+	
+	<span>小德</span>
+	<span>2021-12-02 12:58:53</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/前端/">前端</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/前端/">前端</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h2 id="1-前端工具-VSCode"><a href="#1-前端工具-VSCode" class="headerlink" title="1 前端工具 VSCode"></a>1 前端工具 VSCode</h2><p>安装: 下载安装包进行 安装。<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Auto Close Tag</span><br><span class="line">Auto Rename Tag</span><br><span class="line">Chinese Lanage</span><br><span class="line">Close HTML/XML Tag</span><br><span class="line">ESLint</span><br><span class="line">HTML CSS Support</span><br><span class="line">HTML Snippets</span><br><span class="line">JavaScript</span><br><span class="line">Jquery</span><br><span class="line">Live Server</span><br><span class="line">open in browser</span><br><span class="line">vetur       </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">常用到的快捷键   </span><br><span class="line">新建文件:   Ctrl+N</span><br><span class="line">关闭当前窗口:   Ctrl+W</span><br><span class="line">文件之间切换:   Ctrl+Tab</span><br><span class="line">代码格式化:   Shift+Alt+F</span><br><span class="line">向上或向下移动一行:   Alt+Up 或 Alt+Down</span><br><span class="line">向上或向下复制一行:   Shift+Alt+Up 或 Shift+Alt+Down</span><br><span class="line">在当前行下方插入一行:   Ctrl+Enter</span><br><span class="line">在当前行上方插入一行:   Ctrl+Shift+Enter  </span><br><span class="line">删除某一行  shift+delete</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="2-ES6"><a href="#2-ES6" class="headerlink" title="2 ES6"></a>2 ES6</h2><h3 id="1什么是-ES6"><a href="#1什么是-ES6" class="headerlink" title="1什么是 ES6"></a>1什么是 ES6</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ES6， 全称 ECMAScript 6.0 ，是 JavaScript 的下一个版本标准，2015.06 发版。</span><br><span class="line"></span><br><span class="line">ES6 主要是为了解决 ES5 的先天不足，比如 JavaScript 里并没有类的概念，</span><br><span class="line">但是目前浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ECMAScript 的背景</span><br><span class="line">JavaScript 是大家所了解的语言名称，但是这个语言名称是商标（ Oracle 公司注册的商标）。因此，JavaScript 的正式名称是 ECMAScript 。1996年11月，JavaScript 的创造者网景公司将 JS 提交给国际化标准组织 ECMA（European computer manufactures association，欧洲计算机制造联合会），希望这种语言能够成为国际标准，随后 ECMA 发布了规定浏览器脚本语言的标准，即 ECMAScript。这也有利于这门语言的开放和中立。</span><br><span class="line">    </span><br><span class="line">ECMAScript 的历史</span><br><span class="line">ES6 是 ECMAScript 标准十余年来变动最大的一个版本，为其添加了许多新的语法特性。</span><br><span class="line"></span><br><span class="line">1997 年 ECMAScript 1.0 诞生。</span><br><span class="line">1998 年 6 月 ECMAScript 2.0 诞生，包含一些小的更改，用于同步独立的 ISO 国际标准。</span><br><span class="line">1999 年 12 月 ECMAScript 3.0诞生，它是一个巨大的成功，在业界得到了广泛的支持，它奠定了 JS 的基本语法，被其后版本完全继承。直到今天，我们一开始学习 JS ，其实就是在学 3.0 版的语法。</span><br><span class="line">2000 年的 ECMAScript 4.0 是当下 ES6 的前身，但由于这个版本太过激烈，对 ES 3 做了彻底升级，所以暂时被&quot;和谐&quot;了。</span><br><span class="line">2009 年 12 月，ECMAScript 5.0 版正式发布。ECMA 专家组预计 ECMAScript 的第五个版本会在 2013 年中期到 2018 年作为主流的开发标准。2011年6月，ES 5.1 版发布，并且成为 ISO 国际标准。</span><br><span class="line">2013 年，ES6 草案冻结，不再添加新的功能，新的功能将被放到 ES7 中；2015年6月， ES6 正式通过，成为国际标准。</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-ES6-的新特性"><a href="#2-ES6-的新特性" class="headerlink" title="2  ES6 的新特性"></a>2  ES6 的新特性</h3><h4 id="1-let-和-const"><a href="#1-let-和-const" class="headerlink" title="1  let 和 const"></a>1  let 和 const</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">let 定义的变量不会被变量提升，</span><br><span class="line">const 定义的常量不能被修改，let 和 const 都是块级作用域</span><br><span class="line"></span><br><span class="line">ES6前，js 是没有块级作用域 &#123;&#125; 的概念的。（有函数作用域、全局作用域、eval作用域）</span><br><span class="line"></span><br><span class="line">ES6后，let 和 const 的出现，js 也有了块级作用域的概念，前端的知识是日新月异的~</span><br><span class="line"></span><br><span class="line">变量提升：在ES6以前，var关键字声明变量。无论声明在何处，都会被视为声明在函数的最顶部；不在函数内即在全局作用域的最顶部。这样就会引起一些误解。例如：</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">console.log(a); // undefined</span><br><span class="line">var a = &#x27;hello&#x27;;</span><br><span class="line"> </span><br><span class="line"># 上面的代码相当于</span><br><span class="line">var a;</span><br><span class="line">console.log(a);</span><br><span class="line">a = &#x27;hello&#x27;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"># 而 let 就不会被变量提升</span><br><span class="line">console.log(a); // a is not defined</span><br><span class="line">let a = &#x27;hello&#x27;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const 定义的常量不能被修改</span><br><span class="line">    </span><br><span class="line">var name = &quot;bai&quot;;</span><br><span class="line">name = &quot;ming&quot;;</span><br><span class="line">console.log(name); // ming</span><br><span class="line">const name = &quot;bai&quot;;</span><br><span class="line">name = &quot;ming&quot;; // Assignment to constant variable. 常量给变量赋值</span><br><span class="line">console.log(name);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注意的点:</span><br><span class="line"></span><br><span class="line">let 关键词声明的变量不具备变量提升（hoisting）特性</span><br><span class="line">let 和 const 声明只在最靠近的一个块中（花括号内）有效</span><br><span class="line">当使用常量 const 声明时，请使用大写变量，如：CAPITAL_CASING</span><br><span class="line">const 在声明时必须被赋值</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-箭头函数（Arrow-Functions）"><a href="#2-箭头函数（Arrow-Functions）" class="headerlink" title="2  箭头函数（Arrow Functions）"></a>2  箭头函数（Arrow Functions）</h4><blockquote>
+<p>ES6 中，箭头函数就是函数的一种简写形式，使用括号包裹参数，跟随一个 =&gt;，紧接着是函数体：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">老的 写法:</span><br><span class="line"></span><br><span class="line">var getPrice = function() &#123;</span><br><span class="line">    return 4.55;</span><br><span class="line">&#125;;</span><br><span class="line">console.log(getPrice());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">var getPrice= ()=&gt;&#123;return 555&#125;;</span><br><span class="line">console.log(getPrice());</span><br><span class="line"></span><br><span class="line">() 代表函数中的参数  &#123;中 写  函数体&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">一个返回值: 还可以直接简写:</span><br><span class="line">var getPrice= ()=&gt;666;</span><br><span class="line">console.log(getPrice());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">箭头函数，本质上就是一个匿名函数 ，箭头函数的特性： 箭头函数内部的 this, 永远和 箭头函数外部的 this 保持一致 </span><br><span class="line">    </span><br><span class="line">简写方法有三种变体：</span><br><span class="line"></span><br><span class="line">变体1：如果箭头函数，左侧的形参列表中，只有一个参数，则，左侧小括号可以省略；</span><br><span class="line">变体2：如果右侧函数体中，只有一行代码，则，右侧的&#123; &#125;可以省略；</span><br><span class="line">变体3：如果箭头函数左侧 只有一个 形参，而且右侧只有一行代码，则 两边的()和&#123;&#125;都可以省略</span><br><span class="line">    </span><br><span class="line">注意： 如果我们省略了 右侧函数体的&#123; &#125;，那么，默认会把 右侧函数体中代码的执行结果，当作箭头函数的调用结果 return 出去；</span><br><span class="line">    </span><br><span class="line">注意: 箭头函数 不能使用 this， 如果要使用对象中的变量，要用对象的名字 . 属性。</span><br><span class="line">    </span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        var student=&#123;</span><br><span class="line">            name:&#x27;張三&#x27;,</span><br><span class="line">            age:23,</span><br><span class="line">            say:()=&gt;&#123;</span><br><span class="line">               //  console.log(this.name);</span><br><span class="line">               console.log(student.name);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        student.say();</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-函数参数默认值"><a href="#3-函数参数默认值" class="headerlink" title="3 函数参数默认值"></a>3 函数参数默认值</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let hello=(a,b=3.14)=&gt;&#123;</span><br><span class="line">   return b*a*a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用可以 单个调</span><br><span class="line">console.log(hello(3));</span><br><span class="line">// 也可以两个参数传</span><br><span class="line">console.log(hello(3,2));</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-模板字符串-（Template-String）"><a href="#4-模板字符串-（Template-String）" class="headerlink" title="4 模板字符串 （Template String）"></a>4 模板字符串 （<strong>Template String</strong>）</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">ES6 提供了几个 新的 API</span><br><span class="line">    </span><br><span class="line">includes(): 返回布尔值，表示是否包含该字符串。</span><br><span class="line">startsWith()</span><br><span class="line">endsWith()</span><br><span class="line"></span><br><span class="line">let str=&quot;你好我好大家好&quot;;</span><br><span class="line">console.log(str.startsWith(&#x27;你好&#x27;));</span><br><span class="line">console.log(str.includes(&quot;大家&quot;));</span><br><span class="line">console.log(str.endsWith(&quot;大家&quot;));</span><br><span class="line"></span><br><span class="line">用一对反引号（`模板字符串`）标识 ，它可以当普通字符串使用（&#x27;普通字符串&#x27;），也可以用来定义多行字符串 ，</span><br><span class="line">    </span><br><span class="line">在模板字符串中可以嵌入变量 ，js表达式或函数等 ，变量，js表达式或函数需要写在$&#123;&#125;中</span><br><span class="line"> </span><br><span class="line">模板中可以 插值。  也可以调方法  $&#123;  &#125;</span><br><span class="line">    </span><br><span class="line">&lt;div id=&quot;dd&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;          </span><br><span class="line">    let a=10;</span><br><span class="line">	const U=&#123;</span><br><span class="line">  	  template:</span><br><span class="line">        `</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">            &lt;h1&gt;Hello&lt;/h1&gt;</span><br><span class="line">            &lt;p&gt;你好啊$&#123;a+10&#125;&lt;/p&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">            `</span><br><span class="line">	&#125;</span><br><span class="line">	document.getElementById(&quot;dd&quot;).innerHTML=U.template;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-变量的解构赋值"><a href="#5-变量的解构赋值" class="headerlink" title="5 变量的解构赋值"></a>5 变量的解构赋值</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Es6允许按照一定的模式 ，从数组和对象中提取值 ，对变量进行赋值 ，这被称作解构赋值 ，</span><br><span class="line">意思就是把 某个对象中的属性，当作变量，给解放出来，这样，今后就能够当作变量直接使用了；</span><br><span class="line"></span><br><span class="line">数组的解构:</span><br><span class="line">以前:</span><br><span class="line"></span><br><span class="line">let [a,b,c]=[10,&quot;你好&quot;,true];</span><br><span class="line">console.log(a);</span><br><span class="line">console.log(b);</span><br><span class="line">console.log(c); </span><br><span class="line"></span><br><span class="line">对象的解构:</span><br><span class="line"></span><br><span class="line">let user=&#123;</span><br><span class="line">    id:1001,</span><br><span class="line">    name:&quot;张三&quot;</span><br><span class="line">&#125;</span><br><span class="line">const&#123;name,id&#125;=user;</span><br><span class="line">console.log(name);</span><br><span class="line">console.log(id);</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-对象扩展"><a href="#6-对象扩展" class="headerlink" title="6 对象扩展"></a>6 对象扩展</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">属性简写：允许对象中直接写变量 ，这时属性名为变量名 ，属性值为变量值</span><br><span class="line"></span><br><span class="line">let  a=10;</span><br><span class="line">let  b=20;</span><br><span class="line">function show()&#123;</span><br><span class="line">    console.log(&quot;是个好人.&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var user=&#123;a,b,show&#125;;</span><br><span class="line">user.show();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">对象简写中:可以省略function 关键字</span><br><span class="line">const h=&#123;</span><br><span class="line">    user:function()&#123;</span><br><span class="line">        console.log(&quot;你好&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;    </span><br><span class="line">    </span><br><span class="line">const h=&#123;</span><br><span class="line">    user()&#123;</span><br><span class="line">        console.log(&quot;你好&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Object 中扩展了很多新的方法:  如</span><br><span class="line"></span><br><span class="line">keys(obj): 获取对象的所有 key 形成的数组</span><br><span class="line">values(obj): 获取对象的所有value 组成的数组</span><br><span class="line">entries(obj): 获取对象组成的 所有 key 和 value 组成的二维数组，[[k1,v1],[k2,v2]]</span><br><span class="line">    </span><br><span class="line">assign(dest,...src):  将多个src对应的值 拷贝得到 dest中，(第一层为申拷贝，第二次为浅拷贝)</span><br><span class="line">    合并对象。</span><br><span class="line">    </span><br><span class="line">let student=&#123;</span><br><span class="line">    id:232,</span><br><span class="line">    name:&#x27;張三&#x27;,</span><br><span class="line">    say()&#123;</span><br><span class="line">        console.log(&quot;我是&quot;+name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(Object.keys(student));</span><br><span class="line">console.log(Object.values(student));</span><br><span class="line">console.log(Object.entries(student));</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;   </span><br><span class="line">    const a=&#123;&#x27;a&#x27;:&#x27;b&#x27;&#125;;</span><br><span class="line">    const b=&#123;&#x27;a1&#x27;:&#x27;b1&#x27;&#125;;</span><br><span class="line">    const c=&#123;&#x27;a2&#x27;:&#x27;b2&#x27;&#125;;</span><br><span class="line">    Object.assign(a,b,c);</span><br><span class="line">    console.log(a);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<h4 id="7-展开运算符-（…）"><a href="#7-展开运算符-（…）" class="headerlink" title="7  展开运算符 （…）"></a>7  展开运算符 （…）</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 1 将字符串 转换成 数组</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">let str=&quot;abcd&quot;;</span><br><span class="line">const arr=[...str];</span><br><span class="line">console.log(arr);</span><br><span class="line"></span><br><span class="line">// 2 合并数组</span><br><span class="line"></span><br><span class="line">const arr1=[1,2,3];</span><br><span class="line">const arr2=[4,5,6];</span><br><span class="line">const arr=[...arr1,...arr2];</span><br><span class="line">console.log(arr);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="8-类-javaScript模拟面向对象"><a href="#8-类-javaScript模拟面向对象" class="headerlink" title="8  类 javaScript模拟面向对象"></a>8  类 javaScript模拟面向对象</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">ES6 中有 class 语法。</span><br><span class="line">值得注意是，这里的 class 不是新的对象继承模型，它只是原型链的语法糖表现形式。</span><br><span class="line">函数中使用 static 关键词定义构造函数的的方法和属性：</span><br><span class="line">    </span><br><span class="line">class Perple&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">        console.log(&quot;people 被初始化了..&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let a=new Perple();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Perple&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">        console.log(&quot;people 被初始化了..&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    say()&#123;</span><br><span class="line">        console.log(&quot;人会说话..&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">类中的继承: 构造子类的时候 必须先构造父类</span><br><span class="line"></span><br><span class="line">class Perple&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">        console.log(&quot;people 被初始化了..&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    say()&#123;</span><br><span class="line">        console.log(&quot;人会说话..&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Student extends Perple&#123;</span><br><span class="line">    constructor()&#123;</span><br><span class="line">        super();</span><br><span class="line">        console.log(&quot;我是学生&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let s1=new Student();</span><br><span class="line">s1.say();</span><br></pre></td></tr></table></figure>
+
+<h4 id="9-模块化"><a href="#9-模块化" class="headerlink" title="9 模块化"></a>9 模块化</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">模块是独立的文件，该文件内部的所有的变量外部都无法获取。如果希望获取某个变量，必须通过export输出</span><br><span class="line">    </span><br><span class="line">多个JS 文件中 内容可以相互运用。</span><br><span class="line">    </span><br><span class="line">如: 有两个 js 文件 , a.js 和 b.js</span><br><span class="line">    </span><br><span class="line">a.js中 </span><br><span class="line">    </span><br><span class="line">let util=&#123;</span><br><span class="line">    sum(a,b)&#123;</span><br><span class="line">        return a+b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const PI=3.14;</span><br><span class="line">let a=100;</span><br><span class="line">// export 可以导出 一切 js變量 如变量  函数 数组</span><br><span class="line">export &#123;a,PI,util&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b.js 中导入 使用</span><br><span class="line">    </span><br><span class="line">import a from &#x27;./a.js&#x27;</span><br><span class="line">console.log(a);    </span><br><span class="line"></span><br><span class="line">现在浏览器 不支持，要 node .</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<h2 id="3-VUE"><a href="#3-VUE" class="headerlink" title="3 VUE"></a>3 VUE</h2><h4 id="1-什么是VUE"><a href="#1-什么是VUE" class="headerlink" title="1  什么是VUE"></a>1  什么是VUE</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。</span><br><span class="line">与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。</span><br><span class="line">另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</span><br><span class="line"></span><br><span class="line">VUE 官网: https://cn.vuejs.org/</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-1-为什么学习VUE"><a href="#1-1-为什么学习VUE" class="headerlink" title="1_1 为什么学习VUE"></a>1_1 为什么学习VUE</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Vue框架以其简单易学并且渐进式的特点深受开发者喜爱</span><br><span class="line">    </span><br><span class="line">无论是中小型还是大型项目都可使用Vue框架来开发，在前端开发领域非常流行</span><br><span class="line">    </span><br><span class="line">VUE优点:</span><br><span class="line">解耦视图与数据</span><br><span class="line">可复用的组件</span><br><span class="line">前端路由</span><br><span class="line">状态管理</span><br><span class="line">虚拟DOM (Virtual DOM)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-MVVM-思想"><a href="#2-MVVM-思想" class="headerlink" title="2 MVVM 思想"></a>2 MVVM 思想</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Vue在设计上使用的MVVM（Model-View-ViewModel）模式</span><br><span class="line">Model:负责数据存储</span><br><span class="line">View:负责页面展示</span><br><span class="line">ViewModel:负责业务逻辑处理（比如Ajax请求等），对数据进行加工后交给视图展示</span><br><span class="line">    </span><br><span class="line">MVVM 模式的优势:</span><br><span class="line"></span><br><span class="line">低耦合</span><br><span class="line">视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的&quot;View&quot;上，当View变化时Model可以不变，当Model变化时View也可以不变</span><br><span class="line">可重用性</span><br><span class="line">可以把一些视图逻辑放在一个ViewModel里面，让多个View重用这段视图逻辑代码</span><br><span class="line">独立开发</span><br><span class="line">开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计</span><br><span class="line"></span><br><span class="line">MVVM解决的问题是将业务逻辑代码与视图代码进行完全分离，使</span><br><span class="line">各自的职责更加清晰，后期代码维护更加简单 </span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-1-VUE-DOM监听"><a href="#2-1-VUE-DOM监听" class="headerlink" title="2_1 VUE DOM监听"></a>2_1 VUE DOM监听</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DOM监听</span><br><span class="line">视图层发生变化，DOM监听到之后，会传到逻辑层进行处理</span><br><span class="line">数据绑定</span><br><span class="line">逻辑层把数据处理完成之后，通过数据绑定，把处理后的结构返回给视图层</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="3-VUE安装"><a href="#3-VUE安装" class="headerlink" title="3  VUE安装"></a>3  VUE安装</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">1 直接引入 VUE,  下载 开发版本或者 生产版本。</span><br><span class="line">   </span><br><span class="line">  https://cn.vuejs.org/v2/guide/installation.html</span><br><span class="line"></span><br><span class="line">  引入 JS 文件。</span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">2 CDN 安装。</span><br><span class="line">      </span><br><span class="line">  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">      </span><br><span class="line">3  NPM 安装</span><br><span class="line">      </span><br><span class="line">  在用 Vue 构建大型应用时推荐使用 NPM 安装</span><br><span class="line">      </span><br><span class="line">  NPM 能很好地和诸如 webpack 或 Browserify 模块打包器配合使用。同时 Vue 也提供配套工具来开发单文件组件。</span><br><span class="line">      </span><br><span class="line">  # 最新稳定版</span><br><span class="line">      </span><br><span class="line">  1  在 要操作的文件夹 下面 初始化</span><br><span class="line">      </span><br><span class="line">     npm  init  -y           </span><br><span class="line">      </span><br><span class="line">     初始化完成之后，会生成一个  package.json ，表示 是 npm 管理的项目。</span><br><span class="line">      </span><br><span class="line">  2  npm install vue  </span><br><span class="line">     </span><br><span class="line">     安装vue</span><br><span class="line">      </span><br><span class="line">     安装nodejs</span><br><span class="line">      </span><br><span class="line">  3 在 项目外面 引入 node_modules中的 vue</span><br><span class="line">      </span><br><span class="line">    </span><br><span class="line">      </span><br><span class="line">  &lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;   </span><br><span class="line">     </span><br></pre></td></tr></table></figure>
+
+<h4 id="4-VUE使用"><a href="#4-VUE使用" class="headerlink" title="4  VUE使用"></a>4  VUE使用</h4><blockquote>
+<p>1  体验 VUE</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;dd&quot;&gt;</span><br><span class="line">        &lt;h1&gt;你好&#123;&#123;message&#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        let vm=new Vue(&#123;</span><br><span class="line">            el:&quot;#dd&quot;,</span><br><span class="line">            data:&#123;</span><br><span class="line">                message:&quot;张三&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>2 体验VUE</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; v-model=&quot;name&quot; placeholder=&quot;你的名字&quot;&gt;</span><br><span class="line">        &lt;h1&gt;Hello，&#123;&#123; name &#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var app = new Vue(&#123;</span><br><span class="line">            el: &quot;#app&quot;,</span><br><span class="line">            data: &#123;  name: &quot;&quot;  &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">app.message </span><br></pre></td></tr></table></figure>
+
+<h4 id="5-插值表达式讲解"><a href="#5-插值表达式讲解" class="headerlink" title="5  插值表达式讲解"></a>5  插值表达式讲解</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">插值表达式简介</span><br><span class="line"></span><br><span class="line">插值表达式是使用双大括号来包裹 js 代码构成插值表达式，插值表达式作用是将双大括号中的数据替换成对应属性值进行展示</span><br><span class="line">双大括号语法也叫模板语法或者Mustache语法</span><br><span class="line">Mustache是一款经典的前端模板引擎。在前后端分离的技术架构下，前端模板引擎是一种技术选型</span><br><span class="line">插值表达式中可以写入的内容</span><br><span class="line">JSON数据</span><br><span class="line">数字</span><br><span class="line">字符串</span><br><span class="line">插值表达式</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">示例:</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; msg &#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; 10 &#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; &quot;string&quot; &#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; 12+13 &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var vm = new Vue(&#123;</span><br><span class="line">        el: &quot;#app&quot;,</span><br><span class="line">        data: &#123;</span><br><span class="line">            msg: &quot;hello&quot; &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="6-指令简介"><a href="#6-指令简介" class="headerlink" title="6 指令简介"></a>6 指令简介</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">指令（Directive）是特殊的带有 v-前缀的特性</span><br><span class="line">常用Vue指令</span><br><span class="line">v-if指令、v-else指令、v-show指令、v-on指令、v-model指令、v-bind指令、v-for指令…</span><br><span class="line">    </span><br><span class="line">指令的作用</span><br><span class="line">当表达式的值改变时，将某些行为应用到DOM上</span><br><span class="line">点击toggle按钮，会显示红色方块，再次点击，红色方块消失，这里就是通过控制属性的真假并作用到红色方块上来显示隐藏方块</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h5><blockquote>
+<p>v-if 指令</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">v-if指令称为条件渲染指令，根据表达式的真假来插入和删除元素</span><br><span class="line">    </span><br><span class="line">语法: v-if = &quot;表达式&quot;</span><br><span class="line">    </span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;h1 v-if=&quot;isShow&quot;&gt;表达式的值为真，就能显示&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123;    isShow: true    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;  </span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a>v-else</h5><blockquote>
+<p>v-else 指令    指令为v-if指令添加“else块”，v-else元素必须立即跟在v-if元素的后面</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- v-else 后面不需要表达式 --&gt;</span><br><span class="line">&lt;h1 v-else&gt; v-if不成立的时候，才会显示&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;h1 v-if=&quot;isShow&quot;&gt;表达式的值为真，就能显示&lt;/h1&gt;</span><br><span class="line">    &lt;h1 v-else&gt;v-if不成立的时候，才会显示&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123; isShow: false&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h5><blockquote>
+<p>v-show指令控制切换一个元素的显示和隐藏</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">v-show指令控制切换一个元素的显示和隐藏</span><br><span class="line">    </span><br><span class="line">v-show = &quot;表达式&quot;</span><br><span class="line">    </span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;h1 v-show=&#x27;isShow&#x27;&gt;表达式为真，元素显示&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123;  isShow: true   &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>v-show 和 v-if指令的区别?</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">按下F12键，打开控制台查看  查看控制台。</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">v-if指令满足条件时会渲染到HTML中，不满足条件时，不会渲染，不会加载</span><br><span class="line">使用v-show指令的元素始终会被渲染到HTML中</span><br><span class="line">只是简单地为元素设置CSS的style属性。当不满足条件的元素被设置style=&quot;display:none&quot;样式</span><br><span class="line">    </span><br><span class="line">应用场景的区别</span><br><span class="line">v-if指令有更高的切换消耗，当v-if指令条件成立的时候会将元素加上，不成立的时候，就会移除DOM，并且内部的指令不会执行</span><br><span class="line">v-show指令有更高的初始渲染消耗，v-show只是简单的隐藏和显示</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h5><blockquote>
+<p>v-on  指令为HTML元素绑定事件监听</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">v-on：事件名称 =&quot;函数名称() &quot;</span><br><span class="line">简写形式   @事件名称 =&quot;函数名称()&quot;</span><br><span class="line">    </span><br><span class="line">关键代码:</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">     &lt;button v-on:click=&#x27;fn&#x27;&gt;toggle&lt;/button&gt;</span><br><span class="line">     &lt;div class=&quot;div1&quot; v-show=&#x27;bol&#x27;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var vm = new Vue(&#123;</span><br><span class="line">            el:&quot;#app&quot;,</span><br><span class="line">            data: &#123;  bol: false &#125;,</span><br><span class="line">            methods: &#123;</span><br><span class="line">                fn: function () &#123; </span><br><span class="line">                    this.bol = !this.bol;  </span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;    </span><br></pre></td></tr></table></figure>
+
+<h5 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h5><blockquote>
+<p>v-model  指令能轻松实现表单输入和应用状态之间的双向绑定</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">语法:   v-model =&quot;变量&quot;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; v-model=&#x27;msg&#x27; /&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; msg &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123; msg: &#x27;hello&#x27; &#125;</span><br><span class="line"> &#125;);</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h5><blockquote>
+<p>v-bind指令可以在其名称后面带一个参数，参数通常是HTML元素的特性（attribute）</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">v-bind:属性名 =&quot;表达式&quot; </span><br><span class="line">简写形式    :属性名 =&quot;表达式&quot;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">&lt;style&gt;</span><br><span class="line">        .textColor&#123;color:red&#125;</span><br><span class="line">        .textSize&#123;font-size: 50px;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;img v-bind:src=&quot;imageSrc&quot;/&gt;</span><br><span class="line">        &lt;div v-bind:class=&quot;[isA?classA:classB]&quot;&gt;类名作为一个属性值保存&lt;/div&gt;</span><br><span class="line">        &lt;div :class=&quot;[classA,classB]&quot;&gt;你好&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var vm = new Vue(&#123;</span><br><span class="line">            el:&quot;#app&quot;,</span><br><span class="line">            data: &#123;  </span><br><span class="line">                imageSrc: &quot;images/a.png&quot;,</span><br><span class="line">                classA:&#x27;textColor&#x27;,</span><br><span class="line">                classB:&#x27;textSize&#x27;,</span><br><span class="line">                isA:false</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;/script&gt;    </span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="v-for"><a href="#v-for" class="headerlink" title="v-for"></a>v-for</h5><blockquote>
+<p>v-for 指令可以遍历data中的数据，并在页面进行数据展示</p>
+</blockquote>
+<blockquote>
+<p>v-for =” (item, index) in items”</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">            &lt;li v-for=&quot;(item,index) in lesson&quot; :key=&quot;index&quot;&gt;</span><br><span class="line">                &#123;&#123;index&#125;&#125; - &#123;&#123;item.name&#125;&#125; - &#123;&#123;item.type&#125;&#125;</span><br><span class="line">                &lt;br /&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var vm = new Vue(&#123;</span><br><span class="line">            el:&quot;#app&quot;,</span><br><span class="line">            data: &#123;  </span><br><span class="line">               lesson:[</span><br><span class="line">                   &#123;name:&#x27;前端&#x27;,type:[&#x27;HTML&#x27;,&#x27;CSS&#x27;,&#x27;JavaScript&#x27;]&#125;,</span><br><span class="line">                   &#123;name:&#x27;前端框架&#x27;,type:[&#x27;Vue&#x27;,&#x27;React&#x27;,&#x27;Angular&#x27;]&#125;,</span><br><span class="line">               ]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;/script&gt;    </span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="7-VUE小案例"><a href="#7-VUE小案例" class="headerlink" title="7  VUE小案例"></a>7  VUE小案例</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">制作导航页面，当前辈点击的项目内容会显示 在绿色方块中，并且被点击的背景会变成红色。</span><br><span class="line">    </span><br><span class="line">使用 v-for 遍历导航 项目，  v-on 添加事件。 v-bind 动态绑定  class 和key 属性。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">核心代码:</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;nav&gt;</span><br><span class="line">            &lt;a v-for=&quot;(item,index) in items&quot; :key=&quot;index&quot; </span><br><span class="line">			:class=&quot;&#123;&#x27;show&#x27;: item.active&#125;&quot; </span><br><span class="line">			@click=&quot;makeActive(item, index)&quot;&gt;</span><br><span class="line">			&#123;&#123;item.name&#125;&#125;</span><br><span class="line">			&lt;/a&gt;</span><br><span class="line">        &lt;/nav&gt;</span><br><span class="line">        &lt;p&gt;选择了 &lt;b&gt;&#123;&#123;active&#125;&#125;&lt;/b&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123;</span><br><span class="line">            active: &#x27;HTML&#x27;,</span><br><span class="line">            items: [</span><br><span class="line">                &#123; name: &#x27;HTML&#x27;, active: true &#125;,</span><br><span class="line">                &#123; name: &#x27;CSS&#x27;, active: false &#125;,</span><br><span class="line">                &#123; name: &#x27;JavaScript&#x27;, active: false &#125;,</span><br><span class="line">                &#123; name: &#x27;Vue.js&#x27;, active: false &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            makeActive: function (item, index) &#123;</span><br><span class="line">                // 得到当前点击导航的文本内容</span><br><span class="line">                this.active = item.name;</span><br><span class="line">                for (var i = 0; i &lt; this.items.length; i++) &#123;</span><br><span class="line">                    // 遍历让所有的背景都去掉颜色</span><br><span class="line">                    this.items[i].active = false;</span><br><span class="line">                &#125;</span><br><span class="line">                // 当前点击的背景变为红色</span><br><span class="line">                this.items[index].active = true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="8-VUE-过滤器"><a href="#8-VUE-过滤器" class="headerlink" title="8  VUE 过滤器"></a>8  VUE 过滤器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">什么是过滤器？</span><br><span class="line"></span><br><span class="line">　　过滤器是对即将显示的数据做进一步的筛选处理，然后进行显示，值得注意的是过滤器并没有改变原来的数据，只是在原数据的基础上产生新的数据。</span><br><span class="line">    </span><br><span class="line">   Vue支持 &#123;&#123;&#125;&#125; 插值的尾部添加一个管道符 &#123;|&#125; 对数据进行过滤，经常用于格式化文本，加货币单位等。</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;h1&gt;价格:&#123;&#123;price&#125;&#125;&lt;/h1&gt;</span><br><span class="line">        &lt;h1&gt;添加价格符号:&#123;&#123;price| myCurry(&#x27;￥&#x27;)&#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    // filter</span><br><span class="line">    new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123;</span><br><span class="line">           price:5000</span><br><span class="line">        &#125;,</span><br><span class="line">        //过滤器的本质 就是一个有参数有返回值的方法</span><br><span class="line">        filters: &#123;</span><br><span class="line">            // value: 第一个值: 要处理的值</span><br><span class="line">            // arg1: 过滤器要传递过来的 ￥</span><br><span class="line">            myCurry: function(value, arg1) &#123;</span><br><span class="line">                return value +arg1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    &lt;/script&gt;  </span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="9-Axios库"><a href="#9-Axios库" class="headerlink" title="9  Axios库"></a>9  Axios库</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Vue.js Ajax(axios)</span><br><span class="line">Vue.js 2.0 版本推荐使用 axios 来完成 ajax 请求。</span><br><span class="line"></span><br><span class="line">Axios 是一个基于 Promise 的 HTTP 库，可以用在浏览器和 node.js 中。</span><br><span class="line">    </span><br><span class="line">Github开源地址： https://github.com/axios/axios</span><br><span class="line"></span><br><span class="line">Axios 库常用于  Ajax请求，它本身具有如下特征:</span><br><span class="line"></span><br><span class="line">支持从浏览器创建  XMLHttpRequest 对象</span><br><span class="line">支持从 node.js 发出http请求</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">官方 提供的 API方法，可以参看 Github </span><br><span class="line">    </span><br><span class="line">axios.request(config)</span><br><span class="line">axios.get(url[, config])</span><br><span class="line">axios.delete(url[, config])</span><br><span class="line">axios.head(url[, config])</span><br><span class="line">axios.options(url[, config])</span><br><span class="line">axios.post(url[, data[, config]])</span><br><span class="line">axios.put(url[, data[, config]])</span><br><span class="line">axios.patch(url[, data[, config]])</span><br><span class="line">    </span><br><span class="line">Axios 提供了8种API方法，官方没有明确推荐 使用哪种方法。一般使用 get()  和 post()</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">可以练习测试：</span><br><span class="line"> </span><br><span class="line">为了 避免跨域问题，可以现在 VSCode 中 安装插件   Live  Server 插件。</span><br><span class="line">    </span><br><span class="line">运行的时候，在 HTML中 点击  Open with  Live Server。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>get 请求案例</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.staticfile.org/axios/0.18.0/axios.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;h1&gt;姓名:&#123;&#123;msg.name&#125;&#125;&lt;/h1&gt;</span><br><span class="line">        &lt;h1&gt;年龄:&#123;&#123;msg.age&#125;&#125;&lt;/h1&gt;</span><br><span class="line">        &lt;button @click=&quot;dj&quot;&gt;点击&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">      &lt;script type = &quot;text/javascript&quot;&gt;</span><br><span class="line">       var vm= new Vue(&#123;</span><br><span class="line">            el: &#x27;#app&#x27;,</span><br><span class="line">            data:&#123;</span><br><span class="line">                msg:&#123;&#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            methods:&#123;</span><br><span class="line">               dj()&#123;</span><br><span class="line">                    axios</span><br><span class="line">                    .get(&#x27;a.txt&#x27;,&#123;params:&#123;ID:1&#125;&#125;)</span><br><span class="line">                    .then(response =&gt; (this.msg=response.data))</span><br><span class="line">                    .catch(function (error) &#123; // 请求失败处理</span><br><span class="line">                        console.log(error);</span><br><span class="line">                    &#125;);</span><br><span class="line">               &#125;</span><br><span class="line">            &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line">&#123;</span><br><span class="line">&quot;name&quot;:&quot;Tom&quot;,</span><br><span class="line">&quot;age&quot;:13</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Post发送请求</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">axios.post(&#x27;/user&#x27;, &#123;</span><br><span class="line">    firstName: &#x27;Fred&#x27;,        // 参数 firstName</span><br><span class="line">    lastName: &#x27;Flintstone&#x27;    // 参数 lastName</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(function (response) &#123;</span><br><span class="line">    console.log(response);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(function (error) &#123;</span><br><span class="line">    console.log(error);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">axios.get(&#x27;a.txt&#x27;,&#123;params:&#123;ID:1&#125;&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>get  和 post 的区别</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">get  携带参数 需要放在 params 命名 对象中，而post 方法不需要。</span><br><span class="line">    </span><br><span class="line">其他 和 普通的 get   post 一致。</span><br><span class="line">    </span><br><span class="line">post()的使用和get()基本一致，只是在携带参数的时候各自携带的参数方式不同</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="10-生命周期函数"><a href="#10-生命周期函数" class="headerlink" title="10  生命周期函数"></a>10  生命周期函数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">“生命周期”指实例对象从构造函数开始执行（被创建）到被GC（Garbage Collection）回收销毁的整个存在的时期</span><br><span class="line">生命周期函数是为了在实例对象的各个阶段方便开发者控制而产生，在不同的时期有不同的生命周期函数，可以利用不同时期的生命周期函数去完成不同的操作</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">可以查看官网的 生命周期图谱。    </span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;vue生命周期&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;js/vue.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;h1&gt;&#123;&#123;message&#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var vm = new Vue(&#123;</span><br><span class="line">        el: &#x27;#app&#x27;,</span><br><span class="line">        data: &#123;</span><br><span class="line">            message: &#x27;Vue的生命周期&#x27;</span><br><span class="line">        &#125;,</span><br><span class="line">        /*// 生命周期的写法需要注意，适合data在一个级别的</span><br><span class="line">        beforeCreate: function() &#123;</span><br><span class="line">          console.group(&#x27;------beforeCreate创建前状态------&#x27;);</span><br><span class="line">          console.log(&quot;el: &quot; + this.$el); //undefined</span><br><span class="line">          console.log(&quot;data: &quot; + this.$data); //undefined </span><br><span class="line">          console.log(&quot;message: &quot; + this.message) //undefined </span><br><span class="line">          // 在这个时期 ,说明 el 和 data 并未初始化</span><br><span class="line">          // 这个时候做的操作,例如:加一些loading事件</span><br><span class="line">        &#125;,*/</span><br><span class="line">        created: function () &#123;</span><br><span class="line">            console.group(&#x27;------created创建完毕状态------&#x27;);</span><br><span class="line">            console.log(&quot;el: &quot; + this.$el); //undefined</span><br><span class="line">            console.log(&quot;data: &quot; + this.$data); //已被初始化 </span><br><span class="line">            console.log(&quot;message: &quot; + this.message); //Vue的生命周期,说明已被初始化</span><br><span class="line">            //  这个时期,data 数据已经初始化，但是 el没有</span><br><span class="line">            //  这个时候可以做的操作例如:结束loading事件，还做一些初始化，实现函数自执行等</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line">        beforeMount: function () &#123;</span><br><span class="line">            console.group(&#x27;------beforeMount挂载前状态------&#x27;);</span><br><span class="line">            // console.log(&quot;el: &quot; + (this.$el)); //已被初始化</span><br><span class="line">            console.log(this.$el);</span><br><span class="line">            console.log(&quot;data: &quot; + this.$data); //已被初始化  </span><br><span class="line">            console.log(&quot;message: &quot; + this.message); //已被初始化  </span><br><span class="line">            // 到这个时期,data 和 el 都已经 初始化</span><br><span class="line">        &#125;,</span><br><span class="line">        /* mounted: function() &#123;</span><br><span class="line">          console.group(&#x27;------mounted 挂载后状态------&#x27;);</span><br><span class="line">          // console.log(&quot;el: &quot; + this.$el); //已被初始化</span><br><span class="line">          console.log(this.$el);    </span><br><span class="line">          console.log(&quot;data: &quot; + this.$data); //已被初始化</span><br><span class="line">          console.log(&quot;message: &quot; + this.message); //已被初始化 </span><br><span class="line">          // 完成挂载，这个生命周期用的是比较多的</span><br><span class="line">          // 最常见的就是:1、发起后端请求，拿回数据 2、接收页面之间的传递的参数 3、子组件向父组件传递参数</span><br><span class="line">          </span><br><span class="line">        &#125;, */</span><br><span class="line">        beforeUpdate: function () &#123;</span><br><span class="line">            console.group(&#x27;------beforeUpdate 更新前状态------&#x27;);</span><br><span class="line">            console.log(&quot;el: &quot; + this.$el);</span><br><span class="line">            console.log(this.$el);</span><br><span class="line">            console.log(&quot;data   : &quot; + this.$data);</span><br><span class="line">            console.log(&quot;message: &quot; + this.message);</span><br><span class="line">        &#125;,</span><br><span class="line">        updated: function () &#123;</span><br><span class="line">            console.group(&#x27;------updated 更新后状态------&#x27;);</span><br><span class="line">            console.log(&quot;el: &quot; + this.$el);</span><br><span class="line">            console.log(this.$el);</span><br><span class="line">            console.log(&quot;data: &quot; + this.$data);</span><br><span class="line">            console.log(&quot;message: &quot; + this.message);</span><br><span class="line">            // 当vue发现data中的数据发生了改变，会触发对应组件的重新渲染，先后调用beforeUpdate和updated钩子函数。我们在console中输入 vm.message = &#x27;触发组件更新&#x27;</span><br><span class="line">            // 这里就比较好理解了：当希望更新组件前做一些操作的时候，我们就可以调用 beforeUpdate钩子函数，同理使用 updated 钩子函数</span><br><span class="line">        &#125;,</span><br><span class="line">        beforeDestroy: function () &#123;</span><br><span class="line">            console.group(&#x27;------beforeDestroy 销毁前状态------&#x27;);</span><br><span class="line">            console.log(&quot;el: &quot; + this.$el);</span><br><span class="line">            console.log(this.$el);</span><br><span class="line">            console.log(&quot;data: &quot; + this.$data);</span><br><span class="line">            console.log(&quot;message: &quot; + this.message);</span><br><span class="line">            // beforeDestroy钩子函数在实例销毁之前调用。在这一步，实例仍然完全可用。</span><br><span class="line">        &#125;,</span><br><span class="line">        destroyed: function () &#123;</span><br><span class="line">            console.group(&#x27;------destroyed 销毁后状态------&#x27;);</span><br><span class="line">            console.log(&quot;el: &quot; + this.$el);</span><br><span class="line">            console.log(this.$el);</span><br><span class="line">            console.log(&quot;data: &quot; + this.$data);</span><br><span class="line">            console.log(&quot;message: &quot; + this.message);</span><br><span class="line">            // destroyed钩子函数在Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。</span><br><span class="line">        &#125;/**/</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-安装VUE脚手架。"><a href="#4-安装VUE脚手架。" class="headerlink" title="4 安装VUE脚手架。"></a>4 安装VUE脚手架。</h2><h3 id="1-安装node"><a href="#1-安装node" class="headerlink" title="1  安装node"></a>1  安装node</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/wulala_hei/article/details/85000530</span><br><span class="line"></span><br><span class="line">安装好 之后 查看是否安装: node -v</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用npm-全局安装-webpack"><a href="#2-使用npm-全局安装-webpack" class="headerlink" title="2  使用npm 全局安装 webpack"></a>2  使用npm 全局安装 webpack</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">使用 npm（不知道npm的同学，可以自行百度，或者看我上面 nvm的安装教程 ） </span><br><span class="line">    </span><br><span class="line">全局安装 webpack，</span><br><span class="line">    打开命令行工具输入：npm install webpack -g  </span><br><span class="line">    </span><br><span class="line">    安装完成之后输入 webpack -v，如果出现相应的版本号，则说明安装成功。</span><br><span class="line"></span><br><span class="line">如果不能执行  webpack -v</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">powershell</span><br><span class="line">    </span><br><span class="line">打开系统禁用脚本:  set-ExecutionPolicy  RemoteSigned</span><br><span class="line">    </span><br><span class="line">注意：webpack 4.X 开始，需要安装 webpack-cli 依赖 ,所以使用这条命令 npm install webpack webpack-cli -g</span><br><span class="line"></span><br><span class="line">https://blog.csdn.net/weixin_51370367/article/details/115164263</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-全局安装-vue-cli"><a href="#3-全局安装-vue-cli" class="headerlink" title="3 全局安装 vue-cli"></a>3 全局安装 vue-cli</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在命令行中输入 npm install -g vue-cli</span><br><span class="line">    </span><br><span class="line">安装完成后，检验是否安装成功，输入 vue  -V (注意：这里是大写的 “V”)，如果出现版本号，则说明安装成功。 </span><br><span class="line">    </span><br><span class="line">打开 node 的安装目录，也可以看到我们全局安装的 vue-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-搭建一个项目"><a href="#3-搭建一个项目" class="headerlink" title="3 搭建一个项目"></a>3 搭建一个项目</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">1  首先，在D盘新建一个文件夹作为项目的存放地，然后cd到目录下，输入命令，创建项目</span><br><span class="line">    </span><br><span class="line">    vue init webpack vue-demo</span><br><span class="line">    </span><br><span class="line">2 等待模板下载成功后，会有一个交互式的选项让你选择：</span><br><span class="line">   </span><br><span class="line">  ? Project name vue-demo # 项目名称，直接回车，按照括号中默认名字（注意这里的名字不能有大写字母，如果有会报错Sorry, name can no longer contain capital letters），阮一峰老师博客为什么文件名要小写 ，可以参考一下。</span><br><span class="line">? Project description A Vue.js project # 项目描述,随便写</span><br><span class="line">? Author # 作者名称</span><br><span class="line">? Vue build standalone # 我选择的运行加编译时</span><br><span class="line">	Runtime + Compiler: recommended for most users</span><br><span class="line">? Install vue-router? Yes # 是否需要 vue-router，路由肯定要的</span><br><span class="line">? Use ESLint to lint your code? NO # 是否使用 ESLint 作为代码规范.</span><br><span class="line">? Pick an ESLint preset Standard # 一样的ESlint 相关</span><br><span class="line">? Set up unit tests Yes # 是否安装单元测试</span><br><span class="line">? Pick a test runner 按需选择 # 测试模块</span><br><span class="line">? Setup e2e tests with Nightwatch? 安装选择 # e2e 测试</span><br><span class="line">? Should we run `npm install` for you after the project has been created? (recommended) npm # 包管理器，我</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 3 安装完成后，安装提示，cd 到项目目录, 执行命令 npm install 进行初始化。</span><br><span class="line">    </span><br><span class="line">   </span><br><span class="line"> 4 启动项目   npm run dev   ,  启动项目的时候，一定要 切入到 项目中。</span><br><span class="line"></span><br><span class="line"> 如果浏览器打开之后，没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件 config里的index.js 的 post</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"> vue-cli 的 webpack 配置分析</span><br><span class="line"></span><br><span class="line">从 package.json 可以看到 开发 和 生产 环境的入口。</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">dev 就是开发环境的启动命令</span><br><span class="line">build 是生产打包环境的命令</span><br><span class="line">lint 是ESLint的检查命令 在 --ext 前加一个 --fix 可以自动修复不符合规范的代码</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">   </span><br><span class="line">    </span><br><span class="line"> 打包上线 </span><br><span class="line"></span><br><span class="line">运行 npm run build 命令，就可以进行打包工作了，打包完成后，会生成 dist 目录，项目上线时，把dist 目录下的文件放到服务器就可以了。</span><br><span class="line">    </span><br><span class="line">1 npm run build</span><br><span class="line">    </span><br><span class="line">2 把dist 目录下的文件放到服务器就可以了。</span><br><span class="line">    </span><br><span class="line">vue 打包。</span><br><span class="line">   </span><br><span class="line">https://www.cnblogs.com/lightmusic/p/11474910.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-用脚手架搭建好前端程序后，写一个自己的页面"><a href="#4-用脚手架搭建好前端程序后，写一个自己的页面" class="headerlink" title="4 用脚手架搭建好前端程序后，写一个自己的页面"></a>4 用脚手架搭建好前端程序后，写一个自己的页面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">测试以下，配置好地址路径</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-VUE做增删改查"><a href="#5-VUE做增删改查" class="headerlink" title="5 VUE做增删改查"></a>5 VUE做增删改查</h2><blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装 ： </span><br><span class="line">    </span><br><span class="line">2、cnpm i element-ui -S  如果没有使用淘宝镜像的就使用npm i element-ui -S命令</span><br><span class="line">    </span><br><span class="line">3  导入:  我们要先导入axios模块，命令：npm install axios  然后再输入npm run dev 运行项目。 </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vue 前后端 分离demo</span><br><span class="line">    </span><br><span class="line">VUE中引入静态文件的路径:  https:<span class="comment">//blog.csdn.net/HY_358116732/article/details/82219387</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">搭建好 Emp的页面后:</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">			&lt;div id=&quot;top_content&quot;&gt; </span><br><span class="line">				&lt;div id=&quot;header&quot;&gt;</span><br><span class="line">					&lt;div id=&quot;rightheader&quot;&gt;</span><br><span class="line">						&lt;p&gt;</span><br><span class="line">							2009/11/20</span><br><span class="line">							&lt;br /&gt;</span><br><span class="line">						&lt;/p&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&lt;div id=&quot;topheader&quot;&gt;</span><br><span class="line">						&lt;h1 id=&quot;title&quot;&gt;</span><br><span class="line">							&lt;a href=&quot;#&quot;&gt;main&lt;/a&gt;</span><br><span class="line">						&lt;/h1&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">					&lt;div id=&quot;navigation&quot;&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">				&lt;div id=&quot;content&quot;&gt;</span><br><span class="line">					&lt;p id=&quot;whereami&quot;&gt;</span><br><span class="line">					&lt;/p&gt;</span><br><span class="line">					&lt;h1&gt;</span><br><span class="line">						Welcome!</span><br><span class="line">					&lt;/h1&gt;</span><br><span class="line">					&lt;table class=&quot;table&quot;&gt;</span><br><span class="line">						&lt;tr class=&quot;table_header&quot;&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								ID</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								Name</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								Salary</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								Age</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								Operation</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">						&lt;/tr&gt;</span><br><span class="line">						&lt;tr class=&quot;row1&quot; v-for=&quot;user in obj1&quot;&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								&#123;&#123;user.id&#125;&#125;</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								&#123;&#123;user.name&#125;&#125;</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								&#123;&#123;user.salary&#125;&#125;</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								&#123;&#123;user.age&#125;&#125;</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">							&lt;td&gt;</span><br><span class="line">								&lt;a href=&quot;emplist.html&quot;&gt;delete emp&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;updateEmp.html&quot;&gt;update emp&lt;/a&gt;</span><br><span class="line">							&lt;/td&gt;</span><br><span class="line">						&lt;/tr&gt;</span><br><span class="line">						</span><br><span class="line">					&lt;/table&gt;</span><br><span class="line">					&lt;p&gt;</span><br><span class="line">						&lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;Add Employee&quot; onclick=&quot;location=&#x27;addEmp.html&#x27;&quot;/&gt;</span><br><span class="line">					&lt;/p&gt;</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div id=&quot;footer&quot;&gt;</span><br><span class="line">				&lt;div id=&quot;footer_bg&quot;&gt;</span><br><span class="line">				ABC@126.com</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;Emp&#x27;,</span><br><span class="line">  mounted()&#123;</span><br><span class="line">    this.getUserInfo();</span><br><span class="line">  &#125;,</span><br><span class="line">  data()&#123;</span><br><span class="line">      return &#123;obj1:[]&#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">      getUserInfo()&#123;</span><br><span class="line">          console.log(&quot;大家伙....................&quot;);</span><br><span class="line">          this.$axios.get(&#x27;http://localhost:8080/findAll&#x27;)</span><br><span class="line">                    .then(response =&gt; (this.obj1=response.data))</span><br><span class="line">                    .catch(function (error) &#123; // 请求失败处理</span><br><span class="line">                        console.log(error);</span><br><span class="line">                    &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">    </span><br><span class="line">	body </span><br><span class="line">	&#123;</span><br><span class="line">		margin: 0;</span><br><span class="line">		font-size: 62.5%;</span><br><span class="line">		font-family: Verdana, Arial, Helvetica, sans-serif;</span><br><span class="line">		padding: 15px 0;</span><br><span class="line">		background: #eeeeee;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#wrap &#123;</span><br><span class="line">		width: 820px;</span><br><span class="line">		margin: 0 auto;</span><br><span class="line">		background:  #FFFFFF;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#top_content &#123;</span><br><span class="line">		padding: 0 10px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#topheader &#123;</span><br><span class="line">			padding: 25px 15px 15px 15px;</span><br><span class="line">			margin: 0 auto 0 auto;</span><br><span class="line">			background:  #85C329;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#rightheader &#123;</span><br><span class="line">		float: right;</span><br><span class="line">		width: 375px;</span><br><span class="line">		height: 40px;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		text-align: right;</span><br><span class="line">	&#125;</span><br><span class="line">	#rightheader p &#123;</span><br><span class="line">		padding: 35px 15px 0 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">		text-align: right;</span><br><span class="line">	&#125;</span><br><span class="line">	#rightheader p span &#123;</span><br><span class="line">		font-weight: bold;</span><br><span class="line">	&#125;</span><br><span class="line">	#rightheader a:link, #rightheader a:visited &#123;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#title &#123;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">		font-size: 2.5em;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">	&#125;</span><br><span class="line">	#title span &#123;</span><br><span class="line">		font-size: 0.5em;</span><br><span class="line">		font-style: italic;</span><br><span class="line">	&#125;</span><br><span class="line">	#title a:link, #title a:visited &#123;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#title a:hover &#123;</span><br><span class="line">		color: #E1F3C7;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#navigation &#123;</span><br><span class="line">		background: #74A8F5;</span><br><span class="line">		border-top: 1px solid #ffffff;</span><br><span class="line">		height: 25px;</span><br><span class="line">		clear: both</span><br><span class="line">	&#125;</span><br><span class="line">	#navigation ul &#123;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">		list-style: none;	</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">		height: 25px;</span><br><span class="line">	&#125;</span><br><span class="line">	#navigation ul li &#123;</span><br><span class="line">		display: inline;</span><br><span class="line">	&#125;</span><br><span class="line">	#navigation ul li a &#123;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		display: block;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">		float: left;</span><br><span class="line">		line-height: 25px;</span><br><span class="line">		padding: 0 16px;</span><br><span class="line">		border-right: 1px solid #ffffff;</span><br><span class="line">	&#125;</span><br><span class="line">	#navigation ul li a:hover &#123;</span><br><span class="line">		background: #5494F3;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	#content &#123;</span><br><span class="line">		padding: 0 15px;</span><br><span class="line">		margin: 0 auto 0 auto;</span><br><span class="line">		background:  #ffffff;</span><br><span class="line">		color: #666666;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#content p#whereami &#123;</span><br><span class="line">		padding: 20px 0 15px 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	#whereami a:link, #whereami a:visited &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	#content h1, #content h2, </span><br><span class="line">	#content h3, #content h4 , #content h5 &#123;</span><br><span class="line">		color: #74A8F5;</span><br><span class="line">	&#125;</span><br><span class="line">	#content h1 &#123;</span><br><span class="line">		font-family: &quot;Trebuchet MS&quot;, Arial, Helvetica;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0 0 15px 0;</span><br><span class="line">		font-size: 2em;</span><br><span class="line">	&#125;</span><br><span class="line">	#content h2 &#123;</span><br><span class="line">		font-family: &quot;Trebuchet MS&quot;, Arial, Helvetica;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0 0 15px 0;</span><br><span class="line">		font-size: 1.5em;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#top_body, #content_body &#123;</span><br><span class="line">		padding: 0 25px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#footer &#123;</span><br><span class="line">	</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		padding: 0 10px 13px 10px;</span><br><span class="line">	&#125;</span><br><span class="line">	#footer p &#123;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	#footer p a:link, #footer p a:visited &#123;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		font-style: italic;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#footer #footer_bg &#123;</span><br><span class="line">		padding: 15px 15px 25px 15px;</span><br><span class="line">		border-top: 1px solid #7BB425;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	#footer #design &#123;</span><br><span class="line">		display: block; </span><br><span class="line">		width: 150px; </span><br><span class="line">		height: 30px;</span><br><span class="line">		float: right;</span><br><span class="line">		line-height: 20px;</span><br><span class="line">		padding: 0 5px;</span><br><span class="line">		text-align: right;</span><br><span class="line">		color: #E1F3C7;</span><br><span class="line">	&#125;</span><br><span class="line">	#footer #design a &#123;</span><br><span class="line">		color: #FFFFFF;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.table &#123;</span><br><span class="line">		margin-bottom: 15px;</span><br><span class="line">		width: 100%;</span><br><span class="line">		border-collapse: collapse;</span><br><span class="line">	&#125;</span><br><span class="line">	.table_header td &#123;</span><br><span class="line">		padding: 5px 10px;</span><br><span class="line">		color: rgb(70,122,167);</span><br><span class="line">		border-top: 1px solid #CBD6DE;</span><br><span class="line">		border-bottom: 1px solid #ADBECB;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">		font-weight: bold;</span><br><span class="line">	&#125;</span><br><span class="line">	.table_header td a:link, .table_header td a:visited &#123;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">		color: rgb(70,122,167);</span><br><span class="line">	&#125;</span><br><span class="line">	.table_header td a:hover &#123;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">		color: #73A822;</span><br><span class="line">	&#125;</span><br><span class="line">	.table_header td &#123;</span><br><span class="line">		border: 1px solid #CBD6DE;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.row1 td, .row2 td, .row_hover td, .paging_row td &#123;</span><br><span class="line">		padding: 5px 10px;</span><br><span class="line">		color: #666666;</span><br><span class="line">		border: 1px solid #CBD6DE;</span><br><span class="line">	&#125;</span><br><span class="line">	.row1 td &#123;</span><br><span class="line">		background: #ffffff;</span><br><span class="line">	&#125;</span><br><span class="line">	.row2 td &#123;</span><br><span class="line">		background: #eeeeee;</span><br><span class="line">	&#125;</span><br><span class="line">	.row_hover td &#123;</span><br><span class="line">		background: #FBFACE;</span><br><span class="line">		color: #000000;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	.hidden &#123;</span><br><span class="line">		display: none;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.little &#123;</span><br><span class="line">		font-size: 10px;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	.clear &#123;</span><br><span class="line">		clear: both;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	.img_left &#123;</span><br><span class="line">		float: left;</span><br><span class="line">		padding: 1px;</span><br><span class="line">		border: 1px solid #cccccc;</span><br><span class="line">		margin: 0 10px 10px 0;</span><br><span class="line">		width: 110px;</span><br><span class="line">		height:150px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* #content ul basic style for unordered lists</span><br><span class="line">------------------------------------------------*/</span><br><span class="line">	#content ul &#123;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">		line-height: 1.8em;</span><br><span class="line">		margin: 0 0 15px 0;</span><br><span class="line">		padding: 0;</span><br><span class="line">		list-style-type: none;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* #content p paragraphs</span><br><span class="line">-----------------------------*/</span><br><span class="line">	#content p &#123;</span><br><span class="line">		font-size: 1.2em;</span><br><span class="line">		margin: 0;</span><br><span class="line">		padding: 0 0 15px 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* #content p a links in paragraphs</span><br><span class="line">------------------------------------*/</span><br><span class="line">	#content p a:link, #content p a:visited, </span><br><span class="line">	.table a:link, .table a:visited,</span><br><span class="line">	.link a &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#content p a:hover, .table a:hover, .link a:hover &#123;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* #content ul.green (73A822)</span><br><span class="line">--------------------------------*/</span><br><span class="line">	#content ul.green li &#123;</span><br><span class="line">		padding: 0 0 0 20px;</span><br><span class="line">		margin: 0;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ul.green li a:link, #content ul.green li a:visited &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ul.green li a:hover &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">/* #content ul.black (73A822)</span><br><span class="line">--------------------------------*/</span><br><span class="line">	#content ul.black li &#123;</span><br><span class="line">		padding: 0 0 0 20px;</span><br><span class="line">		margin: 0;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ul.black li a:link, #content ul.black li a:visited &#123;</span><br><span class="line">		color: #666666;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ul.black li a:hover &#123;</span><br><span class="line">		color: #999999;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">/* #content ol</span><br><span class="line">--------------------------------*/</span><br><span class="line">	#content ol &#123;</span><br><span class="line">		padding: 0 0 0 25px;</span><br><span class="line">		margin: 0 0 15px 0;</span><br><span class="line">		line-height: 1.8em;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	#content ol li &#123;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ol li a:link, #content ol li a:visited &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">	&#125;</span><br><span class="line">	#content ol li a:hover &#123;</span><br><span class="line">		color: #73A822;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* #content p.paging </span><br><span class="line">---------------------------------*/</span><br><span class="line">	#content p.paging &#123;</span><br><span class="line">	padding: 5px;</span><br><span class="line">	border: 1px solid #CBD6DE;</span><br><span class="line">	text-align: center;</span><br><span class="line">	margin-bottom: 15px;</span><br><span class="line">	background: #eeeeee;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* .small_input smaller text in inputs/combos</span><br><span class="line">-----------------------------------------------*/</span><br><span class="line">	.small_input &#123;</span><br><span class="line">		font-size: 10px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* .form_table style for table used in forms</span><br><span class="line">---------------------------------------------*/</span><br><span class="line">	.form_table &#123;</span><br><span class="line">		margin-bottom: 15px;</span><br><span class="line">		font-size: 1.1em;</span><br><span class="line">	&#125;</span><br><span class="line">	.form_table p &#123;</span><br><span class="line">		margin: 0;</span><br><span class="line">		padding: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	.form_table td &#123;</span><br><span class="line">		padding: 5px 10px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* .checkbox_nomargins clear all margins from a checkbox</span><br><span class="line">---------------------------------------------------------*/</span><br><span class="line">	.checkbox_nomargins &#123;</span><br><span class="line">		/*margin:0;width:13px;height:13px;overflow:hidden;</span><br><span class="line">		font-size: 10px;*/</span><br><span class="line">		margin: 0;</span><br><span class="line">		padding: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">/* .button some buttons style - inspired from wordpress</span><br><span class="line">------------------------------*/</span><br><span class="line">	input.button &#123;</span><br><span class="line">		margin: 0;</span><br><span class="line">		padding: 2px;</span><br><span class="line">		border: 3px double #999999;</span><br><span class="line">		border-left-color: #ccc;</span><br><span class="line">		border-top-color: #ccc;</span><br><span class="line">		font-size: 11px;</span><br><span class="line">		font-family: Verdana, Arial, Helvetica, sans-serif;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">/* form style for forms</span><br><span class="line">-------------------------*/</span><br><span class="line">	form &#123;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* input.inputgri - some style for inputs</span><br><span class="line">--------------------------------------------*/</span><br><span class="line">	input.inputgri, select.inputgri, textarea.inputgri &#123;</span><br><span class="line">		background: #eeeeee;</span><br><span class="line">		font-size: 14px;</span><br><span class="line">		border: 1px solid #cccccc;</span><br><span class="line">		padding: 3px;</span><br><span class="line">	&#125;</span><br><span class="line">	input.inputgri:focus, select.inputgri:focus , textarea.inputgri:focus &#123;</span><br><span class="line">		background: #ffffff;</span><br><span class="line">		border: 1px solid #686868;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* .notice - messages to user</span><br><span class="line">--------------------------------*/</span><br><span class="line">	.notice &#123;</span><br><span class="line">		background: #CAEA99; </span><br><span class="line">		border: 1px solid #70A522; </span><br><span class="line">		padding: 15px 15px 15px 15px; </span><br><span class="line">		margin-bottom: 15px;</span><br><span class="line">		font-size: 1.2em;</span><br><span class="line">		color: #333333;</span><br><span class="line">	&#125;</span><br><span class="line">	.notice_error &#123;</span><br><span class="line">		background: #FEDCDA; </span><br><span class="line">		border: 1px solid  #CE090E; </span><br><span class="line">		padding: 15px 15px 15px 15px; </span><br><span class="line">		margin-bottom: 15px;</span><br><span class="line">		font-size: 1.2em;</span><br><span class="line">		color: #333333;</span><br><span class="line">	&#125;</span><br><span class="line">	#notice a &#123;</span><br><span class="line">		color: #333333;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">/* Other links </span><br><span class="line">----------------*/</span><br><span class="line">	.other_links &#123;</span><br><span class="line">		background: #eeeeee;</span><br><span class="line">		border-top: 1px solid #cccccc;</span><br><span class="line">		padding: 5px;</span><br><span class="line">		margin: 0 0 15px 0;</span><br><span class="line">	&#125;</span><br><span class="line">	#content .other_links h2 &#123;</span><br><span class="line">		color: #999999;</span><br><span class="line">		padding: 0 0 0 3px;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	#content .other_links ul &#123;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	#content .other_links ul li &#123;</span><br><span class="line">		padding: 0 0 0 20px;</span><br><span class="line">	&#125;</span><br><span class="line">	#content .other_links a, #content .other_links a:visited &#123;</span><br><span class="line">		color: #999999;</span><br><span class="line">		text-decoration: underline;</span><br><span class="line">	&#125;</span><br><span class="line">	#content .other_links a:hover &#123;</span><br><span class="line">		color: #666666;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">/* code */</span><br><span class="line">	code &#123;</span><br><span class="line">		font-size: 1.2em;</span><br><span class="line">		color: #73A822;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>​    main.js中  导入 axios库</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// The Vue build version to load with the `import` command</span><br><span class="line">// (runtime-only or standalone) has been set in webpack.base.conf with an alias.</span><br><span class="line">import Vue from &#x27;vue&#x27;</span><br><span class="line">import App from &#x27;./App&#x27;</span><br><span class="line">import router from &#x27;./router&#x27;</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line">Vue.prototype.$axios = axios;</span><br><span class="line">Vue.config.productionTip = false</span><br><span class="line"></span><br><span class="line">/* eslint-disable no-new */</span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &#x27;#app&#x27;,</span><br><span class="line">  router,</span><br><span class="line">  components: &#123; App &#125;,</span><br><span class="line">  template: &#x27;&lt;App/&gt;&#x27;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>后端代码 解决跨域问题</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">public class EmpController &#123;</span><br><span class="line">    @RequestMapping(&quot;/findAll&quot;)</span><br><span class="line">    @ResponseBody</span><br><span class="line">    @CrossOrigin(origins=&quot;http://localhost:8888&quot;,allowCredentials = &quot;true&quot;)</span><br><span class="line">    // @CrossOrigin(origins = &quot;*&quot;,maxAge = 3600)</span><br><span class="line">    public List&lt;Emp&gt; findAll()&#123;</span><br><span class="line">        List&lt;Emp&gt; list=new ArrayList&lt;&gt;();</span><br><span class="line">        list.add(new Emp(1,&quot;张三&quot;,232323.2,23));</span><br><span class="line">        list.add(new Emp(2,&quot;张三2&quot;,2232323.2,23));</span><br><span class="line">        return list;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">注解@CrossOrigin解决跨域问题  </span><br><span class="line"></span><br><span class="line">其中</span><br><span class="line"></span><br><span class="line">origins:是允许访问的列表（origins=“网址”）</span><br><span class="line"></span><br><span class="line">maxAge:准备响应前的 缓存持续的 最大时间</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">import Vue from &#x27;vue&#x27;</span><br><span class="line">import Router from &#x27;vue-router&#x27;</span><br><span class="line">import HelloWorld from &#x27;@/components/HelloWorld&#x27;</span><br><span class="line">import axios from &#x27;axios&#x27;</span><br><span class="line">Vue.prototype.$axios = axios</span><br><span class="line">Vue.use(Router)</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">post请求 拿不到 值:</span><br><span class="line"></span><br><span class="line">https://www.cnblogs.com/yuerdong/p/10277177.html</span><br></pre></td></tr></table></figure>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2021/12/02/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  面试
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%85%B6%E4%BB%96/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%A0%E5%8E%BB%E5%A4%96%E5%8C%85%E5%85%AC%E5%8F%B8%EF%BC%9F/">
+                其他
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2021-<span id="footerYear"></span> 
+	<a href="/">小德</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
