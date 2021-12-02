@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		队列 | 
+	 
+	小德的博客
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="小德的博客" />
+	 
+		<meta name="description" content="小德的博客" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">小德的博客</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
+		<li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										JAVA学习
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java框架
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/ElasticSearch/">
+                     
+										    ElasticSearch
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/MyBatisPlus/">
+                     
+										    MyBatisPlus
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Mybatis/">
+                     
+										    Mybatis
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Ngnix/">
+                     
+										    Ngnix
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/NoSQL/">
+                     
+										    NoSQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Redis/">
+                     
+										    Redis
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/SSM/">
+                     
+										    SSM
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/Swagger/">
+                     
+										    Swagger
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E6%A1%86%E6%9E%B6/%E5%B7%A5%E5%85%B7/">
+                     
+										    工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java理论
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/RBAC%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F/">
+                     
+										    RBAC权限系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">
+                     
+										    设计原则
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E7%90%86%E8%AE%BA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                     
+										    设计模式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										java高级
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/">
+                     
+										    JUC并发编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/JVM/">
+                     
+										    JVM
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/Java%E5%8F%8D%E5%B0%84/">
+                     
+										    Java反射
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/Java%E6%B3%A8%E8%A7%A3/">
+                     
+										    Java注解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/java%E9%AB%98%E7%BA%A7/%E6%B3%9B%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/">
+                     
+										    泛型的理解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%85%B6%E4%BB%96/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%A0%E5%8E%BB%E5%A4%96%E5%8C%85%E5%85%AC%E5%8F%B8%EF%BC%9F/">
+                     
+										    为什么我不建议你去外包公司？
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%85%B6%E4%BB%96/%E9%AB%98%E6%95%B0/">
+                     
+										    高数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										前端
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/vue/">
+                     
+										    vue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										理财
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%B4%A2/%E7%90%86%E8%B4%A2/">
+                     
+										    理财
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										算法与数据结构
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E6%B3%95%EF%BC%88%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%EF%BC%89/">
+                     
+										    大O表示法（复杂度分析）
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+                     
+										    数据结构与算法
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/">
+                     
+										    队列
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%972/">
+                     
+										    队列2
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										项目管理
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/Git/">
+                     
+										    Git
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/Jekins/">
+                     
+										    Jekins
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/SVN/">
+                     
+										    SVN
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										动画
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E5%8A%A8%E7%94%BB/Blender%E6%93%8D%E4%BD%9C/">
+                     
+										    Blender操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/BUG/">
+                     
+										    BUG
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/Linux/">
+                     
+										    Linux
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/TCPIP%E7%90%86%E8%AE%BA/">
+                     
+										    TCPIP理论
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E6%B5%8B%E8%AF%95/%E4%BB%80%E4%B9%88%E6%98%AFPOP3%E3%80%81SMTP%E5%92%8CIMAP/">
+                     
+										    什么是POP3、SMTP和IMAP
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										阿里
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E8%BF%99%E7%BE%A4%E7%96%AF%E5%AD%90/">
+                     
+										    阿里云的这群疯子
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E7%AC%AC%E4%B8%80%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98%E2%80%94%E2%80%94%E5%A4%9A%E9%9A%86/">
+                     
+										    阿里第一位程序员——多隆
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/12/02/%E9%98%BF%E9%87%8C/%E9%98%BF%E9%87%8C%E8%81%8C%E7%BA%A7%E4%BD%93%E7%B3%BB/">
+                     
+										    阿里职级体系
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	队列
+</h1>
+<div class="article-meta">
+	
+	<span>小德</span>
+	<span>2021-12-02 12:57:59</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/算法与数据结构/">算法与数据结构</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/算法与数据结构/">算法与数据结构</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h1 id="java实现队列"><a href="#java实现队列" class="headerlink" title="java实现队列"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/menglong1108/p/11608861.html">java实现队列</a></h1><h2 id="队列的定义"><a href="#队列的定义" class="headerlink" title="队列的定义"></a>队列的定义</h2><p>　　队列的特点是节点的排队次序和出队次序按入队时间先后确定，即先入队者先出队，后入队者后出队。即我们常说的FIFO(first in first out)先进先出。　　　　</p>
+<h2 id="顺序队列定义及相关操作"><a href="#顺序队列定义及相关操作" class="headerlink" title="顺序队列定义及相关操作"></a>顺序队列定义及相关操作</h2><p>　　顺序存储结构存储的队列称为顺序队列，内部使用一个一维数组存储，用一个队头指针front指向队列头部节点（即使用int类型front来表示队头元素的下标），用一个队尾指针rear，指向队列尾部元素(int类型rear来表示队尾节点的下标)。</p>
+<p>　　初始化队列时: front = rear = -1 (非必须，也可设置初始值为0，在实现方法时具体修改)</p>
+<p>　　队列满时：   rear = maxSize-1 (其中maxSize为初始化队列时，设置的队列最大元素个数)</p>
+<p>　　队列为空时：  front = rear</p>
+<p>　　下面使用java实现一个基于一维数组的顺序队列，代码如下：</p>
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"> 1 /**</span><br><span class="line"> 2  * 定义一个queue</span><br><span class="line"> 3  */</span><br><span class="line"> 4 class ArrayQueue&#123;</span><br><span class="line"> 5     private int[] data ; //队列中存放的数据</span><br><span class="line"> 6     private int maxSize ; //队列的大小</span><br><span class="line"> 7     private int front ;//指向队列头部的指针</span><br><span class="line"> 8     private int rear ; //指向队列尾部的指针</span><br><span class="line"> 9 </span><br><span class="line">10     public ArrayQueue(int maxSize)&#123;</span><br><span class="line">11         this.maxSize = maxSize;</span><br><span class="line">12         data = new int[maxSize];</span><br><span class="line">13         front = -1;</span><br><span class="line">14         rear = -1;</span><br><span class="line">15     &#125;</span><br><span class="line">16 </span><br><span class="line">17     /**</span><br><span class="line">18      * 判断队列是否已满</span><br><span class="line">19      * @return</span><br><span class="line">20      */</span><br><span class="line">21     public boolean isFull()&#123;</span><br><span class="line">22         return rear == maxSize -1 ;</span><br><span class="line">23     &#125;</span><br><span class="line">24 </span><br><span class="line">25     /**</span><br><span class="line">26      * 判断队列是否为空</span><br><span class="line">27      * @return</span><br><span class="line">28      */</span><br><span class="line">29     public boolean isEmpty()&#123;</span><br><span class="line">30         return rear == front;</span><br><span class="line">31     &#125;</span><br><span class="line">32 </span><br><span class="line">33     /**</span><br><span class="line">34      * 添加数据到队列</span><br><span class="line">35      * @param n</span><br><span class="line">36      */</span><br><span class="line">37     public void add(int n)&#123;</span><br><span class="line">38         if(isFull())&#123;</span><br><span class="line">39             System.out.println(&quot;队列已满，不能添加&quot;);</span><br><span class="line">40             return;</span><br><span class="line">41         &#125;</span><br><span class="line">42         data[++rear] = n;</span><br><span class="line">43     &#125;</span><br><span class="line">44 </span><br><span class="line">45     /**</span><br><span class="line">46      * 显示头部数据</span><br><span class="line">47      * @return</span><br><span class="line">48      */</span><br><span class="line">49     public void head()&#123;</span><br><span class="line">50         if(isEmpty())&#123;             　　　　　　throw new RuntimeException(&quot;队列为空&quot;);</span><br><span class="line">53         &#125;</span><br><span class="line">54         System.out.println(data[front+1]);</span><br><span class="line">55     &#125;</span><br><span class="line">56 </span><br><span class="line">57     /**</span><br><span class="line">58      * 取出头部数据</span><br><span class="line">59      * @return</span><br><span class="line">60      */</span><br><span class="line">61     public int pop()&#123;</span><br><span class="line">62         if(isEmpty())&#123;64             throw new RuntimeException(&quot;队列为空&quot;);</span><br><span class="line">65         &#125;</span><br><span class="line">66         int a = data[++front];</span><br><span class="line">67         data[front] = 0;</span><br><span class="line">68         return a;</span><br><span class="line">69     &#125;</span><br><span class="line">70 </span><br><span class="line">71     /**</span><br><span class="line">72      * 打印全部数据</span><br><span class="line">73      */</span><br><span class="line">74     public void print()&#123;</span><br><span class="line">75         if(isEmpty())&#123;</span><br><span class="line">76             System.out.println(&quot;队列为空&quot;);</span><br><span class="line">77             return;</span><br><span class="line">78         &#125;</span><br><span class="line">79         for(int i=0;i&lt;data.length;i++)&#123;</span><br><span class="line">80             System.out.printf(&quot;array[&quot;+i+&quot;]=%d\n&quot;,data[i]);</span><br><span class="line">81         &#125;</span><br><span class="line">82     &#125;</span><br><span class="line">83 &#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<p>　　简单描述顺序队列的入队(add方法)：</p>
+<p>　　</p>
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> 1 public static void main(String []args) &#123;</span><br><span class="line"> 2         //1.声明一个可以存储6个元素的顺序队列，默认值为0,front 和rear指针为-1</span><br><span class="line"> 3         ArrayQueue queue = new ArrayQueue(6);</span><br><span class="line"> 4         //2.向顺序队列中添加元素</span><br><span class="line"> 5         queue.add(1);</span><br><span class="line"> 6         queue.add(2);</span><br><span class="line"> 7         queue.add(3);</span><br><span class="line"> 8         queue.add(4);</span><br><span class="line"> 9         queue.add(5);</span><br><span class="line">10         queue.add(6);</span><br><span class="line">11         //2.1打印当前队列元素</span><br><span class="line">12         queue.print();</span><br><span class="line">13         //3.将顺序队列中元素取出</span><br><span class="line">14         queue.pop();</span><br><span class="line">15         queue.pop();</span><br><span class="line">16         queue.pop();</span><br><span class="line">17         queue.pop();</span><br><span class="line">18         queue.pop();</span><br><span class="line">19         queue.pop();</span><br><span class="line">20         //4.队列中元素全部取出</span><br><span class="line">21 &#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<p>　　在代码中初始化了一个大小为6的顺序队列，下图展示了第一步(即代码ArrayQueue queue = new ArrayQueue(6))中队列元素及指针情况</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929173231093-1095299231.png" alt="img"></p>
+<p>　　其中front和rear指向的虚线框实际并不存在，仅用来表示初始化时的默认状态，因我们实现的队列元素使用int[]存储元素，所以初始值均为0(如用Object[]或范型则初始值为null)</p>
+<p>   执行queue.add(1)方法后队列的状态如下图：</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929174030380-1502751015.png" alt="img"></p>
+<p>　　可以看到向队列中添加元素后，rear指针向后移动一个位置指向第一个元素位置，后面继续添加后面5个元素后队列如下图所示</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929174334433-1060765903.png" alt="img"></p>
+<p>　　接下来看下队列的出队情况 </p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929185937958-1276791475.png" alt="img"></p>
+<p>　　当第一次执行queue.pop()方法后，队列元素如上图所示，此时队列剩下5个元素</p>
+<p>　　当第六次执行queue.pop()方法后，队列元素如下图所示</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929190207156-2020605727.png" alt="img"></p>
+<p>　　此时队列中元素已全部出队，按正常逻辑应该可以添加元素到队列中，但此时添加元素却会报队列已满错误（rear=maxSize-1)，当然即使前面元素未出队也会报相同错误。这就是我们常说的“假溢出”问题。为解决这个问题，就引出了我们的环形队列。</p>
+<h2 id="环形队列"><a href="#环形队列" class="headerlink" title="环形队列"></a>环形队列</h2><p>　　环形队列，顾名思义即让普通队列首尾相连，形成一个环形。当rear指向尾元素后，当队列有元素出队时，可以继续向队列中添加元素。</p>
+<p>　　这里我使用的是rear指针指向最后一个节点的后一个元素，即会占用一个位置用来表示队列已满。</p>
+<p>　　</p>
+<p>　　初始化队列时: front = rear = 0</p>
+<p>　　队列满时：   ( rear +1 ) % maxSize == front (其中maxSize为初始化队列时，设置的队列最大元素个数)</p>
+<p>　　这里不能使用rear = maxSize-1作为判断队满的条件，因使用环形队列方式实现，当第一次队满时，rear = maxSize -1，执行出队操作后原队头位置空出，此时继续执行入队操作，则rear向后移动一个位置，则rear = 0，而此时队列也是已满状态。所以只要rear 向前移动一个位置就等于front时，就是队满的情况。</p>
+<p>　　队列为空时：  front == rear</p>
+<p>　　先看下具体代码</p>
+<p>　　</p>
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"> 1 public class CycleQueue &#123;</span><br><span class="line"> 2 </span><br><span class="line"> 3     /**</span><br><span class="line"> 4      *</span><br><span class="line"> 5      */</span><br><span class="line"> 6     private int maxSize ;</span><br><span class="line"> 7     private int data[] ;</span><br><span class="line"> 8     private int front ;</span><br><span class="line"> 9     /**</span><br><span class="line">10      * 这里rear指向最后一个数据的后面一个位置，即队列中有一个为空占位</span><br><span class="line">11      */</span><br><span class="line">12     private int rear ;</span><br><span class="line">13 </span><br><span class="line">14     public CycleQueue(int maxSize)&#123;</span><br><span class="line">15         this.maxSize = maxSize;</span><br><span class="line">16         data = new int[maxSize];</span><br><span class="line">17         front = 0;</span><br><span class="line">18         rear = 0;</span><br><span class="line">19     &#125;</span><br><span class="line">20 </span><br><span class="line">21     /**</span><br><span class="line">22      * 判断队列是否已满</span><br><span class="line">23      * 因是循环队列，所以rear值可能小于front，所以不能使用rear == maxSize -1来判断</span><br><span class="line">24      * @return</span><br><span class="line">25      */</span><br><span class="line">26     public boolean isFull()&#123;</span><br><span class="line">27         return (rear + 1) % maxSize == front;</span><br><span class="line">28     &#125;</span><br><span class="line">29 </span><br><span class="line">30     public boolean isEmpty()&#123;</span><br><span class="line">31         return rear == front;</span><br><span class="line">32     &#125;</span><br><span class="line">33 </span><br><span class="line">34     public void add(int n)&#123;</span><br><span class="line">35         if(isFull())&#123;</span><br><span class="line">36             System.out.println(&quot;队列已满，不能添加&quot;);</span><br><span class="line">37             return;</span><br><span class="line">38         &#125;</span><br><span class="line">39         data[rear] = n;</span><br><span class="line">40         rear = (rear + 1) % maxSize;</span><br><span class="line">41     &#125;</span><br><span class="line">42 </span><br><span class="line">43     public void head()&#123;</span><br><span class="line">44         if(isEmpty())&#123;</span><br><span class="line">45             throw new RuntimeException(&quot;队列为空&quot;);</span><br><span class="line">46         &#125;</span><br><span class="line">47         System.out.println(&quot;head=&quot;+data[front]);</span><br><span class="line">48     &#125;</span><br><span class="line">49 </span><br><span class="line">50     public int pop()&#123;</span><br><span class="line">51         if(isEmpty())&#123;</span><br><span class="line">52             throw new RuntimeException(&quot;队列为空&quot;);</span><br><span class="line">53         &#125;</span><br><span class="line">54         int value = data[front];</span><br><span class="line">55         front = (front + 1) % maxSize;</span><br><span class="line">56         return value;</span><br><span class="line">57     &#125;</span><br><span class="line">58 </span><br><span class="line">59     public void print()&#123;</span><br><span class="line">60         if(isEmpty())&#123;</span><br><span class="line">61             System.out.println(&quot;队列为空&quot;);</span><br><span class="line">62             return;</span><br><span class="line">63         &#125;</span><br><span class="line">64         for(int i= front; i&lt;front+size(); i++)&#123;</span><br><span class="line">65             System.out.printf(&quot;array&quot;+(i%maxSize)+&quot;=%d&quot;,data[i%maxSize]);</span><br><span class="line">66         &#125;</span><br><span class="line">67     &#125;</span><br><span class="line">68 </span><br><span class="line">69     /**</span><br><span class="line">70      * 因是循环队列，所以会出现rear&lt;front情况，这里需要+maxSize</span><br><span class="line">71      * @return</span><br><span class="line">72      */</span><br><span class="line">73     public int size()&#123;</span><br><span class="line">74         return (rear - front + maxSize)%maxSize;</span><br><span class="line">75     &#125;</span><br><span class="line">76 &#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="javascript:void(0);"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<p>　　下面再以图解的方式讲解一下环形队列的入队出队以及队满情况。当执行初始化代码后</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 CycleQueue queue = new CycleQueue(6);　　 </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929194146589-719483429.png" alt="img"></p>
+<p>　　此时front = rear = 0，队列为空。当第一次执行queue.add(1)后，环形队列元素如下图所示</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929194505466-1376389517.png" alt="img"></p>
+<p>　　当依次执行queue.add(2);queue.add(3);queue.add(4);queue.add(5);后，达到(rear+1)%maxSize=front （即rear=5）条件，队列已满不能添加新元素。此时环形队列元素情况如下图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929194628104-1513324714.png" alt="img"></p>
+<p>　　所以这种情况会浪费一个空间来作为判满的条件。</p>
+<p>　　下面执行出队操作，当第一次执行出队操作queue.pop()方法后，环形队列元素情况如下图所示</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929194859442-1724520727.png" alt="img"></p>
+<p>　　　此时 (rear+1)%maxSize = 0  不等于 front=1 ,所以可以继续向队列中添加元素，也就不会出现假溢出的情况。当执行入队(例queue.add(6))操作后，rear = (rear+1)%maxSize 即rear=0，以此来生成环形队列。此时队列元素情况如下图所示</p>
+<p><img src="https://img2018.cnblogs.com/blog/1797332/201909/1797332-20190929195319924-1392645127.png" alt="img"></p>
+<p>　　另外，再说明下环形队列有效元素个数问题，如果不是环形队列，则有效元素个数size = rear - front。而使用环形实现后，会出现rear&lt;front的情况，所以这里使用(rear-front+maxSize)%maxSize的方式计算有效元素个数。（或者在内部定义一个size属性，当元素入队时size++，当出队时size–）</p>
+<p>　　因此在打印队列中元素时，从front位置开始至 front+size位置结束来循环打印有效元素。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>　　如果不实用环形队列方式实现队列，则会出现“假溢出”情况（即队列满后，将全部元素出队却不能继续添加元素的情况）。而环形队列会在队头元素出队后，将队尾指针rear重新分配为0，以达到循环使用队列空间的目的。</p>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%972/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  队列2
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2021/12/02/JAVA%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+                数据结构与算法
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2021-<span id="footerYear"></span> 
+	<a href="/">小德</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
